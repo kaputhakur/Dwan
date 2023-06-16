@@ -64,7 +64,7 @@
       "settings": {
         "width": "wrapper-width",
         "logo_position": "middle-left",
-        "menu": "support-us",
+        "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
