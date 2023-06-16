@@ -27,30 +27,6 @@
             "sec_btn_hover_color": "#000000"
           }
         },
-        "4c05708a-ade6-40b6-bff1-7f93de8bf1c8": {
-          "type": "image",
-          "settings": {
-            "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
-            "overlay_opacity": 0,
-            "text_color": "#ffffff",
-            "desktop_content_position": "bottom-center",
-            "title": "New Arrivals",
-            "sub_title": "",
-            "dec": "",
-            "first_button_title": "First Button Title",
-            "first_button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
-            "sec_button_title": "Second Button Title",
-            "sec_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
-          }
-        },
         "894cae4e-bf00-4d23-a498-09c37bd724a3": {
           "type": "video",
           "settings": {
@@ -75,12 +51,36 @@
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "sec_btn_hover_color": "#000000"
           }
+        },
+        "4c05708a-ade6-40b6-bff1-7f93de8bf1c8": {
+          "type": "image",
+          "settings": {
+            "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
+            "overlay_opacity": 0,
+            "text_color": "#ffffff",
+            "desktop_content_position": "bottom-center",
+            "title": "New Arrivals",
+            "sub_title": "",
+            "dec": "",
+            "first_button_title": "First Button Title",
+            "first_button_link": "",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_color": "#000000",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_hover_color": "#000000",
+            "sec_button_title": "Second Button Title",
+            "sec_button_link": "",
+            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_color": "#000000",
+            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_hover_color": "#000000"
+          }
         }
       },
       "block_order": [
         "4edac545-4c3a-4426-b570-b7ca7cbc2946",
-        "4c05708a-ade6-40b6-bff1-7f93de8bf1c8",
-        "894cae4e-bf00-4d23-a498-09c37bd724a3"
+        "894cae4e-bf00-4d23-a498-09c37bd724a3",
+        "4c05708a-ade6-40b6-bff1-7f93de8bf1c8"
       ],
       "settings": {
         "bg-color": "",
