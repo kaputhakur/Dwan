@@ -8,7 +8,7 @@
           "settings": {
             "dektop_image": "shopify:\/\/shop_images\/Womens_Amplify_Addict4x5_JW-port.webp",
             "overlay_opacity": 0,
-            "text_color": "#b94040",
+            "text_color": "rgba(0,0,0,0)",
             "desktop_content_position": "bottom-center",
             "title": "",
             "sub_title": "",
