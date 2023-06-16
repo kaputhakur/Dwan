@@ -3136,6 +3136,38 @@ details-disclosure > details {
   margin: -0.5rem 0 -0.5rem 0;
 }
 
+.product-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Ambient animation */
 
 @media (prefers-reduced-motion: no-preference) {
