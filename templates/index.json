@@ -32,9 +32,9 @@
           "settings": {
             "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
             "overlay_opacity": 0,
-            "text_color": "",
+            "text_color": "#ffffff",
             "desktop_content_position": "bottom-center",
-            "title": "",
+            "title": "New Arrivals",
             "sub_title": "",
             "dec": "",
             "first_button_title": "First Button Title",
