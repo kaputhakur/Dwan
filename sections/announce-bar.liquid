@@ -1,48 +1,7 @@
+<link rel="stylesheet" href="{{ 'announce-header.css' | asset_url }}">
 <link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
 <script src="{{ 'swiper.js' | asset_url }}"></script>
 
-<style>
-  /*annonce-ment bar  */
-
-ul.list-menu.info-child {
-  visibility:hidden;
-  opacity:0;
-}
-.announce-bar {
-    display: flex;
-  
-}
-.announce-wrapper {
-   border:0 1px solid;
-   padding: 0 40px;
-}
-  .left-links>ul {
-    display: flex;
-    
-}
-.left-links ul li:hover>ul  {
-   visibility:visible;
-  opacity:1;
-    
-}
-.left-links ul ul {
-/*     border-radius: 0 0 15px 15px; */
-    top: 10%;
-/*     background:var(--body-background-color);
-    border: 1px solid var(--color-border) ; */
-    position: absolute;
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-   transition-duration: .15s;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-  text-align: left;
-}
-
-.left-links>ul li {
-    margin-right: 20px;
-</style>
 
 {%- if section.settings.announcement_bar_enabled -%}
 <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
