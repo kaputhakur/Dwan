@@ -6,10 +6,11 @@ ul.list-menu.info-child {
 }
 .announce-bar {
     display: flex;
-   border:0 1px solid;
+  
 }
 .announce-wrapper {
-    border: 1px solid;
+   border:0 1px solid;
+   padding: 0 40px;
 }
   .left-links>ul {
     display: flex;
