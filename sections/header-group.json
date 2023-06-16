@@ -51,7 +51,7 @@
       ],
       "settings": {
         "width": "page-width",
-        "bg-color": "linear-gradient(72deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+        "bg-color": "5, 250, 99, 1) 85%)",
         "text-color": "#161313",
         "announcement_bar_enabled": true,
         "announcement_bar_home_page_only": true,
