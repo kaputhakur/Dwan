@@ -4,6 +4,7 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "disabled": true,
       "blocks": {
         "f6558b4a-ff8b-41a9-b562-0172709b673d": {
           "type": "announcement",
@@ -19,6 +20,43 @@
         "f6558b4a-ff8b-41a9-b562-0172709b673d"
       ],
       "settings": {
+      }
+    },
+    "18a39f1c-eb46-47b2-b5c6-7df2e2774002": {
+      "type": "announce-bar",
+      "blocks": {
+        "dee36340-eb1d-48c6-adbe-e7f427c108ab": {
+          "type": "header",
+          "settings": {
+            "title": "Welcome to our store"
+          }
+        },
+        "564c6259-5478-47a3-be98-5b4f4ea830a1": {
+          "type": "header",
+          "settings": {
+            "title": "Welcome to our store"
+          }
+        },
+        "6b380910-0329-4fd8-8ee7-9eabaafcb601": {
+          "type": "header",
+          "settings": {
+            "title": "Welcome to our store"
+          }
+        }
+      },
+      "block_order": [
+        "dee36340-eb1d-48c6-adbe-e7f427c108ab",
+        "564c6259-5478-47a3-be98-5b4f4ea830a1",
+        "6b380910-0329-4fd8-8ee7-9eabaafcb601"
+      ],
+      "settings": {
+        "width": "full-width",
+        "bg-color": "",
+        "text-color": "",
+        "announcement_bar_enabled": false,
+        "announcement_bar_home_page_only": true,
+        "info-menu": "",
+        "text-alignment": "center"
       }
     },
     "header": {
@@ -42,6 +80,7 @@
   },
   "order": [
     "announcement-bar",
+    "18a39f1c-eb46-47b2-b5c6-7df2e2774002",
     "header"
   ]
 }
