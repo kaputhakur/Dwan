@@ -1065,7 +1065,7 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 
- var popUpContent = document.querySelctorAll('.product-popup');
+ var popUpContent = document.querySelectorAll('.product-popup');
 console.log(popUpContent)
 // function openPopUP() {
 //   var addTocarT = document.querySelectorAll('.product-form__submit');
