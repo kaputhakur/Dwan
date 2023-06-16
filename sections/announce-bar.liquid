@@ -1,16 +1,44 @@
 
 <style>
 
-ul.list-menu.info-child {
-    display: none;
+.left-links ul li {
+   visibility:hidden;
+  opacity:0;
 }
-
 .announce-bar {
     display: flex;
 }
-
 .announce-wrapper {
     border: 1px solid;
+}
+  .left-links>ul {
+    display: flex;
+    
+}
+.left-links ul li:hover>ul  {
+   visibility:visible;
+  opacity:1;
+    
+}
+.left-links ul ul {
+    border-radius: 0 0 15px 15px;
+    top: 10%;
+    background:var(--body-background-color);
+    border: 1px solid var(--color-border) ;
+    position: absolute;
+    z-index: 1;
+    padding: 21px;
+    right: 263px;
+    visibility: hidden;
+    opacity: 0;
+  transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+  text-align: left;
+}
+
+.left-links>ul li {
+    margin-right: 20px;
 }
 
 </style>
