@@ -1,9 +1,12 @@
+/*annonce-ment bar  */
+
 ul.list-menu.info-child {
   visibility:hidden;
   opacity:0;
 }
 .announce-bar {
     display: flex;
+   border:0 1px solid;
 }
 .announce-wrapper {
     border: 1px solid;
@@ -34,4 +37,5 @@ ul.list-menu.info-child {
 
 .left-links>ul li {
     margin-right: 20px;
-}
+
+
