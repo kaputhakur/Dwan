@@ -1070,4 +1070,4 @@ console.log(popUpContent)
 // function openPopUP() {
 //   var addTocarT = document.querySelectorAll('.product-form__submit');
  
-}
+// }
