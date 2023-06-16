@@ -1065,8 +1065,15 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 
- var popUpContent = document.querySelectorAll('.product-popup');
-console.log(popUpContent)
-function openPopUP() {
-  popUpContent.style.display="block"; 
- }
+//  var popUpContent = document.querySelectorAll('.product-popup');
+// console.log(popUpContent)
+// function openPopUP() {
+//   popUpContent.style.display="block"; 
+//  }
+
+
+
+$('.add-to-cart-btn').on('click', function() {
+  // Display the popup
+  $('.product-popup').show();
+});
