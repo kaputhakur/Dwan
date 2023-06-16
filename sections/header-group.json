@@ -51,7 +51,7 @@
       ],
       "settings": {
         "width": "page-width",
-        "bg-color": "5, 250, 99, 1) 85%)",
+        "bg-color": "",
         "text-color": "#161313",
         "announcement_bar_enabled": true,
         "announcement_bar_home_page_only": true,
