@@ -91,6 +91,7 @@
     },
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -131,6 +132,7 @@
     },
     "deb51548-5c70-4b4d-8b78-0cf7d1a7b325": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--19339382227264__deb51548-5c70-4b4d-8b78-0cf7d1a7b325-1685621367ac3bb74b-0": {
           "type": "heading",
@@ -218,6 +220,7 @@
     },
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19339382227264__c2ecd15a-a2ca-48f4-886c-70fefbd845f7-168561527772a6e58d-0": {
           "type": "heading",
@@ -336,57 +339,9 @@
         "padding_bottom": 36
       }
     },
-    "264cce7c-6e7c-465d-ad77-f157b3b14730": {
-      "type": "tabbing",
-      "disabled": true,
-      "blocks": {
-        "b4396af5-db61-4885-9291-9bbae0701e2e": {
-          "type": "text",
-          "settings": {
-            "title": "Women",
-            "richtext": ""
-          }
-        },
-        "f680362e-6b1c-4124-a805-f00424797928": {
-          "type": "text",
-          "settings": {
-            "title": "All products",
-            "richtext": ""
-          }
-        },
-        "43ae5e7e-704e-4339-989a-238ed5c50e5e": {
-          "type": "text",
-          "settings": {
-            "title": "New Releases",
-            "richtext": ""
-          }
-        },
-        "f7b4d025-110d-475d-9013-423dd38f9aa0": {
-          "type": "text",
-          "settings": {
-            "title": "Best Sellers",
-            "richtext": ""
-          }
-        }
-      },
-      "block_order": [
-        "b4396af5-db61-4885-9291-9bbae0701e2e",
-        "f680362e-6b1c-4124-a805-f00424797928",
-        "43ae5e7e-704e-4339-989a-238ed5c50e5e",
-        "f7b4d025-110d-475d-9013-423dd38f9aa0"
-      ],
-      "settings": {
-        "width": "full-width",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "title": "LIMITLESS. THE NEW APEX",
-        "sub-title": "",
-        "button": "",
-        "enable-button": false
-      }
-    },
     "41ffb30e-b137-4f30-b482-12b6caa674b8": {
       "type": "tabbing",
+      "disabled": true,
       "blocks": {
         "86c833e5-c708-4018-ad79-c2cffc7619bb": {
           "type": "text",
@@ -446,7 +401,6 @@
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7",
     "featured_collection",
     "38d6c8b9-2190-493d-89b5-d81415604a57",
-    "264cce7c-6e7c-465d-ad77-f157b3b14730",
     "41ffb30e-b137-4f30-b482-12b6caa674b8"
   ]
 }
