@@ -23,15 +23,7 @@
   {% for link in section.settings.info-menu.links %}
      <li>
        <a href="{{ link.url }}">{{ link.title }}</a>
-       {% if link.links.size >0 %}
-           <ul class="list-menu list-menu--inline">
-             {% for child_link in link.links %}
-               <li>
-                 <a href ="{{ child_link.url }}">{{ child_link.title }}</a>
-               </li>
-               {% endfor %}
-           </ul>
-         {% endif %}
+      
      </li>
     {% endfor %}
       <span>Login</span>
