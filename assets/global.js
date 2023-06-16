@@ -1065,11 +1065,11 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 
- var popUpContent = document.querySelectorAll('.product-popup');
+//  var popUpContent = document.querySelectorAll('.product-popup');
 
-function openPopUP() {
-  popUpContent.style.display="block"; 
- }
+// function openPopUP() {
+//   popUpContent.style.display="block"; 
+//  }
 
 
 
