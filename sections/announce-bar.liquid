@@ -1,3 +1,19 @@
+
+<style>
+
+ul.list-menu.info-child {
+    display: none;
+}
+
+.announce-bar {
+    display: flex;
+}
+
+.announce-wrapper {
+    border: 1px solid;
+}
+
+</style>
 <link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
 <script src="{{ 'swiper.js' | asset_url }}"></script>
 
@@ -20,7 +36,7 @@
         </div>
         </div>
  <div class="left-links">
-  <ul class="list-menu ">
+  <ul class="list-menu info-child ">
   {% for link in section.settings.info-menu.links %}
      <li>
        <a href="{{ link.url }}">{{ link.title }}</a>
