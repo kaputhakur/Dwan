@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
 <script src="{{ 'swiper.js' | asset_url }}"></script>
+
 {%- if section.settings.announcement_bar_enabled -%}
 <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
   <div class="announce-wrapper">
@@ -45,9 +46,9 @@
  
  const swiper = new Swiper('.announce-container-{{ section.id }}', {
        loop:true,
-        autoplay:true,
+       autoplay:true,
        slidesPerView: 1,
-   spaceBetween: 10,
+       spaceBetween: 10,
 
    });
 </script>
