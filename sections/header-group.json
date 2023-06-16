@@ -50,12 +50,12 @@
         "6b380910-0329-4fd8-8ee7-9eabaafcb601"
       ],
       "settings": {
-        "width": "full-width",
-        "bg-color": "",
-        "text-color": "",
-        "announcement_bar_enabled": false,
+        "width": "page-width",
+        "bg-color": "linear-gradient(72deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+        "text-color": "#161313",
+        "announcement_bar_enabled": true,
         "announcement_bar_home_page_only": true,
-        "info-menu": "",
+        "info-menu": "footer-info",
         "text-alignment": "center"
       }
     },
