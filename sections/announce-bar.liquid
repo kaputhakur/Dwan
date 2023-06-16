@@ -1,8 +1,152 @@
+<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
+<script src="{{ 'swiper.js' | asset_url }}"></script>
+{%- if section.settings.announcement_bar_enabled -%}
+<div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
+  <div class="announce-wrapper">
+  <div class="announce-bar {{ section.settings.text-alignment}}" style="background:{{ section.settings.bg-color }}; color:{{ section.settings.text-color}};">
+     <div class="announce-container-{{ section.id }} swiper">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="announce-text swiper-slide ">
+              {%- if section.settings.announcement_bar_home_page_only == false or template.name == 'index' -%}
+                {%- if block.settings.title!= blank -%}
+                  <p>{{ block.settings.title | escape }}</p>
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+          {% endfor %}
+        </div>
+        </div>
+ <div class="left-links">
+  <ul>
+  {% for link in section.settings.info-menu.links %}
+     <li>
+       <a href="{{ link.url }}">{{ link.title }}</a>
+       {% if link.links.size >0 %}
+           <ul>
+             {% for child_link in link.links %}
+               <li>
+                 <a href ="{{ child_link.url }}">{{ child_link.title }}</a>
+               </li>
+               {% endfor %}
+           </ul>
+         {% endif %}
+     </li>
+    {% endfor %}
+      <span>Login</span>
+     </ul>
+    </div>
+    
+  </div>
+  </div>
+</div>
+ {%- endif -%}
+<script>
+ 
+ const swiper = new Swiper('.announce-container-{{ section.id }}', {
+       loop:true,
+        autoplay:true,
+       slidesPerView: 1,
+   spaceBetween: 10,
+
+   });
+</script>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Announcement Bar",
+  "settings": [
+     {
+        "type":"select",
+        "label":"Page Width",
+        "id":"width",
+         "options":[
+           {
+             "value":"full-width",
+             "label":"Full Width"
+           },
+            {
+             "value":"wrapper-width",
+             "label":"Wrapper Width"
+           },
+            {
+             "value":"narrow-width",
+             "label":"Narrow Width"
+           }
+         ]
+      },
+      {
+        "type": "color_background",
+        "id": "bg-color",
+        "label": "Background-color"
+      },
+    {
+        "type": "color",
+        "id": "text-color",
+        "label": "Text Color"
+      },
+    {
+        "type": "header",
+        "content": "Announcement bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "announcement_bar_enabled",
+        "label": "Show announcement",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "announcement_bar_home_page_only",
+        "label": "Show on home page only",
+        "default": true
+      },
+    {
+      "type":"link_list",
+      "label":"Info Menu",
+      "id":"info-menu"
+    },
+     {
+        "type": "select",
+        "id": "text-alignment",
+        "label": "Text Alignment",
+        "options": [
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      }
+  ],
+  "blocks":[
+    {
+      "type":"header",
+        "name":"Announcement Text",
+      "settings":[
+        {
+        "type": "text",
+        "id": "title",
+        "label": "Announcement Text",
+        "default":"Welcome to our store"
+      }
+      
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Announcement Bar"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
