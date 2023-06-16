@@ -20,22 +20,23 @@
         </div>
         </div>
  <div class="left-links">
- <ul class="menu">
+  <ul class="list-menu ">
   {% for link in section.settings.info-menu.links %}
-    <li class="menu-link">
-      <a href="{{ link.url }}">{{ link.title }}</a>
-       {% if link.links.size > 0 %}
-        <ul class="menu dropdown-child">
-          {% for child_link in link.links %}
-            <li class="menu-link">
-              <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+     <li>
+       <a href="{{ link.url }}">{{ link.title }}</a>
+       {% if link.links.size >0 %}
+           <ul class="list-menu ">
+             {% for child_link in link.links %}
+               <li>
+                 <a href ="{{ child_link.url }}">{{ child_link.title }}</a>
                </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+               {% endfor %}
+           </ul>
+         {% endif %}
+     </li>
+    {% endfor %}
+      <span>Login</span>
+     </ul>
     </div>
     
   </div>
