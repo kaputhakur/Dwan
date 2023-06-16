@@ -6,16 +6,16 @@
         "4edac545-4c3a-4426-b570-b7ca7cbc2946": {
           "type": "image",
           "settings": {
-            "dektop_image": "shopify:\/\/shop_images\/Studio_Creative_76-port-2.webp",
+            "dektop_image": "shopify:\/\/shop_images\/Womens_Amplify_Addict4x5_JW-port.webp",
             "overlay_opacity": 0,
-            "text_color": "",
+            "text_color": "#b94040",
             "desktop_content_position": "bottom-center",
             "title": "",
             "sub_title": "",
             "dec": "",
             "first_button_title": "First Button Title",
             "first_button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_bg": "linear-gradient(48deg, rgba(242, 184, 184, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000",
@@ -30,7 +30,7 @@
         "4c05708a-ade6-40b6-bff1-7f93de8bf1c8": {
           "type": "image",
           "settings": {
-            "dektop_image": "shopify:\/\/shop_images\/22.webp",
+            "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
             "overlay_opacity": 0,
             "text_color": "",
             "desktop_content_position": "bottom-center",
