@@ -1,1 +1,58 @@
-{"name":"t:sections.header.name","type":"header","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"f6558b4a-ff8b-41a9-b562-0172709b673d":{"type":"announcement","settings":{"text":"Welcome to our store","text_alignment":"center","color_scheme":"accent-1","link":""}}},"block_order":["f6558b4a-ff8b-41a9-b562-0172709b673d"],"settings":{}},"header":{"type":"header","settings":{"logo_position":"middle-left","menu":"support-us","menu_type_desktop":"mega","sticky_header_type":"on-scroll-up","show_line_separator":true,"color_scheme":"background-1","enable_country_selector":false,"enable_language_selector":false,"mobile_logo_position":"center","margin_bottom":0,"padding_top":20,"padding_bottom":20}},"d9c95c29-8437-403b-ae38-f2644488c831":{"type":"video-with-image","disabled":true,"settings":{"bg-color":"","width":"full-width","padding_top":36,"padding_bottom":36}}},"order":["announcement-bar","header","d9c95c29-8437-403b-ae38-f2644488c831"]}
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "f6558b4a-ff8b-41a9-b562-0172709b673d": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f6558b4a-ff8b-41a9-b562-0172709b673d"
+      ],
+      "settings": {
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "width": "wrapper-width",
+        "logo_position": "middle-left",
+        "menu": "support-us",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "d9c95c29-8437-403b-ae38-f2644488c831": {
+      "type": "video-with-image",
+      "disabled": true,
+      "settings": {
+        "bg-color": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "d9c95c29-8437-403b-ae38-f2644488c831"
+  ]
+}
