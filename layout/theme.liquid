@@ -256,7 +256,15 @@
     </main>
 
     {% sections 'footer-group' %}
-     <div id="mini-cart-sucess"></div>
+     <div id="mini-cart-sucess">
+       <div class="product-popup">
+  <div class="popup-content">
+    <h2>Product Added to Cart!</h2>
+    <p>Continue shopping or proceed to checkout.</p>
+    <a href="/cart">View Cart</a>
+  </div>
+</div>
+     </div>
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
