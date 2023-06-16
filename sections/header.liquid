@@ -548,7 +548,26 @@
                             </li>
                           {%- endfor -%}
                         </ul>
-<div class="dropdwon-show-image">
+                           <div class="dropdwon-show-image">
+                              {% for link in section.settings.menu.links %}
+              {% if link.links.size >0 %}
+               <div class="grandchild-image">
+              {% for child_link in link.links %}
+                {% if child_link.links.size >0 %}
+                {% for grandchild_link in child_link.links %}
+                     {% assign grandchild_Image = grandchild_link.object %}
+                       {% if grandchild_Image != blank%}
+                         <div class="">
+                         <img src ="{{ grandchild_Image.image | img_url:'64x' }}"/>
+                             <h3>{{ grandchild_Image.products.count }}</h3>
+                         </div>
+                         {% endif %}
+                  {% endfor %}
+                  {% endif %}
+                {% endfor %}
+                </div>
+                {% endif %}
+              {% endfor %}
                             </div>
                       </div>
                     </details>
