@@ -1,0 +1,61 @@
+{% render 'product-grid',
+  card_product: product,
+  media_aspect_ratio: section.settings.image_ratio,
+  show_secondary_image: section.settings.show_secondary_image,
+  show_vendor: section.settings.show_vendor,
+  show_rating: section.settings.show_rating,
+  show_quick_add: section.settings.enable_quick_add,
+  section_id: section.id
+%}
+
+<!-- ------------product-size-selector------------- -->
+<div class="product-size-selector">
+  <div class="quick-ad">
+    <span>OUICK ADD +</span>
+  </div>
+  <div class="product-size-wrapper">
+    {% for option in product.options_with_values %}
+      {% if option.name == 'Size' %}
+        {% for value in option.values %}
+          <div class="size-selector">
+            <input
+              class="single-size-selector"
+              type="radio"
+              id=""
+              name="{{ option.name }}"
+              value="{{ value | escape }}"
+              {% if option.selected_value == value %}
+                checked="true"
+              {% endif %}
+            >
+            <label>{{ value }}</label>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<!-- ------------- product-size-selector-ende ------  ---- -- -->
+
+<!-- ------------- product-color-selector------  ---- -- -->
+<div class="product-color-selector">
+  {% for option in product.options_with_values %}
+    {% if option.name == 'Color' %}
+      <div class="product-variant-images ">
+        <div class="">
+          {% for value in option.values %}
+            {% for image in product.images %}
+              {% if image.alt == value %}
+                <div class="variant-images">
+                  <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
+                </div>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+<!-- ------------- product-color-selector-ende ------  ---- -- -->
