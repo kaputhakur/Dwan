@@ -45,6 +45,7 @@
             id="Tab-{{ section.id  }}{{ forloop.index }}"
             class="TabContent-{{ section.id  }} tabcontent {% if forloop.index == 1 %}active{% endif %}"
           >
+            <!-- -----------    ---------    ------ product silder-------------------------------- -->
             <div class="collection-carousel swiper">
               <div class="swiper-wrapper">
                 {% assign collection = collections[block.settings['slider-collection']] %}
@@ -60,6 +61,7 @@
                       section_id: section.id
                     %}
 
+                    <!-- ------------product-size-selector------------- -->
                     <div class="product-size-selector">
                       <div class="quick-ad">
                         <span>OUICK ADD +</span>
@@ -86,6 +88,9 @@
                         {% endfor %}
                       </div>
                     </div>
+                    <!-- ------------- product-size-selector-ende ------  ---- -- -->
+
+                    <!-- ------------- product-color-selector------  ---- -- -->
                     <div class="product-color-selector">
                       {% for option in product.options_with_values %}
                         {% if option.name == 'Color' %}
@@ -106,10 +111,12 @@
                         {% endif %}
                       {% endfor %}
                     </div>
+                    <!-- ------------- product-color-selector-ende ------  ---- -- -->
                   </div>
                 {% endfor %}
               </div>
             </div>
+            <!-- ----------------------product silder end----- -------------------------------- -->
           </div>
         {% endfor %}
       </div>
