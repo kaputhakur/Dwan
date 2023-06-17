@@ -13,24 +13,7 @@
   padding-bottom:{{section.settings.padding_bottom}}px;
   }
   }
-    .tabcontent {
-  display: none;
-  }
-  .tabcontent.active {
-  transition: all 1s ease;
-  display: block;
-  }
-
-  .tabs {
-    display: flex;
-    gap: 100px;
-}
-  .wrapper_tabcontent {
-    padding-top: 50px;
-}
-.collection-carousel{
-    overflow: inherit;
-}
+ 
 {% endstyle %}
 {%- if section.settings.enable_quick_add -%}
   {{ 'quick-add.css' | asset_url | stylesheet_tag }}

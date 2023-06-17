@@ -1,4 +1,23 @@
- .product-middel-container {
+   .tabcontent {
+  display: none;
+  }
+  .tabcontent.active {
+  transition: all 1s ease;
+  display: block;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 100px;
+}
+  .wrapper_tabcontent {
+    padding-top: 50px;
+}
+.collection-carousel{
+    overflow: inherit;
+}
+
+.product-middel-container {
     position: relative;
     bottom: 143px;
     border: 1px solid;
