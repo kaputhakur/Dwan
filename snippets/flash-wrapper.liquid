@@ -1,5 +1,7 @@
 {% if settings.flash_image != blank %}
-  <div class="flash-image-wrapper" id="flash_image">
-    <img src="{{ settings.flash_image |img_url:'master' }}">
+  <div class="flash-wrapper" id="FlashWrapper">
+    <div class="flash-image">
+      <img src="{{ settings.flash_image |img_url:'master' }}">
+    </div>
   </div>
 {% endif %}
