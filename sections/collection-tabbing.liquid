@@ -49,49 +49,47 @@
               <div class="swiper-wrapper">
                 {% assign collection = collections[block.settings['slider-collection']] %}
                 {% for product in collection.products %}
-                  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                    <div class="featured-product swiper-slide">
-                      {% render 'product-grid',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
-                        show_quick_add: section.settings.enable_quick_add,
-                        section_id: section.id
-                      %}
+                  <div class="featured-product swiper-slide">
+                    {% render 'product-grid',
+                      card_product: product,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      show_quick_add: section.settings.enable_quick_add,
+                      section_id: section.id
+                    %}
 
-                      <div class="product-middel-container">
-                        <div class="quick-ad">
-                          <span>OUICK ADD +</span>
-                        </div>
-                        <div class="product-size-wrapper">
-                          {% for option in product.options_with_values %}
-                            {% if option.name == 'Size' %}
-                              {% for value in option.values %}
-                                <div class="size-selector">
-                                  <input
-                                    class="single-size-selector"
-                                    type="radio"
-                                    id=""
-                                    name="{{ option.name }}"
-                                    value="{{ value | escape }}"
-                                    {% if option.selected_value == value %}
-                                      checked="true"
-                                    {% endif %}
-                                  >
-                                  <label>{{ value }}</label>
-                                </div>
-                              {% endfor %}
-                            {% endif %}
-                          {% endfor %}
-                        </div>
+                    <div class="product-middel-container">
+                      <div class="quick-ad">
+                        <span>OUICK ADD +</span>
                       </div>
-                      <script type="application/json">
-                        {{ product.variants | json }}
-                      </script>
+                      <div class="product-size-wrapper">
+                        {% for option in product.options_with_values %}
+                          {% if option.name == 'Size' %}
+                            {% for value in option.values %}
+                              <div class="size-selector">
+                                <input
+                                  class="single-size-selector"
+                                  type="radio"
+                                  id=""
+                                  name="{{ option.name }}"
+                                  value="{{ value | escape }}"
+                                  {% if option.selected_value == value %}
+                                    checked="true"
+                                  {% endif %}
+                                >
+                                <label>{{ value }}</label>
+                              </div>
+                            {% endfor %}
+                          {% endif %}
+                        {% endfor %}
+                      </div>
                     </div>
-                  {% endform %}
+                    <script type="application/json">
+                      {{ product.variants | json }}
+                    </script>
+                  </div>
                 {% endfor %}
               </div>
             </div>
