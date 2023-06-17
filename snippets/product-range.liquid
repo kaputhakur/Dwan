@@ -1,5 +1,5 @@
 <!-- ------------product-size-selector------------- -->
-{% for product in collection.products %}
+{% form 'product', product, id: product_form_id, class: 'form', data-type: 'add-to-cart-form' %}
   <div class="product-size-selector">
     <div class="quick-ad">
       <span>OUICK ADD +</span>
@@ -49,5 +49,5 @@
       {% endif %}
     {% endfor %}
   </div>
-{% endfor %}
+{% endform %}
 <!-- ------------- product-color-selector-ende ------  ---- -- -->
