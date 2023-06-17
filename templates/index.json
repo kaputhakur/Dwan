@@ -57,7 +57,7 @@
           "settings": {
             "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
             "overlay_opacity": 0,
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "desktop_content_position": "right-bottom",
             "title": "",
             "sub_title": "",
@@ -215,6 +215,7 @@
         "title": "",
         "padding_top": 36,
         "padding_bottom": 36,
+        "show_secondary_image": true,
         "enable_quick_add": false
       }
     },
