@@ -1,4 +1,6 @@
-   .tabcontent {
+
+/* tabbing */
+.tabcontent {
   display: none;
   }
   .tabcontent.active {
@@ -17,18 +19,29 @@
     overflow: inherit;
 }
 
+/* product*/
 .product-middel-container {
-    position: relative;
-    bottom: 143px;
+    border-radius: 47px;
+    position: absolute;
+    bottom: 82px;
     border: 1px solid;
     background: #eee;
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
-.quick-ad{
-  text-align:center;
+.quick-ad {
+    text-align: center;
+    padding: 8px;
 }
 .product-size-wrapper {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    border-top: 1px solid;
+    width: 73%;
+    margin: 0 auto;
+    padding: 10px;
 }
 .radius-30{
   border-radius:30px;
@@ -36,3 +49,4 @@
 .radius-20{
   border-radius:30px;
 }
+
