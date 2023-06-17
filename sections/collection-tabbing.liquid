@@ -49,17 +49,18 @@
               <div class="swiper-wrapper">
                 {% assign collection = collections[block.settings['slider-collection']] %}
                 {% for product in collection.products %}
-                  <div class="featured-product swiper-slide">
-                    {% render 'product-grid',
-                      card_product: product,
-                      media_aspect_ratio: section.settings.image_ratio,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_rating: section.settings.show_rating,
-                      show_quick_add: section.settings.enable_quick_add,
-                      section_id: section.id
-                    %}
-                    {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                    <div class="featured-product swiper-slide">
+                      {% render 'product-grid',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        show_quick_add: section.settings.enable_quick_add,
+                        section_id: section.id
+                      %}
+
                       <div class="product-middel-container">
                         <div class="quick-ad">
                           <span>OUICK ADD +</span>
@@ -89,8 +90,8 @@
                       <script type="application/json">
                         {{ product.variants | json }}
                       </script>
-                    {% endform %}
-                  </div>
+                    </div>
+                  {% endform %}
                 {% endfor %}
               </div>
             </div>
