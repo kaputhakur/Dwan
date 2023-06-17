@@ -5,6 +5,7 @@ featureProduct.forEach((item)=>{
   loop: true,
   slidesPerView:1,
   spaceBetween: 10,
+ loopAdditionalSlides: 30,
   breakpoints: {
     640: {
       slidesPerView: 2,
