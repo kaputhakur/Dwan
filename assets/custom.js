@@ -6,6 +6,7 @@ featureProduct.forEach((item)=>{
   slidesPerView:1,
   spaceBetween: 10,
   initialSlide: 0,
+  grabCursor: true,
 
   breakpoints: {
     640: {
