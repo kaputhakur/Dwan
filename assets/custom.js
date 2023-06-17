@@ -3,7 +3,7 @@ const featureProduct = document.querySelectorAll(".collection-carousel");
 featureProduct.forEach((item)=>{
   var Swipes = new Swiper(item, {
   loop: true,
-  slidesPerView:5,
+  slidesPerView:1,
   spaceBetween: 10,
   initialSlide: 0,
 
