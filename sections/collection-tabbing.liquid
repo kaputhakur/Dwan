@@ -89,12 +89,12 @@
                     <div class="product-color-selector">
                       {% for option in product.options_with_values %}
                         {% if option.name == 'Color' %}
-                          <div class="product-bottom-images swiper">
-                            <div class="swiper-wrapper">
+                          <div class="product-variant-images ">
+                            <div class="">
                               {% for value in option.values %}
                                 {% for image in product.images %}
                                   {% if image.alt == value %}
-                                    <div class="variant-images swiper-slide">
+                                    <div class="variant-images">
                                       <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
                                     </div>
                                     {% break %}
