@@ -72,13 +72,12 @@
               show_quick_add: section.settings.enable_quick_add,
               section_id: section.id
             %}
- {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}     
-      <div class="product-middel-container">
-      <div class="quick-ad">
+        {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}     
+       <div class="product-middel-container">
+       <div class="quick-ad">
         <span>OUICK ADD +</span>
        </div>
      <div class="product-size-wrapper">
-
     {% for option in product.options_with_values  %}
        {% if option.name =='Size' %}
          {% for value in option.values %}
