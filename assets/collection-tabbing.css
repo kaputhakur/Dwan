@@ -1,4 +1,4 @@
-/* .product-middel-container {
+ .product-middel-container {
     position: relative;
     bottom: 143px;
     border: 1px solid;
@@ -9,5 +9,11 @@
 }
 .product-size-wrapper {
     display: flex;
-    justify-content: center;
-} */
+    justify-content: center; 
+}
+.radius-30{
+  border-radius:30px;
+}
+.radius-30{
+  border-radius:30px;
+}
