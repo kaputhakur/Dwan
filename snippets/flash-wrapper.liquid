@@ -1,9 +1,11 @@
-{% if settings.flash_image != blank %}
-  <div class="flash-wrapper" id="FlashWrapper">
-    <div class="flash-image">
-      <img src="{{ settings.flash_image |img_url:'master' }}">
+{% if settings['enable-flash-image'] %}
+  {% if settings.flash_image != blank %}
+    <div class="flash-wrapper" id="FlashWrapper">
+      <div class="flash-image">
+        <img src="{{ settings.flash_image |img_url:'master' }}">
+      </div>
     </div>
-  </div>
+  {% endif %}
 {% endif %}
 <style>
     .flash-wrapper {
