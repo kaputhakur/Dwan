@@ -57,8 +57,8 @@
           "settings": {
             "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
             "overlay_opacity": 0,
-            "text_color": "#f3f3f3",
-            "desktop_content_position": "bottom-center",
+            "text_color": "{{ shop.brand.colors.primary[1].background }}",
+            "desktop_content_position": "right-bottom",
             "title": "New Arrivals",
             "sub_title": "",
             "dec": "",
