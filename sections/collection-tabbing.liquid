@@ -70,60 +70,61 @@
                     <button id="add-to-cart-btn">Add to Cart</button>
 
                     <!-- ------------product-size-selector------------- -->
-
-                    <div class="product-size-selector">
-                      <div class="quick-ad">
-                        <span>OUICK ADD +</span>
+                    {% comment %}
+                      <div class="product-size-selector">
+                        <div class="quick-ad">
+                          <span>OUICK ADD +</span>
+                        </div>
+                        <div class="product-size-wrapper">
+                          {% for option in product.options_with_values %}
+                            {% if option.name == 'Size' %}
+                              {% for value in option.values %}
+                                <div class="size-selector">
+                                  <input
+                                    class="single-size-selector"
+                                    type="radio"
+                                    id=""
+                                    name="{{ option.name }}"
+                                    value="{{ value | escape }}"
+                                    {% if option.selected_value == value %}
+                                      checked="true"
+                                    {% endif %}
+                                  >
+                                  <label>{{ value }}</label>
+                                </div>
+                              {% endfor %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
                       </div>
-                      <div class="product-size-wrapper">
+                      <!-- ------------- product-size-selector-ende ------  ---- -- -->
+
+                      <!-- ------------- product-color-selector------  ---- -- -->
+                      <div class="product-color-selector">
                         {% for option in product.options_with_values %}
-                          {% if option.name == 'Size' %}
-                            {% for value in option.values %}
-                              <div class="size-selector">
-                                <input
-                                  class="single-size-selector"
-                                  type="radio"
-                                  id=""
-                                  name="{{ option.name }}"
-                                  value="{{ value | escape }}"
-                                  {% if option.selected_value == value %}
-                                    checked="true"
+                          {% if option.name == 'Color' %}
+                            <div class="product-variant-images ">
+                              {% for value in option.values %}
+                                {% for image in product.images %}
+                                  {% if image.alt == value %}
+                                    <div class="variant-images">
+                                      <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
+                                    </div>
+                                    {% break %}
                                   {% endif %}
-                                >
-                                <label>{{ value }}</label>
-                              </div>
-                            {% endfor %}
+                                {% endfor %}
+                              {% endfor %}
+                            </div>
                           {% endif %}
                         {% endfor %}
                       </div>
-                    </div>
-                    <!-- ------------- product-size-selector-ende ------  ---- -- -->
-
-                    <!-- ------------- product-color-selector------  ---- -- -->
-                    <div class="product-color-selector">
-                      {% for option in product.options_with_values %}
-                        {% if option.name == 'Color' %}
-                          <div class="product-variant-images ">
-                            {% for value in option.values %}
-                              {% for image in product.images %}
-                                {% if image.alt == value %}
-                                  <div class="variant-images">
-                                    <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
-                                  </div>
-                                  {% break %}
-                                {% endif %}
-                              {% endfor %}
-                            {% endfor %}
-                          </div>
-                        {% endif %}
-                      {% endfor %}
-                    </div>
-
+                    {% endcomment %}
                     <!-- ------------- product-color-selector-ende ------  ---- -- -->
                   </div>
                 {% endfor %}
               </div>
             </div>
+
             <!-- ----------------------product silder end----- -------------------------------- -->
           </div>
         {% endfor %}
