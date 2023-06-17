@@ -13,10 +13,10 @@ featureProduct.forEach((item)=>{
       slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1366: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       
     },
     },
