@@ -10,7 +10,7 @@
             "overlay_opacity": 0,
             "text_color": "rgba(0,0,0,0)",
             "desktop_content_position": "right-bottom",
-            "title": "",
+            "title": "New Arrivals",
             "sub_title": "",
             "dec": "",
             "first_button_title": "First Button Title",
@@ -57,7 +57,7 @@
           "settings": {
             "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
             "overlay_opacity": 0,
-            "text_color": "{{ shop.brand.colors.primary[1].background }}",
+            "text_color": "#fff",
             "desktop_content_position": "right-bottom",
             "title": "New Arrivals",
             "sub_title": "",
