@@ -60,6 +60,14 @@
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
                     %}
+                    <select id="size-selector">
+                      {% for variant in product.variants %}
+                        {% if variant.available %}
+                          <option value="{{ variant.id }}">{{ variant.option1 }}</option>
+                        {% endif %}
+                      {% endfor %}
+                    </select>
+                    <button id="add-to-cart-btn">Add to Cart</button>
 
                     <!-- ------------product-size-selector------------- -->
 
@@ -143,6 +151,13 @@
      document.querySelector("#" + id).classList.add("active");
      btnTarget.classList.add("active");
   }
+
+
+
+  document.getElementById('add-to-cart-btn').addEventListener('click', function() {
+    var selectedVariantId = document.getElementById('size-selector').value;
+    Shopify.addItem(selectedVariantId, 1);
+  });
 </script>
 
 {% schema %}
