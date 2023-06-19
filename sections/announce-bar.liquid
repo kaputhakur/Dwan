@@ -3,7 +3,7 @@
 <script src="{{ 'swiper.js' | asset_url }}"></script>
 
 {%- if section.settings.announcement_bar_enabled -%}
-  <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.narrow-width == 'narrow-width' %}narrow-width{% else %}page-width{% endif %}">
+  <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'narrow-width' %}narrow-width{% else %}page-width{% endif %}">
     <div class="announce-wrapper">
       <div
         class="announce-bar {{ section.settings.text-alignment}}"
