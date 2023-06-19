@@ -28,7 +28,10 @@
               {% endif %}
               <div class="shop-product">
                 {% assign product = all_products[block.settings['productlist-1']] %}
-                {% render 'card-product' %}
+                {%
+                  render 'card-product',
+                  card_product: product,
+                %}
               </div>
             </div>
           </div>
