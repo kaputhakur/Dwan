@@ -14,6 +14,11 @@
 <div class="section-{{ section.id }}-padding">
   <div class="{% if section.settings.width == 'full-width' %}full-width {% elsif section.settings.width == 'wrapper-width' %}page-width{% else %}narrow-width {% endif %}">
     <div class="shop-lock-wrapper">
+      <div class="shop-lock-header">
+        {% if section.settings.title != blank %}
+          <h2>{{ section.settings.title }}</h2>
+        {% endif %}
+      </div>
       <div class="shop-lock-container swiper">
         <div class="swiper-wrapper">
           {% for block in section.blocks %}
