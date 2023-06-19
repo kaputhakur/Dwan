@@ -206,7 +206,7 @@
         "dc854e1a-ff60-4a91-9a5b-c46b17c4dba6": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         }
