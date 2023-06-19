@@ -35,79 +35,78 @@
               or block.settings.product_list3 != blank
               or block.settings.product_list4 != blank
             %}
-             
-            <div class="shopock-product-container swiper">
-               <div class="swiper-wrapper">
-                {% if block.settings.product_list1 != blank %}
-                  <div class="shopock-product swiper-slide">
-                    {% assign product = all_products[block.settings.product_list1] %}
-                    <div class="featured-product">
-                      {% render 'card-product',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
-                        show_quick_add: section.settings.enable_quick_add,
-                        section_id: section.id
-                      %}
+              <div class="shopock-product-container swiper">
+                <div class="swiper-wrapper">
+                  {% if block.settings.product_list1 != blank %}
+                    <div class="shopock-product swiper-slide">
+                      {% assign product = all_products[block.settings.product_list1] %}
+                      <div class="featured-product">
+                        {% render 'card-product',
+                          card_product: product,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          show_quick_add: section.settings.enable_quick_add,
+                          section_id: section.id
+                        %}
+                      </div>
                     </div>
-                  </div>
-                {% endif %}
+                  {% endif %}
 
-                {% if block.settings.product_list2 != blank %}
-                  <div class="shopock-product swiper-slide">
-                    {% assign product = all_products[block.settings.product_list2] %}
-                    <div class="featured-product">
-                      {% render 'card-product',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
-                        show_quick_add: section.settings.enable_quick_add,
-                        section_id: section.id
-                      %}
+                  {% if block.settings.product_list2 != blank %}
+                    <div class="shopock-product swiper-slide">
+                      {% assign product = all_products[block.settings.product_list2] %}
+                      <div class="featured-product">
+                        {% render 'card-product',
+                          card_product: product,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          show_quick_add: section.settings.enable_quick_add,
+                          section_id: section.id
+                        %}
+                      </div>
                     </div>
-                  </div>
-                {% endif %}
+                  {% endif %}
 
-                {% if block.settings.product_list3 != blank %}
-                  <div class="shopock-produc swiper-slide">
-                    {% assign product = all_products[block.settings.product_list3] %}
-                    <div class="featured-product">
-                      {% render 'card-product',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
-                        show_quick_add: section.settings.enable_quick_add,
-                        section_id: section.id
-                      %}
+                  {% if block.settings.product_list3 != blank %}
+                    <div class="shopock-produc swiper-slide">
+                      {% assign product = all_products[block.settings.product_list3] %}
+                      <div class="featured-product">
+                        {% render 'card-product',
+                          card_product: product,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          show_quick_add: section.settings.enable_quick_add,
+                          section_id: section.id
+                        %}
+                      </div>
                     </div>
-                  </div>
-                {% endif %}
+                  {% endif %}
 
-                {% if block.settings.product_list4 != blank %}
-                  <div class="shopock-product swiper-slide">
-                    {% assign product = all_products[block.settings.product_list4] %}
-                    <div class="featured-product">
-                      {% render 'card-product',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
-                        show_quick_add: section.settings.enable_quick_add,
-                        section_id: section.id
-                      %}
+                  {% if block.settings.product_list4 != blank %}
+                    <div class="shopock-product swiper-slide">
+                      {% assign product = all_products[block.settings.product_list4] %}
+                      <div class="featured-product">
+                        {% render 'card-product',
+                          card_product: product,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          show_quick_add: section.settings.enable_quick_add,
+                          section_id: section.id
+                        %}
+                      </div>
                     </div>
-                  </div>
-                {% endif %}
+                  {% endif %}
+                </div>
               </div>
             {% endif %}
-            </div>
           </div>
         {% endfor %}
       </div>
