@@ -422,10 +422,67 @@
             "top_position_4": 50,
             "left_position_4": 20
           }
+        },
+        "791f832a-a313-4e6b-bd36-569a297c1b71": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
+            "product_list1": "amplify-legging",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "elmts-relaxed-jogger",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "elmts-relaxed-jogger",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
+            "product_list1": "",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
+            "product_list1": "",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
         }
       },
       "block_order": [
-        "0e5eb605-d3d3-437e-8045-c588e6cd2a64"
+        "0e5eb605-d3d3-437e-8045-c588e6cd2a64",
+        "791f832a-a313-4e6b-bd36-569a297c1b71",
+        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1",
+        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125"
       ],
       "settings": {
         "bg-color": "",
