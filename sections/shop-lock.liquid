@@ -9,9 +9,10 @@
    }
 {% endstyle %}
 <div class="section-{{ section.id }}-padding">
-  <div
-    class="{% if section.settings.width == 'full-width' %}full-width {% elsif section.settings.width == 'wrapper-width' %}page-width{% else %}narrow-width {% endif %}"
-  ></div>
+  <div class="{% if section.settings.width == 'full-width' %}full-width {% elsif section.settings.width == 'wrapper-width' %}page-width{% else %}narrow-width {% endif %}" >
+    <div class="shop-lock-wrapper">
+    </div>
+  </div>
 </div>
 {% schema %}
 {
