@@ -52,6 +52,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+input.single-size-selector {
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+}
 .radius-30{
   border-radius:30px;
 }
