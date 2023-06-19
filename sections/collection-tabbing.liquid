@@ -67,6 +67,7 @@
                       <div class="quick-ad">
                         <h3>Quick Add+</h3>
                       </div>
+                  {% comment %}
                       {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
                       {%- for block in section.blocks -%}
@@ -101,8 +102,9 @@
                         {%- endform -%}
                       </div>
                     </div>
+                  
                     <!-- ------------product-size-selector------------- -->
-                    {% comment %}
+                   
                       <div class="product-size-wrapper">
                         <div class="quick-ad">
                           <span>OUICK ADD +</span>
