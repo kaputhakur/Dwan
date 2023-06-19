@@ -67,44 +67,44 @@
                       <div class="quick-ad">
                         <h3>Quick Add+</h3>
                       </div>
-                  {% comment %}
-                      {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
-                      {%- for block in section.blocks -%}
-                        {%- case block.type -%}
-                          {%- when '@app' -%}
-                            {% render block %}
-                          {%- when 'variant_picker' -%}
-                            {% render 'product-variant-picker',
-                              product: product,
-                              block: block,
-                              product_form_id: product_form_id
-                            %}
-                          {%- when 'buy_buttons' -%}
-                            {%- render 'buy-buttons',
-                              block: block,
-                              product: product,
-                              product_form_id: product_form_id,
-                              section_id: section.id,
-                              show_pickup_availability: true
-                            -%}
-                        {%- endcase -%}
-                      {% endfor %}
-                      <div {{ block.shopify_attributes }}>
-                        {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                        {%- form 'product',
-                          product,
-                          id: product_form_installment_id,
-                          class: 'installment caption-large'
-                        -%}
-                          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                          {{ form | payment_terms }}
-                        {%- endform -%}
-                      </div>
+                      {% comment %}
+                        {%- assign product_form_id = 'product-form-' | append: section.id -%}
+                        {%- for block in section.blocks -%}
+                          {%- case block.type -%}
+                            {%- when '@app' -%}
+                              {% render block %}
+                            {%- when 'variant_picker' -%}
+                              {% render 'product-variant-picker',
+                                product: product,
+                                block: block,
+                                product_form_id: product_form_id
+                              %}
+                            {%- when 'buy_buttons' -%}
+                              {%- render 'buy-buttons',
+                                block: block,
+                                product: product,
+                                product_form_id: product_form_id,
+                                section_id: section.id,
+                                show_pickup_availability: true
+                              -%}
+                          {%- endcase -%}
+                        {% endfor %}
+                        <div {{ block.shopify_attributes }}>
+                          {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                          {%- form 'product',
+                            product,
+                            id: product_form_installment_id,
+                            class: 'installment caption-large'
+                          -%}
+                            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                            {{ form | payment_terms }}
+                          {%- endform -%}
+                        </div>
+                      {% endcomment %}
                     </div>
-                  
+
                     <!-- ------------product-size-selector------------- -->
-                   
+                    {% comment %}
                       <div class="product-size-wrapper">
                         <div class="quick-ad">
                           <span>OUICK ADD +</span>
