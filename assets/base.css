@@ -4,6 +4,8 @@
 }
 .narrow-width{
   max-width:1240px;
+   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 :root,
 .color-background-1 {
