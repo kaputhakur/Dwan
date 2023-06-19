@@ -15,11 +15,13 @@
         {% for block in section.blocks %}
           <div class="shop-lock-slides">
             <div class="shop-lock-image">
-              {% if section.settings.image !=blank %}
-                  <img src="{{ section.settings.image |img_url:'615x768' }}">
+              {% if block.settings.image !=blank %}
+                  <img src="{{ block.settings.image |img_url:'615x768' }}">
                 {% endif %}
             </div>
             <div class="shop-lock-products">
+             {% if block.settings.productlist-1 !=blank %} 
+               {% endif %}
             </div>
           </div>
           {% endfor %}
