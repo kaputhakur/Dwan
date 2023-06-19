@@ -9,22 +9,26 @@
    }
 {% endstyle %}
 <div class="section-{{ section.id }}-padding">
-  <div class="{% if section.settings.width == 'full-width' %}full-width {% elsif section.settings.width == 'wrapper-width' %}page-width{% else %}narrow-width {% endif %}" >
+  <div class="{% if section.settings.width == 'full-width' %}full-width {% elsif section.settings.width == 'wrapper-width' %}page-width{% else %}narrow-width {% endif %}">
     <div class="shop-lock-wrapper">
       <div class="shop-lock-container">
         {% for block in section.blocks %}
           <div class="shop-lock-slides">
             <div class="shop-lock-image">
-              {% if block.settings.image !=blank %}
-                  <img src="{{ block.settings.image |img_url:'615x768' }}">
-                {% endif %}
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image |img_url:'615x768' }}">
+              {% endif %}
             </div>
             <div class="shop-lock-products">
-             {% if block.settings.productlist-1 !=blank %} 
-               {% endif %}
+              {% if block.settings['productlist-1'] != blank
+                or block.settings['productlist-2'] != blank
+                or block.settings['productlist-3'] != blank
+                or block.settings['productlist-4'] != blank
+              %}
+              {% endif %}
             </div>
           </div>
-          {% endfor %}
+        {% endfor %}
       </div>
     </div>
   </div>
