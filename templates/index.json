@@ -97,7 +97,7 @@
       ],
       "settings": {
         "bg-color": "",
-        "width": "full-width",
+        "width": "page-width",
         "padding_top": 36,
         "padding_bottom": 36
       }
