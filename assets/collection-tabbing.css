@@ -39,13 +39,14 @@
     padding: 8px;
 }
   .product-size-selector{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5px;
     border-top: 1px solid;
     width: 73%;
     margin: 0 auto;
     padding: 10px;
-    flex-wrap:wrap
+ 
     
 } 
 .product-variant-images {
