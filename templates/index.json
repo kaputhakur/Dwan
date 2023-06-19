@@ -278,12 +278,22 @@
             "productlist-3": "surface-pocket-legging-27",
             "productlist-4": "classic-capital-crop-hoodie"
           }
+        },
+        "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056": {
+          "type": "Block-1",
+          "settings": {
+            "productlist-1": "",
+            "productlist-2": "",
+            "productlist-3": "",
+            "productlist-4": ""
+          }
         }
       },
       "block_order": [
         "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5",
         "aebc03e7-a71e-4255-b843-a89b9e590666",
-        "bcae278f-b05d-4aac-ab5b-26526b42c5f7"
+        "bcae278f-b05d-4aac-ab5b-26526b42c5f7",
+        "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056"
       ],
       "settings": {
         "bg-color": "",
