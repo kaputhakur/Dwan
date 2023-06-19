@@ -19,7 +19,15 @@
           <h3>{{ section.settings['sub-title'] }}</h3>
         {% endif %}
       </div>
-      <div class="shop-lock-image-slides"></div>
+      <div class="shop-lock-slider">
+        {% for block in section.blocks %}
+          <div class="shop-lock-images">
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | img_url:'' }}">
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
