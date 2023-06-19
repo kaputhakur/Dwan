@@ -1,5 +1,14 @@
 {
   "sections": {
+    "ea6c87e7-e5a4-442f-8b6b-41ef378e11e9": {
+      "type": "video-with-image",
+      "settings": {
+        "bg-color": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "7f9f5369-162e-48bb-968b-aa246d7922ca": {
       "type": "video-with-image",
       "blocks": {
@@ -396,7 +405,6 @@
     },
     "38d6c8b9-2190-493d-89b5-d81415604a57": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--19339382227264__38d6c8b9-2190-493d-89b5-d81415604a57-168561527772a6e58d-0": {
           "type": "heading",
@@ -496,6 +504,7 @@
     }
   },
   "order": [
+    "ea6c87e7-e5a4-442f-8b6b-41ef378e11e9",
     "7f9f5369-162e-48bb-968b-aa246d7922ca",
     "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
     "31cc0bd9-80fb-4577-9e50-f499fd5942ab",
