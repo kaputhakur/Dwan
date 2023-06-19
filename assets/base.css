@@ -2,6 +2,9 @@
 .header.page-width{
  max-width: 1730px;
 }
+.narrow-width{
+  max-width:1240px;
+}
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
