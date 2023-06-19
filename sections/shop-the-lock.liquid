@@ -35,7 +35,9 @@
               or block.settings.product_list3 != blank
               or block.settings.product_list4 != blank
             %}
-              <div class="shopock-product-container">
+             
+            <div class="shopock-product-container swiper">
+               <div class="swiper-wrapper">
                 {% if block.settings.product_list1 != blank %}
                   <div class="shopock-product swiper-slide">
                     {% assign product = all_products[block.settings.product_list1] %}
@@ -105,6 +107,7 @@
                 {% endif %}
               </div>
             {% endif %}
+            </div>
           </div>
         {% endfor %}
       </div>
