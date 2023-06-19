@@ -28,19 +28,19 @@
               {% endif %}
               <div class="shop-product">
                 {% assign product = all_products[block.settings['productlist-1']] %}
-                {%render 'card-product',card_product: product,%}
+                {% render 'card-product',card_product: product, %}
               </div>
               <div class="shop-product">
                 {% assign product = all_products[block.settings['productlist-2']] %}
-                {%render 'card-product',card_product: product,%}
+                {% render 'card-product',card_product: product, %}
               </div>
-           <<div class="shop-product">
+              <div class="shop-product">
                 {% assign product = all_products[block.settings['productlist-3']] %}
-                {%render 'card-product',card_product: product,%}
+                {% render 'card-product',card_product: product, %}
               </div>
-               <div class="shop-product">
+              <div class="shop-product">
                 {% assign product = all_products[block.settings['productlist-4']] %}
-                {%render 'card-product',card_product: product,%}
+                {% render 'card-product',card_product: product, %}
               </div>
             </div>
           </div>
