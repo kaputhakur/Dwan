@@ -658,11 +658,22 @@
             "productlist-3": "pulse-kinetic-legging",
             "productlist-4": "pulse-kinetic-legging"
           }
+        },
+        "bcae278f-b05d-4aac-ab5b-26526b42c5f7": {
+          "type": "Block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
+            "productlist-1": "amplify-legging",
+            "productlist-2": "elmts-relaxed-jogger",
+            "productlist-3": "surface-pocket-legging-27",
+            "productlist-4": "classic-capital-crop-hoodie"
+          }
         }
       },
       "block_order": [
         "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5",
-        "aebc03e7-a71e-4255-b843-a89b9e590666"
+        "aebc03e7-a71e-4255-b843-a89b9e590666",
+        "bcae278f-b05d-4aac-ab5b-26526b42c5f7"
       ],
       "settings": {
         "bg-color": "",
