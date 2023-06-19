@@ -2,57 +2,58 @@
 <link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
 <script src="{{ 'swiper.js' | asset_url }}"></script>
 
-
 {%- if section.settings.announcement_bar_enabled -%}
-<div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
-  <div class="announce-wrapper">
-  <div class="announce-bar {{ section.settings.text-alignment}}" style="background:{{ section.settings.bg-color }}; color:{{ section.settings.text-color}};">
-     <div class="announce-container-{{ section.id }} swiper">
-        <div class="swiper-wrapper">
-          {% for block in section.blocks %}
-            <div class="announce-text swiper-slide ">
-              {%- if section.settings.announcement_bar_home_page_only == false or template.name == 'index' -%}
-                {%- if block.settings.title!= blank -%}
-                  <p>{{ block.settings.title | escape }}</p>
+  <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.narrow-width == 'narrow-width' %}narrow-width{% else %}page-width{% endif %}">
+    <div class="announce-wrapper">
+      <div
+        class="announce-bar {{ section.settings.text-alignment}}"
+        style="background:{{ section.settings.bg-color }}; color:{{ section.settings.text-color}};"
+      >
+        <div class="announce-container-{{ section.id }} swiper">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="announce-text swiper-slide ">
+                {%- if section.settings.announcement_bar_home_page_only == false or template.name == 'index' -%}
+                  {%- if block.settings.title != blank -%}
+                    <p>{{ block.settings.title | escape }}</p>
+                  {%- endif -%}
                 {%- endif -%}
-              {%- endif -%}
-            </div>
-          {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
         </div>
+        <div class="left-links">
+          <ul class="list-menu">
+            {% for link in section.settings['info-menu'].links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                {% if link.links.size > 0 %}
+                  <ul class="list-menu info-child">
+                    {% for child_link in link.links %}
+                      <li>
+                        <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+            <span>Login</span>
+          </ul>
         </div>
- <div class="left-links">
-  <ul class="list-menu">
-  {% for link in section.settings.info-menu.links %}
-     <li>
-       <a href="{{ link.url }}">{{ link.title }}</a>
-       {% if link.links.size >0 %}
-           <ul class="list-menu info-child">
-             {% for child_link in link.links %}
-               <li>
-                 <a href ="{{ child_link.url }}">{{ child_link.title }}</a>
-               </li>
-               {% endfor %}
-           </ul>
-         {% endif %}
-     </li>
-    {% endfor %}
-      <span>Login</span>
-     </ul>
+      </div>
     </div>
-    
   </div>
-  </div>
-</div>
- {%- endif -%}
+{%- endif -%}
 <script>
- 
- const swiper = new Swiper('.announce-container-{{ section.id }}', {
-       loop:true,
-       autoplay:true,
-       slidesPerView: 1,
-       spaceBetween: 10,
 
-   });
+  const swiper = new Swiper('.announce-container-{{ section.id }}', {
+        loop:true,
+        autoplay:true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+    });
 </script>
 
 {% schema %}
@@ -136,7 +137,7 @@
         "label": "Announcement Text",
         "default":"Welcome to our store"
       }
-      
+
       ]
     }
   ],
