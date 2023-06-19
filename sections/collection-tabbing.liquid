@@ -63,11 +63,11 @@
 
                     <!-- ------------product-size-selector------------- -->
 
-                    <div class="product-size-selector">
+                    <div class="product-size-wrapper">
                       <div class="quick-ad">
                         <span>OUICK ADD +</span>
                       </div>
-                      <div class="product-size-wrapper">
+                      <div class="product-size-selector">
                         {% for option in product.options_with_values %}
                           {% if option.name == 'Size' %}
                             {% for value in option.values %}
