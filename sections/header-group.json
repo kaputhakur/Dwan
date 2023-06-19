@@ -50,7 +50,7 @@
         "6b380910-0329-4fd8-8ee7-9eabaafcb601"
       ],
       "settings": {
-        "width": "page-width",
+        "width": "narrow-width",
         "bg-color": "",
         "text-color": "#161313",
         "announcement_bar_enabled": true,
