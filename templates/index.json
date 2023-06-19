@@ -200,7 +200,7 @@
         "f5ad3c82-eb9a-4428-afa5-1942c970a0ee": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         }
       },
