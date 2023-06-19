@@ -46,7 +46,6 @@
   </div>
 {%- endif -%}
 <script>
-
   const swiper = new Swiper('.announce-container-{{ section.id }}', {
         loop:true,
         autoplay:true,
@@ -72,6 +71,10 @@
             {
              "value":"page-width",
              "label":"Page Width"
+           },
+           {
+             "value":"narrow-width",
+             "label":"Narrow Width"
            }
          ]
       },
