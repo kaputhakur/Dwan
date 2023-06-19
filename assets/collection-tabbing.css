@@ -20,7 +20,7 @@
 }
 
 /* product*/
- .product-size-selector {
+ .product-size-wrapper {
     border-radius: 47px;
     position: absolute;
     top: 208px;
@@ -31,20 +31,22 @@
     left: 0;
     right: 0;
    z-index:1;
-  flex-wrap: wrap;
+  
 
 }
 .quick-ad {
     text-align: center;
     padding: 8px;
 }
-.product-size-wrapper {
+  .product-size-selector{
     display: flex;
     justify-content: center;
     border-top: 1px solid;
     width: 73%;
     margin: 0 auto;
     padding: 10px;
+    flex-wrap:wrap;
+    
 } 
 .product-variant-images {
     display: flex;
