@@ -60,7 +60,14 @@
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
                     %}
+                    {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
+                    {%- for block in section.blocks -%}
+                      {%- case block.type -%}
+                        {%- when '@app' -%}
+                          {% render block %}
+                      {%- endcase -%}
+                    {% endfor %}
                     <!-- ------------product-size-selector------------- -->
 
                     <div class="product-size-wrapper">
