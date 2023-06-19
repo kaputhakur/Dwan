@@ -26,6 +26,10 @@
                 or block.settings['productlist-4'] != blank
               %}
               {% endif %}
+              <div class="shop-product">
+                {% assign product = all_products[block.settings['productlist-1']] %}
+                {% render 'card-product' %}
+              </div>
             </div>
           </div>
         {% endfor %}
