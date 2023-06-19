@@ -60,14 +60,6 @@
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
                     %}
-                    <select id="size-selector">
-                      {% for variant in product.variants %}
-                        {% if variant.available %}
-                          <option value="{{ variant.id }}">{{ variant.option1 }}</option>
-                        {% endif %}
-                      {% endfor %}
-                    </select>
-                    <button id="add-to-cart-btn">Add to Cart</button>
 
                     <!-- ------------product-size-selector------------- -->
                     {% comment %}
