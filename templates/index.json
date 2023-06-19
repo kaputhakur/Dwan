@@ -16,7 +16,7 @@
             "dec": "",
             "first_button_title": "Shop Now",
             "first_button_link": "shopify:\/\/products\/printed-agnes-dress",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_bg": "linear-gradient(189deg, rgba(221, 160, 235, 1) 5%, rgba(255, 255, 255, 1) 100%)",
             "btn_color": "#000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000",
