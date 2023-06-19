@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="{{ 'collection-tabbing.css' | asset_url }}">
-<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
 
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'swiper.js'|asset_url }}"></script>
 
 {% style %}
@@ -162,7 +164,7 @@
     </div>
   </div>
 </div>
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 <script>
   // tabbing
   var tabLinks = document.querySelectorAll(".Tab-{{ section.id}}");
