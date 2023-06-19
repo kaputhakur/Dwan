@@ -246,97 +246,51 @@
         "enable_quick_add": false
       }
     },
-    "31cc0bd9-80fb-4577-9e50-f499fd5942ab": {
-      "type": "shop-the-lock",
-      "disabled": true,
+    "d92db74f-8c78-419b-89ca-8129c36ebbef": {
+      "type": "shop-lock",
       "blocks": {
-        "0e5eb605-d3d3-437e-8045-c588e6cd2a64": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
-            "product_list1": "surface-pocket-legging-27",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "classic-capital-crop-hoodie",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "elmts-relaxed-jogger",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "pulse-kinetic-legging",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        },
-        "791f832a-a313-4e6b-bd36-569a297c1b71": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
-            "product_list1": "amplify-legging",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "elmts-relaxed-jogger",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "elmts-relaxed-jogger",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "classic-capital-crop-hoodie",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        },
-        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
-            "product_list1": "classic-capital-crop-hoodie",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "elmts-relaxed-jogger",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "classic-capital-crop-hoodie",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "surface-pocket-legging-27",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        },
-        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125": {
-          "type": "block-1",
+        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5": {
+          "type": "Block-1",
           "settings": {
             "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
-            "product_list1": "amplify-legging",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "classic-capital-crop-hoodie",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "pulse-kinetic-legging",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "surface-pocket-legging-27",
-            "top_position_4": 50,
-            "left_position_4": 20
+            "productlist-1": "amplify-legging",
+            "productlist-2": "classic-capital-crop-hoodie",
+            "productlist-3": "printed-agnes-dress",
+            "productlist-4": "surface-pocket-legging-27"
+          }
+        },
+        "aebc03e7-a71e-4255-b843-a89b9e590666": {
+          "type": "Block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
+            "productlist-1": "amplify-legging",
+            "productlist-2": "classic-capital-crop-hoodie",
+            "productlist-3": "pulse-kinetic-legging",
+            "productlist-4": "pulse-kinetic-legging"
+          }
+        },
+        "bcae278f-b05d-4aac-ab5b-26526b42c5f7": {
+          "type": "Block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
+            "productlist-1": "amplify-legging",
+            "productlist-2": "elmts-relaxed-jogger",
+            "productlist-3": "surface-pocket-legging-27",
+            "productlist-4": "classic-capital-crop-hoodie"
           }
         }
       },
       "block_order": [
-        "0e5eb605-d3d3-437e-8045-c588e6cd2a64",
-        "791f832a-a313-4e6b-bd36-569a297c1b71",
-        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1",
-        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125"
+        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5",
+        "aebc03e7-a71e-4255-b843-a89b9e590666",
+        "bcae278f-b05d-4aac-ab5b-26526b42c5f7"
       ],
       "settings": {
         "bg-color": "",
         "width": "page-width",
         "title": "Shop The Lock",
-        "sub-title": "",
         "padding_top": 36,
-        "padding_bottom": 36,
-        "image_ratio": "adapt"
+        "padding_bottom": 36
       }
     },
     "e66fbc0a-7235-489c-b60b-959077e69c6d": {
@@ -635,53 +589,6 @@
         "button": "",
         "enable-button": false
       }
-    },
-    "d92db74f-8c78-419b-89ca-8129c36ebbef": {
-      "type": "shop-lock",
-      "blocks": {
-        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5": {
-          "type": "Block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
-            "productlist-1": "amplify-legging",
-            "productlist-2": "classic-capital-crop-hoodie",
-            "productlist-3": "printed-agnes-dress",
-            "productlist-4": "surface-pocket-legging-27"
-          }
-        },
-        "aebc03e7-a71e-4255-b843-a89b9e590666": {
-          "type": "Block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
-            "productlist-1": "amplify-legging",
-            "productlist-2": "classic-capital-crop-hoodie",
-            "productlist-3": "pulse-kinetic-legging",
-            "productlist-4": "pulse-kinetic-legging"
-          }
-        },
-        "bcae278f-b05d-4aac-ab5b-26526b42c5f7": {
-          "type": "Block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
-            "productlist-1": "amplify-legging",
-            "productlist-2": "elmts-relaxed-jogger",
-            "productlist-3": "surface-pocket-legging-27",
-            "productlist-4": "classic-capital-crop-hoodie"
-          }
-        }
-      },
-      "block_order": [
-        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5",
-        "aebc03e7-a71e-4255-b843-a89b9e590666",
-        "bcae278f-b05d-4aac-ab5b-26526b42c5f7"
-      ],
-      "settings": {
-        "bg-color": "",
-        "width": "page-width",
-        "title": "Shop The Lock",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -689,14 +596,13 @@
     "73ae3bd1-341b-4fc1-b6ad-9082e3072f35",
     "7f9f5369-162e-48bb-968b-aa246d7922ca",
     "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
-    "31cc0bd9-80fb-4577-9e50-f499fd5942ab",
+    "d92db74f-8c78-419b-89ca-8129c36ebbef",
     "e66fbc0a-7235-489c-b60b-959077e69c6d",
     "image_banner",
     "deb51548-5c70-4b4d-8b78-0cf7d1a7b325",
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7",
     "featured_collection",
     "38d6c8b9-2190-493d-89b5-d81415604a57",
-    "41ffb30e-b137-4f30-b482-12b6caa674b8",
-    "d92db74f-8c78-419b-89ca-8129c36ebbef"
+    "41ffb30e-b137-4f30-b482-12b6caa674b8"
   ]
 }
