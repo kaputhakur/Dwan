@@ -648,10 +648,21 @@
             "productlist-3": "printed-agnes-dress",
             "productlist-4": "surface-pocket-legging-27"
           }
+        },
+        "aebc03e7-a71e-4255-b843-a89b9e590666": {
+          "type": "Block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
+            "productlist-1": "amplify-legging",
+            "productlist-2": "classic-capital-crop-hoodie",
+            "productlist-3": "pulse-kinetic-legging",
+            "productlist-4": "pulse-kinetic-legging"
+          }
         }
       },
       "block_order": [
-        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5"
+        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5",
+        "aebc03e7-a71e-4255-b843-a89b9e590666"
       ],
       "settings": {
         "bg-color": "",
