@@ -401,6 +401,40 @@
         "button": "",
         "enable-button": false
       }
+    },
+    "31cc0bd9-80fb-4577-9e50-f499fd5942ab": {
+      "type": "shop-the-lock",
+      "blocks": {
+        "0e5eb605-d3d3-437e-8045-c588e6cd2a64": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
+            "product_list1": "surface-pocket-legging-27",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "classic-capital-crop-hoodie",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "elmts-relaxed-jogger",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "pulse-kinetic-legging",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        }
+      },
+      "block_order": [
+        "0e5eb605-d3d3-437e-8045-c588e6cd2a64"
+      ],
+      "settings": {
+        "bg-color": "",
+        "width": "full-width",
+        "title": "",
+        "sub-title": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -411,6 +445,7 @@
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7",
     "featured_collection",
     "38d6c8b9-2190-493d-89b5-d81415604a57",
-    "41ffb30e-b137-4f30-b482-12b6caa674b8"
+    "41ffb30e-b137-4f30-b482-12b6caa674b8",
+    "31cc0bd9-80fb-4577-9e50-f499fd5942ab"
   ]
 }
