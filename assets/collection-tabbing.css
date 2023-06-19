@@ -49,6 +49,11 @@
  
     
 } 
+
+.product-variant-images {
+    display: flex;
+    flex-wrap: wrap;
+}
 input.single-size-selector {
     clip: rect(0,0,0,0);
     overflow: hidden;
