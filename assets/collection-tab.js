@@ -1,5 +1,5 @@
   // tabbing
-  var tabLinks = document.querySelectorAll(".Tab-{{ section.id}}")[0];
+  var tabLinks = document.querySelector(".Tab-{{ section.id}}");
   var tabContent = document.querySelectorAll(".TabContent-{{ section.id}}");
   tabLinks.forEach(function(el) {
      el.addEventListener("click", openTabs);
