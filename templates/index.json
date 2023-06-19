@@ -89,6 +89,153 @@
         "padding_bottom": 36
       }
     },
+    "d3e465f7-e20b-4be8-b11c-2b417e30e40f": {
+      "type": "collection-tabbing",
+      "blocks": {
+        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "men",
+            "title": "Men"
+          }
+        },
+        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "women",
+            "title": "Women"
+          }
+        },
+        "fb2bdbcc-349c-4bea-bdc6-fd43da647318": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "all-collection",
+            "title": "All Collection"
+          }
+        },
+        "f5ad3c82-eb9a-4428-afa5-1942c970a0ee": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "dc854e1a-ff60-4a91-9a5b-c46b17c4dba6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91",
+        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713",
+        "fb2bdbcc-349c-4bea-bdc6-fd43da647318",
+        "f5ad3c82-eb9a-4428-afa5-1942c970a0ee",
+        "dc854e1a-ff60-4a91-9a5b-c46b17c4dba6"
+      ],
+      "settings": {
+        "width": "page-width",
+        "title": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "enable_quick_add": false
+      }
+    },
+    "31cc0bd9-80fb-4577-9e50-f499fd5942ab": {
+      "type": "shop-the-lock",
+      "blocks": {
+        "0e5eb605-d3d3-437e-8045-c588e6cd2a64": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
+            "product_list1": "surface-pocket-legging-27",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "classic-capital-crop-hoodie",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "elmts-relaxed-jogger",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "pulse-kinetic-legging",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "791f832a-a313-4e6b-bd36-569a297c1b71": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
+            "product_list1": "amplify-legging",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "elmts-relaxed-jogger",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "elmts-relaxed-jogger",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "classic-capital-crop-hoodie",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
+            "product_list1": "classic-capital-crop-hoodie",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "elmts-relaxed-jogger",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "classic-capital-crop-hoodie",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "surface-pocket-legging-27",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125": {
+          "type": "block-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
+            "product_list1": "amplify-legging",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "classic-capital-crop-hoodie",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "pulse-kinetic-legging",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "surface-pocket-legging-27",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        }
+      },
+      "block_order": [
+        "0e5eb605-d3d3-437e-8045-c588e6cd2a64",
+        "791f832a-a313-4e6b-bd36-569a297c1b71",
+        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1",
+        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125"
+      ],
+      "settings": {
+        "bg-color": "",
+        "width": "page-width",
+        "title": "Shop The Lock",
+        "sub-title": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_ratio": "adapt"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "disabled": true,
@@ -173,61 +320,6 @@
         "padding_bottom": 52
       }
     },
-    "d3e465f7-e20b-4be8-b11c-2b417e30e40f": {
-      "type": "collection-tabbing",
-      "blocks": {
-        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "men",
-            "title": "Men"
-          }
-        },
-        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "women",
-            "title": "Women"
-          }
-        },
-        "fb2bdbcc-349c-4bea-bdc6-fd43da647318": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "all-collection",
-            "title": "All Collection"
-          }
-        },
-        "f5ad3c82-eb9a-4428-afa5-1942c970a0ee": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "dc854e1a-ff60-4a91-9a5b-c46b17c4dba6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
-        }
-      },
-      "block_order": [
-        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91",
-        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713",
-        "fb2bdbcc-349c-4bea-bdc6-fd43da647318",
-        "f5ad3c82-eb9a-4428-afa5-1942c970a0ee",
-        "dc854e1a-ff60-4a91-9a5b-c46b17c4dba6"
-      ],
-      "settings": {
-        "width": "page-width",
-        "title": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "enable_quick_add": false
-      }
-    },
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7": {
       "type": "image-with-text",
       "disabled": true,
@@ -283,7 +375,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "top-pickups",
+        "collection": "",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": true,
@@ -401,109 +493,17 @@
         "button": "",
         "enable-button": false
       }
-    },
-    "31cc0bd9-80fb-4577-9e50-f499fd5942ab": {
-      "type": "shop-the-lock",
-      "blocks": {
-        "0e5eb605-d3d3-437e-8045-c588e6cd2a64": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-19.webp",
-            "product_list1": "surface-pocket-legging-27",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "classic-capital-crop-hoodie",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "elmts-relaxed-jogger",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "pulse-kinetic-legging",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        },
-        "791f832a-a313-4e6b-bd36-569a297c1b71": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
-            "product_list1": "amplify-legging",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "elmts-relaxed-jogger",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "elmts-relaxed-jogger",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "classic-capital-crop-hoodie",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        },
-        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
-            "product_list1": "classic-capital-crop-hoodie",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "elmts-relaxed-jogger",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "classic-capital-crop-hoodie",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "surface-pocket-legging-27",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        },
-        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
-            "product_list1": "amplify-legging",
-            "top_position_1": 50,
-            "left_position_1": 50,
-            "product_list2": "classic-capital-crop-hoodie",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "pulse-kinetic-legging",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "surface-pocket-legging-27",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        }
-      },
-      "block_order": [
-        "0e5eb605-d3d3-437e-8045-c588e6cd2a64",
-        "791f832a-a313-4e6b-bd36-569a297c1b71",
-        "1285eb4a-885f-4c0a-9a9d-ed887c26feb1",
-        "5d7fc7b7-14e4-4b2d-a9fd-d4f2e07fc125"
-      ],
-      "settings": {
-        "bg-color": "",
-        "width": "page-width",
-        "title": "Shop The Lock",
-        "sub-title": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_ratio": "adapt"
-      }
     }
   },
   "order": [
     "7f9f5369-162e-48bb-968b-aa246d7922ca",
+    "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
+    "31cc0bd9-80fb-4577-9e50-f499fd5942ab",
     "image_banner",
     "deb51548-5c70-4b4d-8b78-0cf7d1a7b325",
-    "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7",
     "featured_collection",
     "38d6c8b9-2190-493d-89b5-d81415604a57",
-    "41ffb30e-b137-4f30-b482-12b6caa674b8",
-    "31cc0bd9-80fb-4577-9e50-f499fd5942ab"
+    "41ffb30e-b137-4f30-b482-12b6caa674b8"
   ]
 }
