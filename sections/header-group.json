@@ -62,7 +62,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "width": "page-width",
+        "width": "narrow-width",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
