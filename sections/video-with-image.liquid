@@ -31,11 +31,7 @@
              {% else %}
              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                  {% endif %}
-            <div
-              class="text-box content-position-{{block.settings.desktop_content_position }}"
-              style="color:{{ block.settings.text_color }}"
-              ;
-            >
+            <div class="text-box content-position-{{block.settings.desktop_content_position }}"style="color:{{ block.settings.text_color }}";>
               {% if block.settings.title != blank %}
                 <h2 class="uppercase">{{ block.settings.title }}</h2>
               {% endif %}
