@@ -310,7 +310,78 @@
               %}
 
             {%- when 'variant_picker' -%}
-              {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+            {%- unless product.has_only_default_variant -%}
+              {% for option in product.options_with_values  %}
+                    
+                    {% if option.name == 'Color'%}
+                       <variant-radios id="variant-radios-{{ section.id }}" class="no-js-hidden"
+                            data-section="{{ section.id }}"
+                            data-url="{{ product.url }}"
+                            {% if update_url == false %}
+                              data-update-url="false"
+                            {% endif %}
+                            {{ block.shopify_attributes }}
+                          >
+                         <fieldset class="js product-form__input">
+                          <legend class="form__label">{{ option.name }}</legend>
+                          {%- for value in option.values -%}
+                            <input
+                              type="radio"
+                              id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                              name="{{ option.name }}"
+                              value="{{ value | escape }}"
+                              form="{{ product_form_id }}"
+                              {% if option.selected_value == value %}
+                                checked
+                              {% endif %}
+                              {% if option_disabled %}
+                                class="disabled"
+                              {% endif %}
+                            >
+                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                              {{ value }}
+                            </label>
+                          {%- endfor -%}
+                        </fieldset>
+                        <script type="application/json">
+                          {{ product.variants | json }}
+                        </script>
+                      </variant-radios>
+                    {% endif %}
+                  {%  if otion.name != 'Color' %}
+                <variant-selects
+                        id="variant-selects-{{ section.id }}"
+                        class="no-js-hidden"
+                        data-section="{{ section.id }}"
+                        data-url="{{ product.url }}"
+                        {% if update_url == false %}
+                          data-update-url="false"
+                        {% endif %}
+                        {{ block.shopify_attributes }}
+                      >    
+                     <div class="product-form__input product-form__input--dropdown">
+                          <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+                            {{ option.name }}
+                          </label>
+                          <div class="select">
+                            <select id="Option-{{ section.id }}-{{ forloop.index0 }}" class="select__select" name="options[{{ option.name | escape }}]" form="{{ product_form_id }}">
+                              {%- for value in option.values -%}
+                                <option value="{{ value | escape }}">
+                                  {{ value }}
+                                </option>
+                              {%- endfor -%}
+                            </select>
+                            {% render 'icon-caret' %}
+                          </div>
+                        </div>
+                      <script type="application/json">
+                          {{ product.variants | json }}
+                        </script>
+                      </variant-selects>
+                    {%- endif -%}
+                  
+               {% endfor %}
+              {% endunless %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
             {%- when 'rating' -%}
