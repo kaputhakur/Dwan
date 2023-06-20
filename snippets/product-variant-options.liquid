@@ -66,21 +66,11 @@
     </label>
  
   {%- else -%}
-   <div class="product-form__input product-form__input--dropdown">
-                          <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
-                            {{ option.name }}
-                          </label>
-                          <div class="select">
-                            <select id="Option-{{ section.id }}-{{ forloop.index0 }}" class="select__select" name="options[{{ option.name | escape }}]" form="{{ product_form_id }}">
-                              {%- for value in option.values -%}
+   {%- for value in option.values -%}
                                 <option value="{{ value | escape }}">
                                   {{ value }}
                                 </option>
                               {%- endfor -%}
-                            </select>
-                            {% render 'icon-caret' %}
-                          </div>
-                        </div>
   {%- endif -%}
      {% endif %}
 {%- endfor -%}
