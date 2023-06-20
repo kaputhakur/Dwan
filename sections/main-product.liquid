@@ -313,7 +313,14 @@
              {%- for option in product.options_with_values -%}
                     {% if product.options.size > 1 -%}
                     {% if option.name == 'Color'%}
-                      <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                      <variant-radios c id="variant-radios-{{ section.id }}"
+              class="no-js-hidden"
+           data-section="{{ section.id }}"
+          data-url="{{ product.url }}"
+           {% if update_url == false %}
+          data-update-url="false"
+         {% endif %}
+      {{ block.shopify_attributes }}>
                         <fieldset class="js product-form__input">
                           <legend class="form__label">{{ option.name }}</legend>
                           {%- for value in option.values -%}
