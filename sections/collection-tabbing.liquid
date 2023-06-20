@@ -54,7 +54,7 @@
                 {% assign collection = collections[block.settings['slider-collection']] %}
                 {% for product in collection.products %}
                   <div class="featured-product swiper-slide">
-                     
+                    {% render 'product-grid' %}
                     {% comment %}
                       <div class="quick-ad">
                         <h3>Quick Add+</h3>
