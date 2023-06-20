@@ -283,10 +283,10 @@
           "type": "Block-1",
           "settings": {
             "image": "shopify:\/\/shop_images\/JuneAmplify_04-port_800x_b8f917fe-12e6-44a2-bae2-19eb1d0b4cfc.webp",
-            "productlist-1": "",
-            "productlist-2": "",
-            "productlist-3": "",
-            "productlist-4": ""
+            "productlist-1": "amplify-legging",
+            "productlist-2": "elmts-relaxed-jogger",
+            "productlist-3": "classic-capital-crop-hoodie",
+            "productlist-4": "amplify-legging"
           }
         }
       },
