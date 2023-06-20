@@ -47,7 +47,7 @@
           "settings": {
             "dektop_image": "shopify:\/\/shop_images\/JuneAmplify_49-port.webp",
             "overlay_opacity": 0,
-            "text_color": "",
+            "text_color": "#f3f3f3",
             "desktop_content_position": "bottom-center",
             "title": "FEELS LESS COMPRESSIVE <br>IN THE WAIST",
             "sub_title": "",
@@ -71,7 +71,7 @@
           "settings": {
             "dektop_image": "shopify:\/\/shop_images\/JuneAmplify_63-port.webp",
             "overlay_opacity": 0,
-            "text_color": "",
+            "text_color": "#ffffff",
             "desktop_content_position": "bottom-center",
             "title": "SITS SLIGHTLY LOWER <br>THAN BEFORE",
             "sub_title": "",
