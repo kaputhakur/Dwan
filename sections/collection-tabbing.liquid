@@ -64,10 +64,11 @@
                         show_quick_add: section.settings.enable_quick_add,
                         section_id: section.id
                       %}
+                    {% comment %}
                       <div class="quick-ad">
                         <h3>Quick Add+</h3>
                       </div>
-                      {% comment %}
+                    
                         {%- assign product_form_id = 'product-form-' | append: section.id -%}
                         {%- for block in section.blocks -%}
                           {%- case block.type -%}
@@ -104,7 +105,7 @@
                     </div>
 
                     <!-- ------------product-size-selector------------- -->
-                    {% comment %}
+                 
                       <div class="product-size-wrapper">
                         <div class="quick-ad">
                           <span>OUICK ADD +</span>
@@ -152,7 +153,7 @@
                           {% endif %}
                         {% endfor %}
                       </div>
-                    {% endcomment %}
+         
                     <!-- ------------- product-color-selector-ende ------  ---- -- -->
                   </div>
                 {% endfor %}
