@@ -74,7 +74,13 @@
 </div>
 <script>
   var shopLockProducts = new Swiper('.shop-lock-products', {
-        slidesPerView:1,
+       direction: 'vertical',
+  speed: 800,
+  mousewheelControl: true,
+  watchSlidesProgress: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
  
     });
 
