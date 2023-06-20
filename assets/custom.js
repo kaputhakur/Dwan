@@ -1,4 +1,4 @@
-
+//  collection-tabbing slider
 const featureProduct = document.querySelectorAll(".collection-carousel");
 featureProduct.forEach((item)=>{
   var Swipes = new Swiper(item, {
@@ -22,5 +22,15 @@ featureProduct.forEach((item)=>{
     },
 });
 })
+
+// shop lock slider
+const shopLockProduct= document.querySelectorAll('..shop-lock-products');
+shopLockProduct.forEach((item)=>{
+  var shopSlides = new Swiper(item,{
+      slidesPerView:1,
+  })
+})
+
+
 
               
