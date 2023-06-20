@@ -90,10 +90,10 @@
             <div class="text-box content-position-{{block.settings.desktop_content_position }}"
               style="color:{{ block.settings.text_color }}";>
               {% if block.settings.title != blank %}
-                <h2 class="uppercase">{{ block.settings.title }}</h2>
+                <h2 class="uppercase" style="color:{{ block.settings.text_color }}";>{{ block.settings.title }}</h2>
               {% endif %}
               {% if block.settings.sub_title != blank %}
-                <h3>{{ block.settings.sub_title }}</h3>
+                <h3 style="color:{{ block.settings.text_color }}";>{{ block.settings.sub_title }}</h3>
               {% endif %}
               {% if block.settings.dec != blank %}
                 {{ block.settings.dec }}
