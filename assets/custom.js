@@ -24,7 +24,7 @@ featureProduct.forEach((item)=>{
 })
 
 // shop lock slider
-const shopLockProduct= document.querySelectorAll('..shop-lock-products');
+const shopLockProduct= document.querySelectorAll('.shop-lock-products');
 shopLockProduct.forEach((item)=>{
   var shopSlides = new Swiper(item,{
       slidesPerView:1,
