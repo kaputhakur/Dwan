@@ -35,8 +35,8 @@
                           {{ product.variants | json }}
                         </script>
                       </variant-radios>
-                    {% endif %}
-                  {%  if otion.name != 'Color' %}
+                    {% else %}
+                  
                 <variant-selects
                         id="variant-selects-{{ section.id }}"
                         class="no-js-hidden"
