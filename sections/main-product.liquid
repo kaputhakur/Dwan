@@ -334,6 +334,7 @@
                           {{ product.variants | json }}
                         </script>
                       </variant-radios>
+                      {%- endif -%}
                     {% else %}
                       <variant-selects
                         id="variant-selects-{{ section.id }}"
@@ -364,7 +365,7 @@
                           {{ product.variants | json }}
                         </script>
                       </variant-selects>
-                    {%- endif -%}
+                    
                   
                {% endfor %}
             {%- when 'buy_buttons' -%}
