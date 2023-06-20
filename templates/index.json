@@ -45,20 +45,20 @@
         "014c3557-bc97-47d0-a4ec-293bd27f479c": {
           "type": "image",
           "settings": {
-            "dektop_image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
+            "dektop_image": "shopify:\/\/shop_images\/JuneAmplify_49-port.webp",
             "overlay_opacity": 0,
             "text_color": "",
             "desktop_content_position": "bottom-center",
             "title": "FEELS LESS COMPRESSIVE <br>IN THE WAIST",
             "sub_title": "",
             "dec": "",
-            "first_button_title": "First Button Title",
+            "first_button_title": "",
             "first_button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000",
-            "sec_button_title": "Second Button Title",
+            "sec_button_title": "",
             "sec_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "sec_btn_color": "#000000",
@@ -69,7 +69,7 @@
         "b9e9ff20-67db-41b4-b19f-09e573acc56c": {
           "type": "image",
           "settings": {
-            "dektop_image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
+            "dektop_image": "shopify:\/\/shop_images\/JuneAmplify_63-port.webp",
             "overlay_opacity": 0,
             "text_color": "",
             "desktop_content_position": "bottom-center",
