@@ -53,6 +53,7 @@
               <div class="swiper-wrapper">
                 {% assign collection = collections[block.settings['slider-collection']] %}
                 {% for product in collection.products %}
+                   {%- assign product_form_id = 'product-form-' | append: section.id -%}
                   <div class="featured-product swiper-slide">
                    {% render 'card-product',
                         card_product: product,
