@@ -65,11 +65,11 @@
                           </label>
                           <div class="select">
                             <select id="Option-{{ section.id }}-{{ forloop.index0 }}" class="select__select" name="options[{{ option.name | escape }}]" form="{{ product_form_id }}">
-                              {%- for value in option.values -%}
-                                <option value="{{ value | escape }}">
-                                  {{ value }}
-                                </option>
-                              {%- endfor -%}
+                               {% render 'product-variant-options',
+    product: product,
+    option: option,
+    block: block
+  %}
                             </select>
                             {% render 'icon-caret' %}
                           </div>
