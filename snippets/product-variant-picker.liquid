@@ -11,6 +11,7 @@
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
   {%- if block.settings.picker_type == 'button' -%}
+      {% if option.name == 'Color' %}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden"
@@ -31,7 +32,8 @@
         {{ product.variants | json }}
       </script>
     </variant-radios>
-  {%- else -%}
+  {%- endif -%}
+    {% if option.name !='Color' %}
     <variant-selects
       id="variant-selects-{{ section.id }}"
       class="no-js-hidden"
@@ -65,6 +67,7 @@
         {{ product.variants | json }}
       </script>
     </variant-selects>
+      {% endif %}
   {%- endif -%}
 {%- endunless -%}
 
