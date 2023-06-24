@@ -1,7 +1,34 @@
+
+<div>
+  <ul class="tabs">
+    <li><a href="#tab-1">Info</a></li>
+    <li><a href="#tab-2">Shipping</a></li>
+    <li><a href="#tab-3">Returns</a></li>
+  </ul>
+  <div id="tab-1">
+  {{ section.settings.tab-dec1 }}
+  </div>
+  <div id="tab-2">
+ {{ section.settings.tab-dec2 }}
+  </div>
+  <div id="tab-3">
+  {{ section.settings.tab-dec3 }}
+  </div>
+</div>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Product Description Tab",
+    "settings": [
+      
+    ],
+    "presets":[
+      {
+    "name":"Product Description Tab"
+      }
+    ]
   }
 {% endschema %}
 
