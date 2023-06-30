@@ -6,13 +6,21 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
+            "text": "",
             "text_style": "uppercase"
           }
         },
         "title": {
           "type": "title",
           "settings": {
+          }
+        },
+        "439e9e43-c0c9-458f-9aff-fe32c2f9e4d8": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": false
           }
         },
         "price": {
@@ -53,6 +61,7 @@
       "block_order": [
         "vendor",
         "title",
+        "439e9e43-c0c9-458f-9aff-fe32c2f9e4d8",
         "price",
         "variant_picker",
         "quantity_selector",
