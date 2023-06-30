@@ -73,7 +73,7 @@
             {{ form | payment_button }}
           {%- endif -%}
             
-          <button onclick="openPopUP();"
+          <div onclick="openPopUP();"
             id = "ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
@@ -89,7 +89,7 @@
                    {%    render 'icon-cart' %}
               {%- endif -%}
             </span>
-          </button>
+          </div>
            
           <button onclick="openPopUP();"
             id = "ProductSubmitButton-{{ section_id }}"
