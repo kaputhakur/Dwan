@@ -161,7 +161,7 @@
                      type="radio"
                      name="{{ card_product.id }}_card_color"
                      id="{{ card_product.id }}_color_{{ forloop.index }}"
-                     style="background: {{ variant.metafields.color.value}}; background-size: cover;">
+                     style="background: {{ background_style }}; background-size: cover;">
               {% endfor %}
             </div>
             {% endif %}
