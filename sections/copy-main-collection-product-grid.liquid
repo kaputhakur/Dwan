@@ -175,33 +175,7 @@
 
 
 <script>
- function filterProducts() {
-  
-  var checkboxes = document.querySelectorAll('.coll-filter');
 
-  var selectedTags = [];
-
-  checkboxes.forEach(function (checkbox) {
-    if (checkbox.checked) {
-      selectedTags.push(checkbox.value);
-    }
-  });
-console.log(selectedTags)
-
-  var products = document.querySelectorAll('#product-grid li');
- console.log(products)
-  
- products.forEach(function (product) {
-    var tags = product.getAttribute('data-tags').split(',');
-console.log(tags)
-    if (selectedTags.length === 0 || tags.some(tag => selectedTags.includes(tag))) {
-      
-      product.style.display = 'block'; 
-    } else {
-      product.style.display = 'none'; 
-    }
-  });
-}
 </script>
 {% schema %}
 {
