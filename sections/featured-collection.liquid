@@ -84,37 +84,7 @@
               show_quick_add: section.settings.enable_quick_add,
               section_id: section.id
             %}
-          {% assign keys = "Color,color,Colour,colour" | split: ',' %}
-            {% for key in keys %}
-            {% if card_product.options contains key %}
-            <div class="product_tile_color_holder">
-              {% for color_option in card_product.options_by_name[key].values %}
-              {% for variant in card_product.variants  %}
-              {% if variant.options contains color_option %}
-              {% if variant.image %}
-              {% assign background_style = color_option %}
-              {% endif %}
-              {% if variant.metafields.color.values %}
-              {% assign background_style = variant.metafields.color.values %}
-              {% endif %}
-              {% if variant.metafields.image.values %}
-              {% assign background_style = "url(" | append: variant.metafields.image.swatch | append: ")" %}
-              {% endif %}
-              {% endif %}
-              {% endfor %}
-			  <!--- Coded by websensepro.com --->
-              <input
-                     type="radio"
-                     name="{{ card_product.id }}_card_color"
-                     id="{{ card_product.id }}_color_{{ forloop.index }}"
-                     style="background: {{ background_style }}; background-size: cover;"
-                        onclick="selectColorVariant('{{ card_product.id }}', '{{ color_option }}');"               
-                >
-                
-              {% endfor %}
-            </div>
-            {% endif %}
-            {% endfor %}
+          
           </li>
         {%- else -%}
           {%- for i in (1..4) -%}
