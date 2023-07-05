@@ -580,22 +580,41 @@
     {%- endif -%}
   {%- endif -%}
 
-{% assign tags = "2XL,3XL,4XL" | split: "," %}
-<div class="clearfix filter">
-  <h2>Product Tags</h2>
-  <div class="main-coll-filter">
-    {% for tag in collection.all_tags %}
-      {% if tags contains tag %}
-        <h3>
-          <label>
-            <input class="coll-filter" type="checkbox" name="{{ tag | handle }}" value="{{ tag | handle }}" onchange="filterProducts()" />
-            {{ tag }}
-          </label>
-        </h3>
-      {% endif %}
-    {% endfor %}
-  </div>
+<div class="price-fillter">
+  <h2>Price</h2>
+<div>
+  <label for="min-price">Min Price:</label>
+  <input type="text" id="min-price" readonly>
 </div>
+
+<div>
+  <label for="max-price">Max Price:</label>
+  <input type="text" id="max-price" readonly>
+</div>
+
+<div id="price-range-slider"></div>
+
+</div>
+ <div class="product-tags">  
+   <h2>Product Tags</h2>
+<ul class="filter-tags">
+  <li>
+    <input type="checkbox" id="tag-2XL" value="2XL">
+    <label for="tag-2XL">2XL</label>
+  </li>
+  <li>
+    <input type="checkbox" id="tag-3XL" value="3XL">
+    <label for="tag-3XL">3XL</label>
+  </li>
+  <li>
+    <input type="checkbox" id="tag-4XL" value="4XL">
+    <label for="tag-4XL">4XL</label>
+  </li>
+</ul>
+
+ </div>      
+
+
 
                                     
   {% comment %}  Drawer and mobile filter {% endcomment %}
