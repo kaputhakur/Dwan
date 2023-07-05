@@ -55,7 +55,7 @@
                 {% for product in collection.products %}
                   
                   <div class="featured-product swiper-slide">
-                   {% render 'card-product',
+                   {% render 'copy-card-product',
                         card_product: product,
                         media_aspect_ratio: section.settings.image_ratio,
                         show_secondary_image: section.settings.show_secondary_image,
