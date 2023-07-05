@@ -137,8 +137,6 @@
             <div class="loading-overlay gradient"></div>
 
             <ul
-              id="product-grid"
-              data-id="{{ section.id }}"
               class="products 
                 grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
                 grid--{{ section.settings.columns_desktop }}-col-desktop
@@ -149,7 +147,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item product"  data-tags="{{ product.tags | join: ',' }}">
+                <li class="product"  data-tags="{{ product.tags | join: ',' }}">
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
