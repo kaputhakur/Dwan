@@ -579,6 +579,25 @@
       </facet-filters-form>
     {%- endif -%}
   {%- endif -%}
+
+{% assign tags = "2XL,3XL,4XL" | split: "," %}
+<div class="clearfix filter">
+  <h2>Product Tags</h2>
+  <div class="main-coll-filter">
+    {% for tag in collection.all_tags %}
+      {% if tags contains tag %}
+        <h3>
+          <label>
+            <input class="coll-filter" type="checkbox" name="{{ tag | handle }}" value="{{ tag | handle }}" onchange="filterProducts()" />
+            {{ tag }}
+          </label>
+        </h3>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+                                    
   {% comment %}  Drawer and mobile filter {% endcomment %}
   <menu-drawer
     class="mobile-facets__wrapper{% if filter_type == 'horizontal' or filter_type == 'vertical' %} medium-hide large-up-hide{% endif %}"
