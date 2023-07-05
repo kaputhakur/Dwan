@@ -198,7 +198,8 @@ $(document).ready(function() {
   });
 });
 
-    $(document).ready(function() {
+ 
+  $(document).ready(function() {
   function filterProductsByPrice(min, max) {
     $('.product').hide(); // Hide all products
     
@@ -213,23 +214,14 @@ $(document).ready(function() {
 
   filterProductsByPrice(0, Infinity);
 
-  // Initialize the range slider
-  $("#price-range-slider").slider({
-    range: true,
-    min: 0,
-    max: 225, // Set the appropriate maximum value for your range
-    values: [0, 225], // Set initial minimum and maximum values
-    slide: function(event, ui) {
-      $("#min-price").val("$" + ui.values[0]);
-      $("#max-price").val("$" + ui.values[1]);
+  // Handle filter input change
+  $('#min-price, #max-price').on('input', function() {
+    var min = parseFloat($('#min-price').val()) || 0;
+    var max = parseFloat($('#max-price').val()) || Infinity;
 
-      filterProductsByPrice(ui.values[0], ui.values[1]);
-    }
+    
+    filterProductsByPrice(min, max);
   });
-
-  // Set initial values for the input fields
-  $("#min-price").val("$" + $("#price-range-slider").slider("values", 0));
-  $("#max-price").val("$" + $("#price-range-slider").slider("values", 1));
 });
 
 </script>
