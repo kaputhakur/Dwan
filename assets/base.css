@@ -3186,3 +3186,13 @@ details-disclosure > details {
     100% { transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2); }
   }
 }
+
+input[type=radio][name$=_card_color]{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+		border: 1px solid black;
+                appearance: none;
+                background-size: 9px 9px;
+                background-image: repeating-linear-gradient(45deg, #000 0, #000 1px, #ebebeb 0, #ebebeb 50%);
+              }
