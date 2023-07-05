@@ -148,7 +148,7 @@
               {% if variant.image %}
               {% assign background_style = color_option %}
               {% endif %}
-              {% if variant.metafields.color.values %}
+              {% if variant.metafields.color.value %}
               {% assign background_style = variant.metafields.color.value %}
               {% endif %}
               {% if variant.metafields.image.values %}
