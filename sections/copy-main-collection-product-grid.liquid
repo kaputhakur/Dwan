@@ -198,7 +198,7 @@ $(document).ready(function() {
   });
 });
 
-  $(document).ready(function() {
+    $(document).ready(function() {
   function filterProductsByPrice(min, max) {
     $('.product').hide(); // Hide all products
     
@@ -218,7 +218,7 @@ $(document).ready(function() {
     range: true,
     min: 0,
     max: 225, // Set the appropriate maximum value for your range
-    values: [0, 1000], // Set initial minimum and maximum values
+    values: [0, 225], // Set initial minimum and maximum values
     slide: function(event, ui) {
       $("#min-price").val("$" + ui.values[0]);
       $("#max-price").val("$" + ui.values[1]);
