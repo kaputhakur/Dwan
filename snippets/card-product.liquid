@@ -162,6 +162,7 @@
                      name="{{ card_product.id }}_card_color"
                      id="{{ card_product.id }}_color_{{ forloop.index }}"
                      style="background: {{ background_style }}; background-size: cover;"
+                 onclick="selectColorVariant('{{ card_product.id }}', '{{ color_option }}');"
                 >
                 
               {% endfor %}
