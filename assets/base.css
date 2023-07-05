@@ -3187,7 +3187,7 @@ details-disclosure > details {
   }
 }
 
-input[type=radio][name$=_card_color]{
+.input[type=radio][name$=_card_color]{
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
