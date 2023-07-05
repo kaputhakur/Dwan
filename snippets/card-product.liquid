@@ -145,10 +145,10 @@
               {% for color_option in card_product.options_by_name[key].values %}
               {% for variant in card_product.variants  %}
               {% if variant.options contains color_option %}
-              {
-              {% if variant.metafields.color.values %}
+           
+         
               {% assign background_style = variant.metafields.color.value %}
-              {% endif %}
+             
               
               {% endif %}
               {% endfor %}
