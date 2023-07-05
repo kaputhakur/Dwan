@@ -148,7 +148,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item" data-tags="{{product.tags | join:'' }}">
+                <li class="grid__item" data-tags="{{product.tags | join:',' }}">
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
