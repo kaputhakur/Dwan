@@ -148,7 +148,8 @@
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 <li class="product"  data-tags="{{ product.tags | join: ',' }}">
-                <h3>{{ product.title }}</h3>
+                       <h3>{{ product.title }}</h3> 
+     <p class="product-price">{{ product.price | money }}</p>
               
                   {% render 'card-product',
                     card_product: product,
