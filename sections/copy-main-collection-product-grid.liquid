@@ -137,10 +137,7 @@
             <div class="loading-overlay gradient"></div>
 
             <ul
-              class="products 
-                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                grid--{{ section.settings.columns_desktop }}-col-desktop
-              "
+              class="products "
             >
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
@@ -149,7 +146,7 @@
                 {%- endif -%}
                 <li class="product"  data-tags="{{ product.tags | join: ',' }}">
                        <h3>{{ product.title }}</h3> 
-     <p class="product-price">{{ product.price | money }}</p>
+          <p class="product-price">{{ product.price | money }}</p>
               
                   {% render 'card-product',
                     card_product: product,
