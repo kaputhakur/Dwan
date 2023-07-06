@@ -173,7 +173,24 @@
     </div>
   {%- endpaginate -%}
 </div>
+<script>  document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.color-button');
 
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var selectedColor = this.dataset.color;
+
+        // Update the URL or perform any filtering logic here
+
+        // Example: Reload the page with the selected color as a URL parameter
+        var currentURL = new URL(window.location.href);
+        currentURL.searchParams.set('color', selectedColor);
+        window.location.href = currentURL.toString();
+      });
+    });
+  });
+</script>
+  
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
