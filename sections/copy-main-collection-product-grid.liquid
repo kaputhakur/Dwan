@@ -148,6 +148,8 @@
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 <li class="product"  data-tags="{{ product.tags | join: ',' }}">
+                <h3>{{ product.title }}</h3>
+                {{ prodct.price }}
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
