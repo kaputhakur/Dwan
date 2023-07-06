@@ -614,6 +614,27 @@
 
  </div>      
 
+{% assign colors = [] %}
+
+{% for product in collection.products %}
+  {% for variant in product.variants %}
+    {% if variant.option1 != '' and variant.option1 contains 'Color' %}
+      {% assign colors = colors | append: variant.option1 %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% assign colors = colors | uniq %}
+
+{% if colors.size > 1 %}
+  <div class="color-filter">
+    <label>Filter by Color:</label>
+    {% for color in colors %}
+      <button class="color-button" data-color="{{ color }}">{{ color }}</button>
+    {% endfor %}
+    <button class="color-button" data-color="">All Colors</button>
+  </div>
+{% endif %}
 
 
                                     
