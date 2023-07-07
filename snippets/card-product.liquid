@@ -335,6 +335,7 @@
       </div>
     </div>
   </div>
+  {% comment %}
 
    {% assign keys = "Color,color,Colour,colour" | split: ',' %}
             {% for key in keys %}
@@ -367,7 +368,7 @@
 {% endif %}
 {% endfor %}
 
-            
+    {% endcomment %}        
           
 {%- else -%}
   <div class="product-card-wrapper card-wrapper underline-links-hover">
