@@ -161,12 +161,7 @@
                     section_id: section.id
                   %}
                 </li>
-              Print
-Display Variants as Individual Products on Shopify Collection Pages
-Here is how you can turn that one product into 10 different ones on the collection page, but have the product page stay the same as one product with many variants.
-
-
-{% for product in collection.products %}
+          {% for product in collection.products %}
 {% for option in product.options %}
    {% if option == 'Color' %}
    {% assign index = forloop.index0 %}
