@@ -160,7 +160,8 @@
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id
                   %}
-                  {% assign keys = "Color,color,Colour,colour" | split: ',' %}
+                </li>
+                {% assign keys = "Color,color,Colour,colour" | split: ',' %}
             {% for key in keys %}
             {% if card_product.options contains key %}
 <div class="product_tile_color_holder">
@@ -190,7 +191,6 @@
 </div>
 {% endif %}
 {% endfor %}
-                </li>
               {%- endfor -%}
             </ul>
 
