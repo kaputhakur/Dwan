@@ -55,12 +55,7 @@
                 {% for product in collection.products %}
                   
                   <div class="featured-product swiper-slide">
-                   {% render 'copy-card-product',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        section_id: section.id
-                      %}
+                   {% render 'custom-prodcut-grid', %}
                      <!-- ------------product-size-selector------------- -->
                      
                       <div class="product-size-wrapper">
