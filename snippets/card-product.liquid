@@ -336,6 +336,9 @@
     </div>
   </div>
   
+    {% assign keys = "Color,color,Colour,colour" | split: ',' %}
+            {% for key in keys %}
+            {% if card_product.options contains key %}
 <div class="product_tile_color_holder">
   {% for color_option in card_product.options_by_name[key].values %}
     {% for variant in card_product.variants %}
@@ -361,7 +364,8 @@
       onclick="changeVariantImage(this)">
   {% endfor %}
 </div>
-
+{% endif %}
+{% endfor %}
 
             
           
