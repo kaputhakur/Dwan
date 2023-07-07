@@ -38,16 +38,15 @@
     text-align: center;
     padding: 8px;
 }
-  .product-size-selector{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 5px;
+.product-size-selector {
     border-top: 1px solid;
     width: 73%;
     margin: 0 auto;
     padding: 10px;
- 
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
 } 
 
 .product-variant-images {
