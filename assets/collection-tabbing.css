@@ -48,6 +48,12 @@
     justify-content: center;
     gap: 6px;
 } 
+.size-selector {
+    width: 3rem;
+    border: 1px solid;
+    border-radius: 6px;
+    text-align: center;
+}
 
 .product-variant-images {
     display: flex;
