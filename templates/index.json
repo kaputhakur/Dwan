@@ -68,6 +68,7 @@
     },
     "73ae3bd1-341b-4fc1-b6ad-9082e3072f35": {
       "type": "video-with-image",
+      "disabled": true,
       "blocks": {
         "014c3557-bc97-47d0-a4ec-293bd27f479c": {
           "type": "image",
@@ -275,6 +276,7 @@
     },
     "d92db74f-8c78-419b-89ca-8129c36ebbef": {
       "type": "shop-lock",
+      "disabled": true,
       "blocks": {
         "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5": {
           "type": "Block-1",
@@ -333,6 +335,7 @@
     },
     "e66fbc0a-7235-489c-b60b-959077e69c6d": {
       "type": "video-with-image",
+      "disabled": true,
       "blocks": {
         "7d3847ea-9508-4e55-aaed-192b99c5e6a3": {
           "type": "video",
