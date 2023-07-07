@@ -335,6 +335,30 @@
       </div>
     </div>
   </div>
+{% for product in collection.products %}
+{% for option in product.options %}
+   {% if option == 'Color' %}
+   {% assign index = forloop.index0 %}
+   {% assign colorlist = '' %}
+   {% assign color = '' %}
+   {% for variant in product.variants %}
+   {% capture color %}
+   {{ variant.options[index] }}
+   {% endcapture %}
+
+     {% unless colorlist contains color %}
+        <-- INSERT PRODUCT LOOP -->
+        {% capture tempList %}
+      {{colorlist | append: color | append: " " }}
+      {% endcapture %}
+      {% assign colorlist = tempList %}
+      {% endunless %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+  
   
     {% assign keys = "Color,color,Colour,colour" | split: ',' %}
             {% for key in keys %}
@@ -361,7 +385,7 @@
       id="{{ card_product.id }}_color_{{ forloop.index }}"
       value="{{ color_option }}"
       style="background: {{ background_style }}; background-size: cover;"
-      onclick="changeVariantImage(this)">
+>
   {% endfor %}
 </div>
 {% endif %}
