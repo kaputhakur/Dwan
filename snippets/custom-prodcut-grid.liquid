@@ -6,9 +6,8 @@
            {% for value in option.values %}
                 {% for image in product.images %}
                   {% if image.alt == value %}
-                    <div class=" swiper-slide"  data-swiper-autoplay="1000">
-                      <img class="feature-image" src="{{ image.src | img_url: '' }}">
-                    </div>
+                   <img class="feature-image" src="{{ image.src | img_url: '' }}">
+                   
                   {% endif %}
                 {% endfor %}
                 {% break %}
