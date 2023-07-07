@@ -417,18 +417,5 @@
   </div>
 {%- endif -%}
 <script>
-    function changeVariantImage(element) {
-  // Get the selected color value
-  var colorValue = element.value;
- console.log(colorValue);
-  // Find the variant that matches the selected color
-  var variant = card_product.variants.find(function(variant) {
-    return variant.metafields.color.value === colorValue;
-  });
 
-  // Update the variant image
-  if (variant && variant.image) {
-    document.getElementById("variant-image").src = variant.image.src;
-  }
-}
 </script>
