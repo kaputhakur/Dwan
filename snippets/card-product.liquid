@@ -368,7 +368,20 @@
 {% endif %}
 {% endfor %}
 
-    {% endcomment %}        
+    {% endcomment %}  
+  <div class="product-color-selector">
+  {% for option in product.options_with_values %}
+    {% if option.name == 'Color' %}
+      <div class="product-variant-colors">
+        {% for value in option.values %}
+          <div class="variant-color">
+            {{ value }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
           
 {%- else -%}
   <div class="product-card-wrapper card-wrapper underline-links-hover">
