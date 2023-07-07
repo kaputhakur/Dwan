@@ -1,0 +1,22 @@
+<div class="product-container">
+  <div class="product-image">
+        {% for option in product.options_with_values %}
+        {% if option.name == 'Color' %}
+          <div class="product-images">
+           {% for value in option.values %}
+                {% for image in product.images %}
+                  {% if image.alt == value %}
+                    <div class=" swiper-slide"  data-swiper-autoplay="1000">
+                      <img class="feature-image" src="{{ image.src | img_url: '' }}">
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                {% break %}
+              {% endfor %}
+           </div>
+        {% endif %}
+      {% endfor %}
+  </div>
+  <div class="prodcut-bottom-container">
+  </div>
+</div>
