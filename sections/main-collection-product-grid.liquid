@@ -161,6 +161,25 @@
                     section_id: section.id
                   %}
                 </li>
+
+                      <div class="product-color-selector">
+                        {% for option in product.options_with_values %}
+                          {% if option.name == 'Color' %}
+                            <div class="product-variant-images ">
+                              {% for value in option.values %}
+                                {% for image in product.images %}
+                                  {% if image.alt == value %}
+                                    <div class="variant-images">
+                                      <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
+                                    </div>
+                                    {% break %}
+                                  {% endif %}
+                                {% endfor %}
+                              {% endfor %}
+                            </div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
           {% for product in collection.products %}
 {% for option in product.options %}
    {% if option == 'Color' %}
@@ -173,7 +192,7 @@
    {% endcapture %}
 
      {% unless colorlist contains color %}
-        <-- INSERT PRODUCT LOOP -->
+      
         {% capture tempList %}
       {{colorlist | append: color | append: " " }}
       {% endcapture %}
