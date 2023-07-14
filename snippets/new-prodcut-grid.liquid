@@ -308,7 +308,60 @@
                       </svg>
                     </div>
                   </button>
+
+
+                
+ <div class="product-size-wrapper">
+                             <div class="quick-ad">
+               <span>OUICK ADD +</span>
+                        </div>
+                  
+                        <div class="product-size-selector">
+                          {% for option in product.options_with_values %}
+                            {% if option.name == 'Size' %}
+                              {% for value in option.values %}
+                                <div class="size-selector">
+                                  <input
+                                    class="single-size-selector"
+                                    type="radio"
+                                    id=""
+                                    name="{{ option.name }}"
+                                    value="{{ value | escape }}"
+                                    {% if option.selected_value == value %}
+                                      checked="true"
+                                    {% endif %}
+                                  >
+                                  <label>{{ value }}</label>
+                                </div>
+                              {% endfor %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                
+                      <!-- ------------- product-size-selector-ende ------  ---- -- -->
+
+                      <!-- ------------- product-color-selector------  ---- -- -->
+                      <div class="product-color-selector">
+                        {% for option in product.options_with_values %}
+                          {% if option.name == 'Color' %}
+                            <div class="product-variant-images ">
+                              {% for value in option.values %}
+                                {% for image in product.images %}
+                                  {% if image.alt == value %}
+                                    <div class="variant-images">
+                                      <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
+                                    </div>
+                                    {% break %}
+                                  {% endif %}
+                                {% endfor %}
+                              {% endfor %}
+                            </div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+</div>
                 {%- endform -%}
+              
               </product-form>
             {%- endif -%}
           </div>
@@ -380,53 +433,3 @@
     </div>
   </div>
 {%- endif -%}
-
- <div class="product-size-wrapper">
-                             <div class="quick-ad">
-               <span>OUICK ADD +</span>
-                        </div>
-                  
-                        <div class="product-size-selector">
-                          {% for option in product.options_with_values %}
-                            {% if option.name == 'Size' %}
-                              {% for value in option.values %}
-                                <div class="size-selector">
-                                  <input
-                                    class="single-size-selector"
-                                    type="radio"
-                                    id=""
-                                    name="{{ option.name }}"
-                                    value="{{ value | escape }}"
-                                    {% if option.selected_value == value %}
-                                      checked="true"
-                                    {% endif %}
-                                  >
-                                  <label>{{ value }}</label>
-                                </div>
-                              {% endfor %}
-                            {% endif %}
-                          {% endfor %}
-                        </div>
-                
-                      <!-- ------------- product-size-selector-ende ------  ---- -- -->
-
-                      <!-- ------------- product-color-selector------  ---- -- -->
-                      <div class="product-color-selector">
-                        {% for option in product.options_with_values %}
-                          {% if option.name == 'Color' %}
-                            <div class="product-variant-images ">
-                              {% for value in option.values %}
-                                {% for image in product.images %}
-                                  {% if image.alt == value %}
-                                    <div class="variant-images">
-                                      <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
-                                    </div>
-                                    {% break %}
-                                  {% endif %}
-                                {% endfor %}
-                              {% endfor %}
-                            </div>
-                          {% endif %}
-                        {% endfor %}
-                      </div>
-</div>
