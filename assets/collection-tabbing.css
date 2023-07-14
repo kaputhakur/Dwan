@@ -37,7 +37,7 @@
 /* .quick-ad {
     text-align: center;
     padding: 8px;
-}
+}*/
 .product-size-selector {
     border-top: 1px solid;
     width: 73%;
@@ -47,7 +47,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 6px;
-}  */
+}  
 .size-selector {
     width: 3rem;
     border: 1px solid;
