@@ -48,7 +48,7 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
-    {%- if option.position == 2 and show_select_dropdown -%}
+    {%- if variants_option2_arr -%}
       <select
         id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
         name="{{ option.name }}"
