@@ -10,7 +10,7 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
-  {%-  if option.position == 1 and if block.settings.picker_type == 'button' -%}
+  {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden"
@@ -31,7 +31,7 @@
         {{ product.variants | json }}
       </script>
     </variant-radios>
-  {%- elsif option.position == 2 and block.settings.picker_type == 'button' -%}
+  {%- else -%}
     <variant-selects
       id="variant-selects-{{ section.id }}"
       class="no-js-hidden"
