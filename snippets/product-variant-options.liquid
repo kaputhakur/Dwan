@@ -49,12 +49,14 @@
 
   {%- if block.settings.picker_type == 'button' -%}
     {%- if option.position == 2 and show_select_dropdown -%}
-     <select
-              id="Option-{{ section.id }}-{{ forloop.index0 }}"
-              class="select__select"
-              name="options[{{ option.name | escape }}]"
-              form="{{ product_form_id }}"
-            >
+      <select
+        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        name="{{ option.name }}"
+        form="{{ product_form_id }}"
+        {% if option_disabled %}
+          disabled
+        {% endif %}
+      >
         <option value="{{ value | escape }}">
           {{ value -}}
         </option>
