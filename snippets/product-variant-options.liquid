@@ -45,7 +45,8 @@
     endfor
   -%}
 
-  {%- if option.position == 1 and block.settings.picker_type == 'dropdown' -%}
+  {%- if block.settings.picker_type == 'dropdown' -%}
+    {% if option.position == 2 %}
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
@@ -58,7 +59,27 @@
         {{- value -}}
       {%- endif %}
     </option>
-  {%- elsif option.position == 2 and block.settings.picker_type == 'button' -%}
+    {% endif %}
+    {% if option.position == 1 %}
+      <input
+      type="radio"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        class="disabled"
+      {% endif %}
+    >
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      {{ value -}}
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    </label>
+      {% endif %}
+  {%- elsif block.settings.picker_type == 'button' -%}
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
