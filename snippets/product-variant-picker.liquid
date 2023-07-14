@@ -31,7 +31,7 @@
         {{ product.variants | json }}
       </script>
     </variant-radios>
-  {%- else -%}
+  {%- elsif option.position == 2 and block.settings.picker_type == 'button' -%}
     <variant-selects
       id="variant-selects-{{ section.id }}"
       class="no-js-hidden"
