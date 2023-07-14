@@ -26,7 +26,6 @@
 {%- for value in option.values -%}
   {%- liquid
     assign option_disabled = true
-    assign show_select_dropdown = false
 
     for option1_name in variants_option1_arr
       case option.position
@@ -37,7 +36,6 @@
         when 2
           if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
             assign option_disabled = false
-            assign show_select_dropdown = true
           endif
         when 3
           if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
@@ -48,38 +46,23 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
-    {%- if option.position == 2 and show_select_dropdown -%}
-      <select
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}"
-        form="{{ product_form_id }}"
-        {% if option_disabled %}
-          disabled
-        {% endif %}
-      >
-        <option value="{{ value | escape }}">
-          {{ value -}}
-        </option>
-      </select>
-    {%- else -%}
-      <input
-        type="radio"
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}"
-        value="{{ value | escape }}"
-        form="{{ product_form_id }}"
-        {% if option.selected_value == value %}
-          checked
-        {% endif %}
-        {% if option_disabled %}
-          class="disabled"
-        {% endif %}
-      >
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-        {{ value -}}
-        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-      </label>
-    {%- endif -%}
+    <input
+      type="radio"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        class="disabled"
+      {% endif %}
+    >
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      {{ value -}}
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
@@ -95,4 +78,3 @@
     </option>
   {%- endif -%}
 {%- endfor -%}
-
