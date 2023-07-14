@@ -49,14 +49,12 @@
 
   {%- if block.settings.picker_type == 'button' -%}
     {%- if variants_option2_arr -%}
-      <select
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}"
-        form="{{ product_form_id }}"
-        {% if option_disabled %}
-          disabled
-        {% endif %}
-      >
+     <select
+              id="Option-{{ section.id }}-{{ forloop.index0 }}"
+              class="select__select"
+              name="options[{{ option.name | escape }}]"
+              form="{{ product_form_id }}"
+            >
         <option value="{{ value | escape }}">
           {{ value -}}
         </option>
