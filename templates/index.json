@@ -235,34 +235,11 @@
             "slider-collection": "women",
             "title": "Women"
           }
-        },
-        "fb2bdbcc-349c-4bea-bdc6-fd43da647318": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "all-collection",
-            "title": "All Collection"
-          }
-        },
-        "f5ad3c82-eb9a-4428-afa5-1942c970a0ee": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "dc854e1a-ff60-4a91-9a5b-c46b17c4dba6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
         }
       },
       "block_order": [
         "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91",
-        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713",
-        "fb2bdbcc-349c-4bea-bdc6-fd43da647318",
-        "f5ad3c82-eb9a-4428-afa5-1942c970a0ee",
-        "dc854e1a-ff60-4a91-9a5b-c46b17c4dba6"
+        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713"
       ],
       "settings": {
         "width": "page-width",
