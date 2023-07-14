@@ -39,8 +39,41 @@
         "padding_bottom": 36
       }
     },
+    "d3e465f7-e20b-4be8-b11c-2b417e30e40f": {
+      "type": "collection-tabbing",
+      "blocks": {
+        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "women",
+            "title": ""
+          }
+        },
+        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "men",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713",
+        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91"
+      ],
+      "settings": {
+        "width": "page-width",
+        "title": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "enable_quick_add": false
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -217,46 +250,6 @@
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "d3e465f7-e20b-4be8-b11c-2b417e30e40f": {
-      "type": "collection-tabbing",
-      "blocks": {
-        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "men",
-            "title": ""
-          }
-        },
-        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "women",
-            "title": ""
-          }
-        },
-        "080c014a-5683-4108-ab9f-fc646f4c5d61": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91",
-        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713",
-        "080c014a-5683-4108-ab9f-fc646f4c5d61"
-      ],
-      "settings": {
-        "width": "page-width",
-        "title": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "enable_quick_add": false
       }
     },
     "d92db74f-8c78-419b-89ca-8129c36ebbef": {
@@ -592,10 +585,10 @@
   },
   "order": [
     "ea6c87e7-e5a4-442f-8b6b-41ef378e11e9",
+    "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
     "featured_collection",
     "73ae3bd1-341b-4fc1-b6ad-9082e3072f35",
     "7f9f5369-162e-48bb-968b-aa246d7922ca",
-    "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
     "d92db74f-8c78-419b-89ca-8129c36ebbef",
     "e66fbc0a-7235-489c-b60b-959077e69c6d",
     "image_banner",
