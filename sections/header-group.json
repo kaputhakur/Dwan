@@ -42,26 +42,12 @@
           "settings": {
             "title": "Welcome to our store"
           }
-        },
-        "b7742588-8763-496b-8d41-28315306cc9a": {
-          "type": "header",
-          "settings": {
-            "title": "Welcome to our store"
-          }
-        },
-        "01062796-2f06-4630-a17b-d53a40f5448a": {
-          "type": "header",
-          "settings": {
-            "title": "Welcome to our store"
-          }
         }
       },
       "block_order": [
         "dee36340-eb1d-48c6-adbe-e7f427c108ab",
         "564c6259-5478-47a3-be98-5b4f4ea830a1",
-        "6b380910-0329-4fd8-8ee7-9eabaafcb601",
-        "b7742588-8763-496b-8d41-28315306cc9a",
-        "01062796-2f06-4630-a17b-d53a40f5448a"
+        "6b380910-0329-4fd8-8ee7-9eabaafcb601"
       ],
       "settings": {
         "width": "narrow-width",
