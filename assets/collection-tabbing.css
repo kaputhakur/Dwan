@@ -7,10 +7,19 @@
   transition: all 1s ease;
   display: block;
   }
-
+.tablinks.active h3 {
+    background: gainsboro;
+    border: 1px solid;
+    padding: 2px 10px;
+    border-radius: 3pc;
+}
   .tabs {
     display: flex;
-    gap: 100px;
+    gap: 56px;
+    border: 1px solid;
+    width: 21%;
+    justify-content: center;
+    border-radius: 30px;
 }
   .wrapper_tabcontent {
     padding-top: 50px;
