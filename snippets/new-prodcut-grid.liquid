@@ -387,7 +387,7 @@
                         </div>
                   
                         <div class="product-size-selector">
-                          {% for option in product.options_with_values %}
+                          {% for option in card_product.options_with_values %}
                             {% if option.name == 'Size' %}
                               {% for value in option.values %}
                                 <div class="size-selector">
@@ -412,7 +412,7 @@
 
                       <!-- ------------- product-color-selector------  ---- -- -->
                       <div class="product-color-selector">
-                        {% for option in product.options_with_values %}
+                        {% for option in card_product.options_with_values %}
                           {% if option.name == 'Color' %}
                             <div class="product-variant-images ">
                               {% for value in option.values %}
