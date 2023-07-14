@@ -234,7 +234,7 @@
         "description_style": "body",
         "collection": "",
         "products_to_show": 2,
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "full_width": true,
         "show_view_all": false,
         "view_all_style": "outline",
