@@ -28,11 +28,9 @@
       {% for media in product.media %}
         <div class="carousel-cell">
           <img src="{{ media | img_url: 'master' }}"
-               srcset="{{ media | img_url: '1440x' }} 1440w,
-                       {{ media | img_url: '1080x' }} 1080w,
-                       {{ media | img_url: '720x' }} 767w,
+               srcset="
                        {{ media | img_url: '480x' }} 480w"
-               sizes="(min-width: 480px) 1440px, 1080px, 767px, 480px"
+               
                alt="{{ media.alt | escape }}"
                border="0"
                data-media-id="{{ media_id }}"
