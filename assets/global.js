@@ -1,11 +1,11 @@
 
 
-$('.main-slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
+// $('.main-slider').slick({
+//   infinite: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
 
-});
+// });
 	
 
 function getFocusableElements(container) {
