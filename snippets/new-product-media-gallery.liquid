@@ -1,3 +1,10 @@
+<style>
+  .left-main-product{
+  width: 300px;
+  transform: rotate(90deg) translate(30px, -100%);
+  transform-origin: left top;
+</style>
+
 {% if product.images != null %}
 <div class="carousel-main right-main-product carousel product__image-slider" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
   {% for media in product.media %}
@@ -45,6 +52,7 @@
     {% else %}
     {{ 'product-1' | placeholder_svg_tag }}
   {% endif %} 
+  
   <script>
     
      var mainCarousel = $('.carousel-main').flickity({
