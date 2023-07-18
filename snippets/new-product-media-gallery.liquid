@@ -27,7 +27,7 @@
     <div class="side-thumbnail-bar">
       {% for media in product.media %}
         <div class="carousel-cell">
-          <img src="{{ media | img_url: 'master' }}"
+          <img src="{{ media | img_url: '300x300' }}"
                srcset="{{ media | img_url: '1440x' }} 1440w,
                        {{ media | img_url: '1080x' }} 1080w,
                        {{ media | img_url: '720x' }} 767w,
