@@ -61,15 +61,12 @@
   var thumbnailCarousel = $('.left-main-product').flickity({
       asNavFor: '.carousel-main',
       contain: true,
-      draggable: false,
+      draggable: true,
       pageDots: false,
       prevNextButtons: false
      
    });
 
-    thumbnailCarousel.on('click', '.carousel-cell', function () {
-      var index = $(this).index();
-      mainCarousel.flickity('select', index);
-    });
+
     
   </script>
