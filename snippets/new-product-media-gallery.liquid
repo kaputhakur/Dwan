@@ -1,0 +1,47 @@
+{% if product.images != null %}
+<div class="carousel-main right-main-product carousel product__image-slider" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
+  {% for media in product.media %}
+    <div class="carousel-cell">
+      {% if media.media_type == "video" %}
+        {{ media | media_tag: image_size: "720x", autoplay: true, loop: loop, controls: true, preload: "none", height: "100%", width: "100%" }}
+      {% else %}
+        <img src="{{ media | img_url: 'master' }}"
+             srcset="{{ media | img_url: 'master' }} 1440w,
+                     {{ media | img_url: '1080x' }} 1080w,
+                     {{ media | img_url: '720x' }} 767w,
+                     {{ media | img_url: '480x' }} 480w"
+             sizes="(min-width: 480px) 1440px, 1080px, 767px, 480px"
+             alt="{{ media.alt | escape }}"
+             border="0"
+             data-media-id="{{ media.id }}"
+             data-zoom="{{ media | img_url: 'master', scale: 2 }}"
+        />
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% if product.images.size > 1 %}
+  <div class="scoopmate-left-linar-product carousel product__image-thumbnail">
+    <div class="side-thumbnail-bar">
+      {% for media in product.media %}
+        <div class="carousel-cell">
+          <img src="{{ media | img_url: 'master' }}"
+               srcset="{{ media | img_url: '1440x' }} 1440w,
+                       {{ media | img_url: '1080x' }} 1080w,
+                       {{ media | img_url: '720x' }} 767w,
+                       {{ media | img_url: '480x' }} 480w"
+               sizes="(min-width: 480px) 1440px, 1080px, 767px, 480px"
+               alt="{{ media.alt | escape }}"
+               border="0"
+               data-media-id="{{ media_id }}"
+          />
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+    {% else %}
+    {{ 'product-1' | placeholder_svg_tag }}
+  {% endif %} 
