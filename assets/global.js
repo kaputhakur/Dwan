@@ -807,10 +807,18 @@ class SlideshowComponent extends SliderComponent {
 customElements.define('slideshow-component', SlideshowComponent);
 
 class VariantSelects extends HTMLElement {
-  constructor() {
+  
+ constructor() {
     super();
+    this.initLoad();
     this.addEventListener('change', this.onVariantChange);
-  }
+}
+  
+initLoad(){
+    this.updateOptions();
+    this.updateMasterId();
+    this.updateMedia();
+}
 
   onVariantChange() {
     this.updateOptions();
@@ -848,17 +856,33 @@ class VariantSelects extends HTMLElement {
 updateMedia() {
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
+    var current_media_id = this.currentVariant.featured_media.id;
 
-    const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
-    mediaGalleries.forEach((mediaGallery) =>
-      mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true)
-    );
+    // For product page with flickity
+    if (document.querySelector('.product__image-slider')) {
 
-    const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
-    if (!modalContent) return;
-    const newMediaModal = modalContent.querySelector(`[data-media-id="${this.currentVariant.featured_media.id}"]`);
-    modalContent.prepend(newMediaModal);
-  }
+      var media_len = document.querySelector('.product__image-slider .flickity-slider').childElementCount;
+      
+      var media_id_array = [];
+      for (let i = 0; i < media_len; i++) {
+        
+        media_id_array.push(parseInt(document.querySelector('.product__image-slider').querySelectorAll("img")[i].getAttribute('data-media-id')));
+      }
+      flkty.select(media_id_array.indexOf(current_media_id));
+    }
+    // For featured products on homepage without flickity
+    else if (document.querySelector('.product__media-list')) {
+      var featured_product_media_len = document.querySelector('.product__media-list').childElementCount;
+      for (let i = 0; i < featured_product_media_len; i++) {
+        var child = document.querySelector('.product__media-list').children[i];
+        if (child.getAttribute('data-media-id').indexOf(current_media_id) > 0) {
+          child.style.display = "block";
+        } else {
+          child.style.display = "none";
+        }
+      }
+    }
+}
   
   updateURL() {
     if (!this.currentVariant || this.dataset.updateUrl === 'false') return;
