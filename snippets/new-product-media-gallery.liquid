@@ -1,8 +1,4 @@
-  <slider-component id="GalleryViewer-{{ section.id }}{{ id_append }}">
-    {%- unless is_duplicate -%}
-      <a class="main-product-list skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
-        {{ 'accessibility.skip_to_product_info' | t }}
-      </a>
+
     {% if product.images != null %}
     <div class="carousel product__image-slider" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
       {%- for media in product.media -%}
@@ -49,5 +45,4 @@
     {% else %}
     {{ 'product-1' | placeholder_svg_tag }}
   {% endif %}
-    {%- endunless -%}
-  </slider-component>
+   
