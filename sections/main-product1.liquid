@@ -714,35 +714,49 @@
 /*]]>*/
 </script>
 
+<!-- Make sure you have included the necessary libraries: jQuery, Flickity -->
+<!-- Example:
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.1/flickity.pkgd.min.js"></script>
+-->
+
+<!-- Your HTML code here -->
+
 <script>
-var mainCarousel = document.querySelector('.carousel.product__image-slider');
 
-  var flkty = new Flickity( mainCarousel, {
-    contain: true,
-    imagesLoaded: true,
-    lazyLoad: 1,
-    wrapAround: true,
-    pageDots: false,
-    {% if product.images.size < 2 %}
-    prevNextButtons: false,
-    {% endif %}
-    adaptiveHeight: true
-  });
-   var elemThumbnail = document.querySelector('.carousel.product__image-thumbnail');
-  var flktyB = new Flickity( elemThumbnail, {
-    asNavFor: '.carousel.product__image-slider',
-    contain: true,
-    imagesLoaded: true,
-    lazyLoad: 4,
-    pageDots: false,
-    prevNextButtons: false
-  });
+  $(document).ready(function () {
+    var mainCarousel = document.querySelector('.carousel.product__image-slider');
 
-   flktyB.on('click', '.carousel-cell', function () {
-      var index = $(this).index();
-      mainCarousel.flickity('select', index);
+    var flkty = new Flickity(mainCarousel, {
+      contain: true,
+      imagesLoaded: true,
+      lazyLoad: 1,
+      wrapAround: true,
+      pageDots: false,
+      {% if product.images.size < 2 %}
+      prevNextButtons: false,
+      {% endif %}
+      adaptiveHeight: true,
     });
+
+    var elemThumbnail = document.querySelector('.carousel.product__image-thumbnail');
+    var flktyB = new Flickity(elemThumbnail, {
+      asNavFor: '.carousel.product__image-slider',
+      contain: true,
+      imagesLoaded: true,
+      lazyLoad: 4,
+      pageDots: false,
+      prevNextButtons: false,
+    });
+
+    // Use Flickity method `on` to bind the click event
+    flktyB.on('click', '.carousel-cell', function () {
+      var index = $(this).index();
+      flkty.select(index); // Use the `flkty` instance, not the `mainCarousel` DOM element
+    });
+  });
 </script>
+
 
 {% schema %}
 {
