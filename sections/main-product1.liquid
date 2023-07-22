@@ -662,34 +662,30 @@
 })();
 /*]]>*/
 </script>
+
 <script>
 
-
-   var mainCarousel = $('.carousel-main').flickity({
-      contain: true,
-      pageDots: false,
+  var elem = document.querySelector('.carousel.product__image-slider');
+  var flkty = new Flickity( elem, {
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 1,
+    wrapAround: true,
+    pageDots: false,
     {% if product.images.size < 2 %}
     prevNextButtons: false,
     {% endif %}
-     wrapAround: true 
-    });
-
-    
-  var thumbnailCarousel = $('.left-main-product').flickity({
-      asNavFor: '.carousel-main',
-      contain: true,
-      draggable: tru,
-      pageDots: false,
-      prevNextButtons: false
-     
-   });
-
-    thumbnailCarousel.on('click', '.carousel-cell', function () {
-      var index = $(this).index();
-      mainCarousel.flickity('select', index);
-    });
-
-  
+    adaptiveHeight: true
+  });
+   var elemThumbnail = document.querySelector('.carousel.product__image-thumbnail');
+  var flktyB = new Flickity( elemThumbnail, {
+    asNavFor: '.carousel.product__image-slider',
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 4,
+    pageDots: false,
+    prevNextButtons: false
+  });
 </script>
 
 {% schema %}
