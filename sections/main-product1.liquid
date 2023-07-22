@@ -717,37 +717,37 @@
   
 </script>
 <script>
+ var elem = document.querySelector('.carousel.product__image-slider');
+  var flkty = new Flickity( elem, {
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 1,
+    wrapAround: true,
+    pageDots: false,
+    {% if product.images.size < 2 %}
+    prevNextButtons: false,
+    {% endif %}
+    adaptiveHeight: true
+  }); 
+  var elemThumbnail = document.querySelector('.carousel.product__image-thumbnail');
+  var flktyB = new Flickity( elemThumbnail, {
+    asNavFor: '.carousel.product__image-slider',
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 4,
+    pageDots: false,
+    prevNextButtons: false
+  }); 
+  
+   var thumbnailImages = document.querySelectorAll('.thumbnail-image');
 
-  var gallerySlider = new Swiper('.product__image-slider', {
-    // Add options for the main slider here
-    // For example, direction: 'horizontal' for horizontal slider
-    // and direction: 'vertical' for vertical slider
-    direction: 'horizontal',
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    // Add other options as needed
+  // Add event listeners to each thumbnail image
+  thumbnailImages.forEach(function (thumbnail, index) {
+    thumbnail.addEventListener('click', function () {
+      // Use Flickity API to change the selected slide in the main slider
+      flkty.select(index);
+    });
   });
-
-  {% if product.images.size > 1 %}
-  var thumbnailSlider = new Swiper('.product__image-thumbnail', {
-    // Add options for the thumbnail slider here
-    direction: 'vertical',
-    spaceBetween: 10, // Adjust the space between thumbnails
-    slidesPerView: 4, // Adjust the number of visible thumbnails
-    // Add other options as needed
-    // For example, navigation arrows for the thumbnail slider:
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  // Link the two sliders together
-  gallerySlider.controller.thumbnails = thumbnailSlider;
-  thumbnailSlider.controller.control = gallerySlider;
-  {% endif %}
 </script>
 
 
