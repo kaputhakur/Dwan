@@ -62,9 +62,9 @@
    {% render 'new-product-media-gallery' %}
     </div>
   {% comment %}
-  <div class="main-media-gallery">
+
        {% render 'product-media-gallery', variant_images: variant_images %}
-  </div>
+
   {% endcomment %}
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <product-info
