@@ -728,14 +728,14 @@ var mainCarousel = $('.carousel-main').flickity({
   });
 
     
-  var thumbnailCarousel = $('.scoopmate-left-linar-product').flickity({
+  var thumbnailCarousel = $('.product__image-thumbnail').flickity({
       asNavFor: '.carousel-main',
       contain: true,
-      draggable: false,
-      pageDots: false,
-      prevNextButtons: false
-     
-   });
+    imagesLoaded: true,
+    lazyLoad: 4,
+    pageDots: false,
+    prevNextButtons: false
+  });
 
     thumbnailCarousel.on('click', '.carousel-cell', function () {
       var index = $(this).index();
@@ -743,28 +743,8 @@ var mainCarousel = $('.carousel-main').flickity({
     });
 
 
-  
- var elem = document.querySelector('.carousel.product__image-slider');
-  var flkty = new Flickity( elem, {
-    contain: true,
-    imagesLoaded: true,
-    lazyLoad: 1,
-    wrapAround: true,
-    pageDots: false,
-    {% if product.images.size < 2 %}
-    prevNextButtons: false,
-    {% endif %}
-    adaptiveHeight: true
-  });
-   var elemThumbnail = document.querySelector('.carousel.product__image-thumbnail');
-  var flktyB = new Flickity( elemThumbnail, {
-    asNavFor: '.carousel.product__image-slider',
-    contain: true,
-    imagesLoaded: true,
-    lazyLoad: 4,
-    pageDots: false,
-    prevNextButtons: false
-  });
+
+   
 </script>
 
 {% schema %}
