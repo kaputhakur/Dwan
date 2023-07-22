@@ -717,6 +717,7 @@
   
 </script>
 <script>
+
  var elem = document.querySelector('.carousel.product__image-slider');
   var flkty = new Flickity( elem, {
     fade: true,
@@ -734,6 +735,7 @@
   var flktyB = new Flickity( elemThumbnail, {
     asNavFor: '.carousel.product__image-slider',
     contain: true,
+    fade: true,
     imagesLoaded: true,
     lazyLoad: 4,
     pageDots: false,
