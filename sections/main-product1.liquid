@@ -724,8 +724,9 @@
 
 <script>
 $(document).ready(function () {
+   var mainCarousel = document.querySelector('.carousel.product__image-slider');
 
-   var flkty = new Flickity(mainCarousel, {
+    var flkty = new Flickity(mainCarousel, {
       contain: true,
       imagesLoaded: true,
       lazyLoad: 1,
