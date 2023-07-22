@@ -851,19 +851,19 @@ updateMedia() {
     var current_media_id = this.currentVariant.featured_media.id;
 
     // For product page with flickity
-    if (document.querySelector('.product__image-slider')) {
+    // if (document.querySelector('.product__image-slider')) {
 
-      var media_len = document.querySelector('.product__image-slider .flickity-slider').childElementCount;
+    //   var media_len = document.querySelector('.product__image-slider .flickity-slider').childElementCount;
       
-      var media_id_array = [];
-      for (let i = 0; i < media_len; i++) {
+    //   var media_id_array = [];
+    //   for (let i = 0; i < media_len; i++) {
         
-        media_id_array.push(parseInt(document.querySelector('.product__image-slider').querySelectorAll("img")[i].getAttribute('data-media-id')));
-      }
-      flkty.select(media_id_array.indexOf(current_media_id));
-    }
+    //     media_id_array.push(parseInt(document.querySelector('.product__image-slider').querySelectorAll("img")[i].getAttribute('data-media-id')));
+    //   }
+    //   flkty.select(media_id_array.indexOf(current_media_id));
+    // }
     // For featured products on homepage without flickity
-    else if (document.querySelector('.product__media-list')) {
+  if (document.querySelector('.product__media-list')) {
       var featured_product_media_len = document.querySelector('.product__media-list').childElementCount;
       for (let i = 0; i < featured_product_media_len; i++) {
         var child = document.querySelector('.product__media-list').children[i];
