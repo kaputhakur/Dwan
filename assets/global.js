@@ -807,17 +807,10 @@ class SlideshowComponent extends SliderComponent {
 customElements.define('slideshow-component', SlideshowComponent);
 
 class VariantSelects extends HTMLElement {
- constructor() {
+  constructor() {
     super();
-    this.initLoad();
     this.addEventListener('change', this.onVariantChange);
-}
-  
-initLoad(){
-    this.updateOptions();
-    this.updateMasterId();
-    this.updateMedia();
-} 
+  }
 
   onVariantChange() {
     this.updateOptions();
