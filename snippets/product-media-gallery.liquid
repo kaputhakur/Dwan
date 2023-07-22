@@ -102,20 +102,17 @@
                 assign lazy_load = true
               endif
             -%}
-            {% render 'product-thumbnail',
-                media: media,
-                media_count: media_count,
-                position: media_position,
-                desktop_layout: section.settings.gallery_layout,
-                mobile_layout: section.settings.mobile_thumbnails,
-                loop: section.settings.enable_video_looping,
-                modal_id: section.id,
-                xr_button: true,
-                media_width: media_width,
-                media_fit: section.settings.media_fit,
-                constrain_to_viewport: section.settings.constrain_to_viewport,
-                lazy_load: lazy_load
-              %}
+            <img src="{{ media | img_url: 'master' }}"
+             srcset="{{ media | img_url: 'master' }} 1440w,
+                     {{ media | img_url: '1080x' }} 1080w,
+                     {{ media | img_url: '720x' }} 767w,
+                     {{ media | img_url: '480x' }} 480w"
+             sizes="(min-width: 480px) 1440px, 1080px, 767px, 480px"
+             alt="{{ media.alt | escape }}"
+             border="0"
+             data-media-id="{{ media.id }}"
+             data-zoom="{{ media | img_url: 'master', scale: 2 }}"
+        />
           </li>
         {%- endunless -%}
       {%- endfor -%}
