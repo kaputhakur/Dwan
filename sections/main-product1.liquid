@@ -715,6 +715,35 @@
 </script>
 
 <script>
+var mainCarousel = $('.carousel-main').flickity({
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 1,
+    wrapAround: true,
+    pageDots: false,
+    {% if product.images.size < 2 %}
+    prevNextButtons: false,
+    {% endif %}
+    adaptiveHeight: true
+  });
+
+    
+  var thumbnailCarousel = $('.scoopmate-left-linar-product').flickity({
+      asNavFor: '.carousel-main',
+      contain: true,
+      draggable: false,
+      pageDots: false,
+      prevNextButtons: false
+     
+   });
+
+    thumbnailCarousel.on('click', '.carousel-cell', function () {
+      var index = $(this).index();
+      mainCarousel.flickity('select', index);
+    });
+
+
+  
  var elem = document.querySelector('.carousel.product__image-slider');
   var flkty = new Flickity( elem, {
     contain: true,
