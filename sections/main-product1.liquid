@@ -716,8 +716,11 @@
 
 <script>
 
-var mainCarousel = $('.carousel-main').flickity({
 
+
+  
+ var elem = document.querySelector('.carousel.product__image-slider');
+  var flkty = new Flickity( elem, {
     contain: true,
     imagesLoaded: true,
     lazyLoad: 1,
@@ -728,25 +731,15 @@ var mainCarousel = $('.carousel-main').flickity({
     {% endif %}
     adaptiveHeight: true
   });
-
-    
-  var thumbnailCarousel = $('.product__image-thumbnail').flickity({
-      asNavFor: '.carousel-main',
-      contain: true,
+   var elemThumbnail = document.querySelector('.carousel.product__image-thumbnail');
+  var flktyB = new Flickity( elemThumbnail, {
+    asNavFor: '.carousel.product__image-slider',
+    contain: true,
     imagesLoaded: true,
     lazyLoad: 4,
     pageDots: false,
     prevNextButtons: false
   });
-
-    thumbnailCarousel.on('click', '.carousel-cell', function () {
-      var index = $(this).index();
-      mainCarousel.flickity('select', index);
-    });
-
-
-
-   
 </script>
 
 {% schema %}
