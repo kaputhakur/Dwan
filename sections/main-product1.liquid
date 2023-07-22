@@ -735,6 +735,16 @@
     pageDots: false,
     prevNextButtons: false
   });
+  
+    var thumbnailImages = document.querySelectorAll('.thumbnail-image');
+
+  // Add event listeners to each thumbnail image
+  thumbnailImages.forEach(function (thumbnail, index) {
+    thumbnail.addEventListener('click', function () {
+      // Use Flickity API to change the selected slide in the main slider
+      flkty.select(index);
+    });
+  });
 </script>
 
 
