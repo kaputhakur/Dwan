@@ -100,7 +100,7 @@ input.single-size-selector {
 }
  */
 
-.product-size-container{
+.quick-ad, .product-size-selector {
   display: none;
 }
 
@@ -109,6 +109,6 @@ input.single-size-selector {
 }
 
 
-.featured-product:hover .quick-ad:hover {
+.quick-ad:hover + .product-size-selector {
   display: block;
 }
