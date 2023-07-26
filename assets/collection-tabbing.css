@@ -111,5 +111,5 @@ input.single-size-selector {
 
 .quick-ad:hover + .product-size-selector {
   display: block;
-   transition-delay: 300ms;
+   transition: .5s ease all;
 }
