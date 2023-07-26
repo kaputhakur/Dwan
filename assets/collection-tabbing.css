@@ -96,5 +96,6 @@ input.single-size-selector {
 }
 .card-wrapper:hover .product-size-container{
   display:block !important;
+  z-index:1;
 }
 
