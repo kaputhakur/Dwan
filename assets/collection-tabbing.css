@@ -91,21 +91,14 @@ input.single-size-selector {
 .radius-20{
   border-radius:30px;
 }
-/* .product-size-container{
-  display:none;
-}
-.card-wrapper:hover .product-size-container{
-  display:block !important;
-  z-index:1;
-}
- */
+
 
 
 .product-size-selector {
   display: none;
 }
 
-/* Show .product-size-selector when the parent .featured-product is hovered or .quick-ad is focused */
+
 .featured-product:hover .product-size-selector,
 .quick-ad:focus-within + .product-size-selector {
   display: block;
