@@ -52,10 +52,7 @@
     left: 0;
     right: 0;
    z-index:1;
- 
-  
-
-}
+ }
 .quick-ad {
     text-align: center;
     padding: 8px;
@@ -93,5 +90,11 @@ input.single-size-selector {
 }
 .radius-20{
   border-radius:30px;
+}
+.product-size-container{
+  display:none;
+}
+.card-wrapper:hover .product-size-container{
+  display:block
 }
 
