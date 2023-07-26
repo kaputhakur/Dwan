@@ -91,16 +91,16 @@ input.single-size-selector {
 .radius-20{
   border-radius:30px;
 }
-/* .product-size-container{
-  display:none;
+.featured-product:hover .quick-add-wrapper {
+    bottom: -51px;
+    z-index: 99;
 }
-.card-wrapper:hover .product-size-container{
-  display:block !important;
-  z-index:1;
-}
- */
 
-.quick-ad, .product-size-selector {
+.featured-product:hover .quick-add-wrapper:hover {
+    bottom: 15px;
+    transition: .5s ease all;
+}
+/* .quick-ad, .product-size-selector {
   display: none;
 }
 
@@ -111,4 +111,4 @@ input.single-size-selector {
 
 .quick-ad:hover + .product-size-selector {
   display: block;
-}
+} */
