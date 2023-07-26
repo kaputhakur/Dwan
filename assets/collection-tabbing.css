@@ -52,7 +52,7 @@
     left: 0;
     right: 0;
    z-index:1;
-  border-top:1px solid;
+ 
   
 
 }
@@ -61,7 +61,7 @@
     padding: 8px;
 }
 .product-size-selector {
-
+ border-top:1px solid;
     width: 73%;
     margin: 0 auto;
     padding: 10px;
