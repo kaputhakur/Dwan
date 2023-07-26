@@ -381,33 +381,34 @@
   </div>
 {%- endif -%}
 
-<div class="product-size-wrapper">
-  <div class="quick-ad">
-    <span>OUICK ADD +</span>
-  </div>
+<div class="product-variant-wrapper">
+  <div class="product-size-container">
+    <div class="quick-ad">
+      <span>OUICK ADD +</span>
+    </div>
 
-  <div class="product-size-selector">
-    {% for option in card_product.options_with_values %}
-      {% if option.name == 'Size' %}
-        {% for value in option.values %}
-          <div class="size-selector">
-            <input
-              class="single-size-selector"
-              type="radio"
-              id=""
-              name="{{ option.name }}"
-              value="{{ value | escape }}"
-              {% if option.selected_value == value %}
-                checked="true"
-              {% endif %}
-            >
-            <label>{{ value }}</label>
-          </div>
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
+    <div class="product-size-selector">
+      {% for option in card_product.options_with_values %}
+        {% if option.name == 'Size' %}
+          {% for value in option.values %}
+            <div class="size-selector">
+              <input
+                class="single-size-selector"
+                type="radio"
+                id=""
+                name="{{ option.name }}"
+                value="{{ value | escape }}"
+                {% if option.selected_value == value %}
+                  checked="true"
+                {% endif %}
+              >
+              <label>{{ value }}</label>
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
-
   <!-- ------------- product-size-selector-ende ------  ---- -- -->
 
   <!-- ------------- product-color-selector------  ---- -- -->
