@@ -109,6 +109,6 @@ input.single-size-selector {
 }
 
 
-.quick-ad:hover .product-size-selector {
+.quick-ad:hover + .product-size-selector {
   display: block;
 }
