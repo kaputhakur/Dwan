@@ -94,7 +94,7 @@ input.single-size-selector {
 .product-size-container{
   display:none;
 }
-.card:hover .product-size-container{
-  display:block;
+.card-wrapper:hover .product-size-container{
+  display:block !important;
 }
 
