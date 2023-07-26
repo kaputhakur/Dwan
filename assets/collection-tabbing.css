@@ -91,11 +91,11 @@ input.single-size-selector {
 .radius-20{
   border-radius:30px;
 }
-.product-size-container{
+/* .product-size-container{
   display:none;
 }
 .card-wrapper:hover .product-size-container{
   display:block !important;
   z-index:1;
 }
-
+ */
