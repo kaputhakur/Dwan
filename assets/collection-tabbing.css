@@ -100,9 +100,9 @@ input.single-size-selector {
     bottom: 15px;
     transition: .5s ease all;
 }
-/* .quick-ad, .product-size-selector {
+/* /* .quick-ad, .product-size-selector {
   display: none;
-}
+} */
 
 .featured-product:hover .quick-ad {
   display: block;
