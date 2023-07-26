@@ -52,7 +52,7 @@
       "settings": {
         "width": "narrow-width",
         "bg-color": "",
-        "text-color": "#000000",
+        "text-color": "#ffffff",
         "announcement_bar_enabled": true,
         "announcement_bar_home_page_only": true,
         "info-menu": "footer-info",
