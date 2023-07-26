@@ -27,9 +27,21 @@
 .collection-carousel{
     overflow: inherit;
 }
+/* .product-size-container {
+    position: absolute;
+    bottom: 153px;
+    border: 1px solid;
+    z-index: 1;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.quick-ad {
+    text-align: center;
+} */
 
 /* product*/
-/*  .product-size-wrapper {
+ .product-size-wrapper {
     border-radius: 47px;
     position: absolute;
     top: 208px;
@@ -42,11 +54,11 @@
    z-index:1;
   
 
-} */
-/* .quick-ad {
+}
+.quick-ad {
     text-align: center;
     padding: 8px;
-}*/
+}
 .product-size-selector {
 
     width: 73%;
