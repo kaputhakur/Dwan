@@ -41,7 +41,7 @@
 } */
 
 /* product*/
- .product-size-wrapper {
+.product-size-container {
     border-radius: 47px;
     position: absolute;
     top: 208px;
