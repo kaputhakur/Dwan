@@ -390,21 +390,23 @@
     <div class="product-size-selector">
       {% for option in card_product.options_with_values %}
         {% if option.name == 'Size' %}
-          {% for value in option.values %}
-            <div class="size-selector">
-              <input
-                class="single-size-selector"
-                type="radio"
-                id=""
-                name="{{ option.name }}"
-                value="{{ value | escape }}"
-                {% if option.selected_value == value %}
-                  checked="true"
-                {% endif %}
-              >
-              <label>{{ value }}</label>
-            </div>
-          {% endfor %}
+          <div class="size-selector-wrapper">
+            {% for value in option.values %}
+              <div class="size-selector">
+                <input
+                  class="single-size-selector"
+                  type="radio"
+                  id=""
+                  name="{{ option.name }}"
+                  value="{{ value | escape }}"
+                  {% if option.selected_value == value %}
+                    checked="true"
+                  {% endif %}
+                >
+                <label>{{ value }}</label>
+              </div>
+            {% endfor %}
+          </div>
         {% endif %}
       {% endfor %}
     </div>
