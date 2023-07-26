@@ -100,15 +100,21 @@ input.single-size-selector {
 }
  */
 
-.quick-ad, .product-size-selector {
+quick-ad, .product-size-selector {
   display: none;
 }
 
+/* Show .quick-ad on hover of .featured-product */
 .featured-product:hover .quick-ad {
   display: block;
 }
 
-
-.quick-ad:hover + .product-size-selector {
+/* Show .product-size-selector on hover of .featured-product */
+.featured-product:hover .product-size-selector {
   display: block;
+}
+
+/* Hide .product-size-selector when not hovering over .featured-product or .quick-ad */
+.product-size-container:hover .product-size-selector {
+  display: none;
 }
