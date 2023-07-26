@@ -36,11 +36,9 @@
             class="Tab-{{ section.id  }} tablinks {% if forloop.index == 1 %}active{% endif %}"
             data-id="Tab-{{ section.id  }}{{ forloop.index }}"
           >
-               
-           
-              {%- for product in collection.products  limit:1 -%}
-                <h3>{{ collection.title}}</h3>
-                {% endfor %}
+            {%- for product in collection.products limit: 1 -%}
+              <h3>{{ collection.title }}</h3>
+            {% endfor %}
           </div>
         {% endfor %}
       </div>
@@ -55,21 +53,15 @@
               <div class="swiper-wrapper">
                 {% assign collection = collections[block.settings['slider-collection']] %}
                 {% for product in collection.products %}
-                  
                   <div class="featured-product swiper-slide">
-                   {% render 'new-prodcut-grid',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        section_id: section.id
-                      %}
-                     <!-- ------------product-size-selector------------- -->
-                     {% comment %}
+                    {% render 'new-prodcut-grid' %}
+                    <!-- ------------product-size-selector------------- -->
+                    {% comment %}
                       <div class="product-size-wrapper">
                         <div class="quick-ad">
                           <span>OUICK ADD +</span>
                         </div>
-                  
+
                         <div class="product-size-selector">
                           {% for option in product.options_with_values %}
                             {% if option.name == 'Size' %}
@@ -113,15 +105,12 @@
                           {% endif %}
                         {% endfor %}
                       </div>
-         
-                  {% endcomment %}
-
-                    
-                     </div>
+                    {% endcomment %}
+                  </div>
                 {% endfor %}
               </div>
             </div>
-            
+
             <!-- ----------------------product silder end----- -------------------------------- -->
           </div>
         {% endfor %}
