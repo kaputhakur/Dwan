@@ -104,12 +104,11 @@ input.single-size-selector {
   display: none;
 }
 
-/* Show .quick-ad on hover of .featured-product */
 .featured-product:hover .quick-ad {
   display: block;
 }
 
-/* Show .product-size-selector on hover of .quick-ad */
+
 .quick-ad:hover + .product-size-selector {
   display: block;
 }
