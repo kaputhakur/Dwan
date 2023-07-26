@@ -100,10 +100,16 @@ input.single-size-selector {
 }
  */
 
-.quick-ad, .product-size-selector {
+
+.product-size-selector {
   display: none;
 }
 
+/* Show .product-size-selector when the parent .featured-product is hovered or .quick-ad is focused */
+.featured-product:hover .product-size-selector,
+.quick-ad:focus-within + .product-size-selector {
+  display: block;
+}
 .featured-product:hover .quick-ad {
   display: block;
 }
