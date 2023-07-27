@@ -87,9 +87,13 @@ input.single-size-selector {
 .radius-20{
   border-radius:30px;
 }
-/*  hover-effect */
-
-
+/* --------- hover-effect -------------------------------------*/
+.product-variant-images{
+  display:none
+} 
+.featured-product:hover .product-variant-images{
+  display: block;
+}
 
 .quick-ad,
 .product-size-selector {
