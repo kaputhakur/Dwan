@@ -3,7 +3,7 @@
     
      {%for image in card_product.images %}
         
-        <div class="product-image-slide swiper-slide" >
+        <div class="product-image-slide" >
           <a href="{{ card_product.url }}">
             <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
