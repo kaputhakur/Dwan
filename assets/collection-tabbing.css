@@ -111,7 +111,7 @@ input.single-size-selector {
 
 }
 /* swiper-arrow */
-.product-image-container .s-arrow {
+.product-image-slide .s-arrow {
      /* height: 30px !important;
     width: 30px !important; */
  display:none;
