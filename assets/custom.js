@@ -29,38 +29,47 @@ featureProduct.forEach((item)=>{
 
 // product-main-slider-in tabbing section
 const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
-mainProductSlider.forEach((item)=>{
+
+mainProductSlider.forEach((item) => {
   var Swipes = new Swiper(item, {
-  loop: true,
-    allowTouchMove:true,
-  slidesPerView:1,
-  initialSlide: 0,
-  effect:"fade",
-       autoplay: {
-      delay: 1000,
-      disableOnInteraction: false, // This allows autoplay to continue even when user interacts with the slider
+    loop: true,
+    allowTouchMove: true,
+    slidesPerView: 1,
+    initialSlide: 0,
+    effect: "fade",
+    autoplay: {
+      delay: 7000,
     },
     speed: 300,
     noSwiping: true,
-  
- navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-},
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
-   
-    
-});
   var swp = item.swiper;
-  item.addEventListener("mouseenter", function() { // Changed "mouseover" to "mouseenter"
-    swp.autoplay.start();
+  var isHovering = false;
+
+  item.addEventListener("mouseenter", function() {
+    isHovering = true;
+    autoplayOnHover();
   });
 
-  item.addEventListener("mouseleave", function() { // Changed "mouseout" to "mouseleave"
-    swp.autoplay.stop();
+  item.addEventListener("mouseleave", function() {
+    isHovering = false;
+    autoplayOnHover();
   });
 
-  });
+  function autoplayOnHover() {
+    if (isHovering) {
+      swp.autoplay.start();
+    } else {
+      swp.autoplay.stop();
+    }
+  }
+});
+
 
 
 
