@@ -96,6 +96,7 @@ input.single-size-selector {
 }
 
 
+
 .product-size-selector {
   display: none;
 }
@@ -104,18 +105,9 @@ input.single-size-selector {
   display: block;
 }
 
-.quick-ad {
-  display: none;
-
-}
-
-.featured-product:hover .quick-ad {
-  display: block;
-  
-}
 .quick-ad:hover + .product-size-selector {
   display: block;
- transition: .5s ease all;
+  transition: .5s ease all;
 }
 
 /* .product-size-selector {
