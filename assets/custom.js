@@ -21,7 +21,17 @@ featureProduct.forEach((item)=>{
     },
     },
 });
-})
+});
+
+// product-main-slider-in tabbing section
+const mainProductSlider = document.querySelectorAll(".product-main-image");
+mainProductSlider.forEach((item)=>{
+  var Swipes = new Swiper(item, {
+  loop: true,
+  slidesPerView:1,
+  initialSlide: 0, 
+});  
+});
 
 // shop lock slider
 // const shopLockProduct= document.querySelectorAll(".shop-lock-products");
