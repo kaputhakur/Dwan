@@ -1,4 +1,15 @@
-
+<div class="product-images">
+   
+        {%for image in product.images %}
+   
+        <div class="product-image-slide swiper-slide" >
+          <a href="{{product.url }}">
+            <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+      {% endfor %}
+      
+</div>
 
 
 
