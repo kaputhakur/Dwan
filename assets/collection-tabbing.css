@@ -112,18 +112,18 @@ input.single-size-selector {
 }
 /* swiper-arrow */
 .product-image-container .s-arrow {
-     height: 30px !important;
-    width: 30px !important;
+     /* height: 30px !important;
+    width: 30px !important; */
  
 }
 
 .product-image-container .s-arrow::after {
-    left: 8px;
+    /* left: 8px;
    background:#000 !important;
- border-radius:100% !important;
-    color: #fff;
-    font-size: 20px;
+ border-radius:100% !important; */
+    color: #000;
+    /* font-size: 20px;
     position: relative;
-    top: -6px;
+    top: -6px; */
 
 }
