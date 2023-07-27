@@ -31,7 +31,10 @@ mainProductSlider.forEach((item)=>{
   slidesPerView:1,
   initialSlide: 0,
   effect:"fade",
-
+ navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+},
 });  
 });
 
