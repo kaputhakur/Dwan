@@ -112,7 +112,7 @@ input.single-size-selector {
 }
 /* swiper-arrow */
 .product-image-container .s-arrow {
-    background:#000 !imprtant;
+    background:#000 !important;
     height: 20px;
     width: 20px;
     border-radius: 100%;
@@ -120,6 +120,7 @@ input.single-size-selector {
 
 .product-image-container .s-arrow::after {
     left: 8px;
+  background:#000 !important;
     color: #fff;
     font-size: 10px;
     position: relative;
