@@ -108,3 +108,18 @@ input.single-size-selector {
 .product-image-container {
     overflow: hidden;
 }
+/* swiper-arrow */
+.product-image-container .s-arrow {
+    background: #000;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+.product-image-container .s-arrow::after {
+    left: 8px;
+    color: #fff;
+    font-size: 10px;
+    position: relative;
+    top: -6px;
+}
