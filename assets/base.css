@@ -7,6 +7,14 @@
    margin: 0 auto;
   padding: 0 1.5rem;
 }
+.swiper-button-prev{
+  display:block !important;
+}
+.swiper-button-next{
+  display:block !important;
+}
+
+
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
