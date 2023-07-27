@@ -100,16 +100,15 @@ input.single-size-selector {
   display: none;
 }
 
-
 .featured-product:hover .product-size-selector {
   display: block;
 }
+
 .featured-product:hover .quick-ad {
   display: block;
 }
 
-
 .quick-ad:hover + .product-size-selector {
   display: block;
-   transition: .5s ease all;
+  transition: .5s ease all;
 }
