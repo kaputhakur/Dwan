@@ -112,7 +112,7 @@ input.single-size-selector {
 }
 /* swiper-arrow */
 .product-image-container .s-arrow {
-    background: #000;
+    background:#000;
     height: 20px;
     width: 20px;
     border-radius: 100%;
