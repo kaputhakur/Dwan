@@ -111,18 +111,16 @@ input.single-size-selector {
 
 }
 /* swiper-arrow */
-.product-image-container .s-arrow {
-   height: 30px !important;
-    width: 30px !important;
- 
-}
+
 
 .product-image-container .s-arrow::after {
     left: 8px;
    background:#000 !important;
  border-radius:100% !important;
     color: #fff;
-    font-size: 10px;
+    font-size: 20px;
     position: relative;
     top: -6px;
+     height: 30px !important;
+    width: 30px !important;
 }
