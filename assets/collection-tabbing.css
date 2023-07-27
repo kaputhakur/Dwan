@@ -111,7 +111,11 @@ input.single-size-selector {
 
 }
 /* swiper-arrow */
+.product-image-container .s-arrow {
+     /* height: 30px !important;
+    width: 30px !important; */
 
+}
 
 .product-image-container .s-arrow::after {
     /* left: 8px;
