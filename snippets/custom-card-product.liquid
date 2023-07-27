@@ -2,17 +2,29 @@
       data-type:'add-to-cart-form' %}
     <div class="product-grid-wrapper">
        <!-- product-image -->
-      <div class="product-main-image">
-        <div class="swiper-wrapper">
+         <div class="product-image-container">
+      {% for option in card_product.options_with_values %}
+      {% if option.name == 'Color'%}
+      {% for value in option.values %}
+      <div class="product-image-wrapper">
+       
         {%for image in card_product.images %}
-         <div class="product-image-slide swiper-slide" >
+        {% if image.alt == value %}
+        <div class="product-image-slide" >
           <a href="{{ card_product.url }}">
             <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
+        {% endif %}
+        {% endfor %}
+         
+        </div>
+   {% break %}
       {% endfor %}
-      </div>
-      </div>
+      {% endif %}
+      {% endfor %}
+   
+</div>
 <!--product-image-end  -->
       {% comment %}
       <div class="product-variant-wrapper">
