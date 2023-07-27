@@ -63,8 +63,15 @@
   </div>
   <!-- ------------- product-size-selector-ende ------  ---- -- -->
 
-  <!-- ------------- product-color-selector------  ---- -- -->
-  <div class="product-color-selector">
+ 
+ 
+  </div>
+
+
+      <div class="bottom-container">
+
+ <!-- ------------- product-color-selector------  ---- -- -->
+         <div class="product-color-selector">
     {% for option in card_product.options_with_values %}
       {% if option.name == 'Color' %}
         <div class="product-variant-images ">
@@ -85,10 +92,6 @@
 
 
   <!-- ------------- product-color-selector-end------  ---- -- -->
-  </div>
-
-
-      <div class="bottom-container">
       </div>
     </div>
     {% endform %}
