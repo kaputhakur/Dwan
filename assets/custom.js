@@ -32,8 +32,7 @@ mainProductSlider.forEach((item)=>{
   slidesPerView:1,
   initialSlide: 0,
   effect:"fade",
-    autoplay:4000,
-     speed: 300,
+  
  navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
