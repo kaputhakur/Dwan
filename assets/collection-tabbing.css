@@ -114,13 +114,13 @@ input.single-size-selector {
 .product-image-container .s-arrow {
    height: 30px !important;
     width: 30px !important;
-  border-radius:100%;
+ 
 }
 
 .product-image-container .s-arrow::after {
     left: 8px;
    background:#000 !important;
-
+ border-radius:100% !important;
     color: #fff;
     font-size: 20px;
     position: relative;
