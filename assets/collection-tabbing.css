@@ -91,12 +91,7 @@ input.single-size-selector {
   border-radius:20px;
 }
 /* --------- hover-effect -------------------------------------*/
-.product-color-selector{
-  display:none
-} 
-.featured-product:hover .product-color-selector{
-  display: block;
-}
+
 .featured-product:hover .product-image-container .s-arrow::after {
     display: block !important;
 }
