@@ -24,7 +24,7 @@ featureProduct.forEach((item)=>{
 });
 
 // product-main-slider-in tabbing section
-const mainProductSlider = document.querySelectorAll(".product-main-image");
+const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
 mainProductSlider.forEach((item)=>{
   var Swipes = new Swiper(item, {
   loop: true,
