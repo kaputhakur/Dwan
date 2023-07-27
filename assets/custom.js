@@ -36,13 +36,25 @@ mainProductSlider.forEach((item)=>{
   slidesPerView:1,
   initialSlide: 0,
   effect:"fade",
+        autoplay:7000,
+	   speed: 300,
+        noSwiping: true,
   
  navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
 },
+
+   
     
 });
+ var swp =item.swiper
+     item.addEventListener("mouseover", function() {
+   swp.autoplay.start();
+      })
+     item.addEventListener("mouseout", function() {
+   swp.autoplay.stop();
+   });
 
   });
 
