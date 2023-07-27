@@ -33,7 +33,7 @@
             data-id="Tab-{{ section.id  }}{{ forloop.index }}"
           >
             {%- for product in collection.products limit: 1 -%}
-              <h3>{{ collection.title }}</h3>
+              <p>{{ collection.title }}</p>
             {% endfor %}
           </div>
         {% endfor %}
