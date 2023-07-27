@@ -61,15 +61,11 @@
        </div>
   </div>
   <!-- ------------- product-size-selector-ende ------  ---- -- -->
-
- 
- 
   </div>
 
 
       <div class="bottom-container">
-
-        <div class="product-info">
+     <div class="product-info">
           <h3>{{card_product.title }}</h3>
            {% for option in card_product.options_with_values %}
              {% if option.name == 'Color' %}
@@ -96,9 +92,7 @@
       {% endif %}
     {% endfor %}
   </div>
-
-
-  <!-- ------------- product-color-selector-end------  ---- -- -->
+ <!-- ------------- product-color-selector-end------  ---- -- -->
       </div>
     </div>
     {% endform %}
