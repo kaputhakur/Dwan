@@ -97,27 +97,23 @@ input.single-size-selector {
 
 
 .product-size-selector {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  /* pointer-events: none; ensures that the element doesn't interfere with mouse events */
 }
 
 .featured-product:hover .quick-ad {
-  display: block;
-}
-
-.quick-ad {
-  display: none;
-  transition: opacity 0.5s ease;
-}
-
-.featured-product:hover .quick-ad {
-  display: block;
   opacity: 1;
+  pointer-events: auto;
+  /* When hovering over .featured-product, make .quick-ad visible and enable mouse events */
 }
 
 .quick-ad:hover + .product-size-selector {
-  display: block;
-  transition: opacity 0.5s ease;
+  opacity: 1;
+  pointer-events: auto;
+  /* When hovering over .quick-ad, make .product-size-selector visible and enable mouse events */
 }
+
 
 /* .product-size-selector {
   display: none;
