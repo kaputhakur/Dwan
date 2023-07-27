@@ -28,6 +28,7 @@ const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
 mainProductSlider.forEach((item)=>{
   var Swipes = new Swiper(item, {
   loop: true,
+    allowTouchMove:false,
   slidesPerView:1,
   initialSlide: 0,
   effect:"fade",
