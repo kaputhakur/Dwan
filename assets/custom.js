@@ -43,15 +43,19 @@ mainProductSlider.forEach((item)=>{
       },
 });
   
- item.addEventListener("mouseenter", function () {
-      Swipes.autoplay.stop();
-    });
-    
-    item.addEventListener("mouseleave", function () {
+ function startAutoplay() {
       Swipes.autoplay.start();
-    });
-});
+    }
 
+    // Function to stop autoplay
+    function stopAutoplay() {
+      Swipes.autoplay.stop();
+    }
+
+    // Add event listeners to start and stop autoplay when hovering
+    item.addEventListener("mouseenter", startAutoplay);
+    item.addEventListener("mouseleave", stopAutoplay);
+  });
 
 
 
