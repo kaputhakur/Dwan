@@ -97,9 +97,9 @@ input.single-size-selector {
 .featured-product:hover .product-color-selector{
   display: block;
 }
-.featured-product:hover .product-image-container .s-arrow::after {
+/* .featured-product:hover .product-image-container .s-arrow::after {
     display: block !important;
-}
+} */
 
 .quick-ad,
 .product-size-selector {
