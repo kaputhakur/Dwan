@@ -16,7 +16,7 @@ featureProduct.forEach((item)=>{
       slidesPerView: 3,
     },
     1366: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       
     },
     },
