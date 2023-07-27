@@ -1,5 +1,4 @@
-const mainProductSlider = document.querySelectorAll(".product-main-image");
-console.log(mainProductSlider);
+
   // tabbing
   // var tabLinks = document.querySelectorAll(".Tab-{{ section.id}}");
   // var tabContent = document.querySelectorAll(".TabContent-{{ section.id}}");
