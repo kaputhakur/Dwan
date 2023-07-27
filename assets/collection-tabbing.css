@@ -95,7 +95,7 @@ input.single-size-selector {
   display: block;
 }
 .featured-product:hover .product-image-container .s-arrow::after {
-    display: block;
+    display: block !important;
 }
 
 .quick-ad,
