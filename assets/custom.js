@@ -1,3 +1,22 @@
+  const mainProductImage = document.querySelector(".feature-image");
+  const variantImages = document.querySelectorAll(".variant-images img");
+
+  // Add a click event listener to each variant image
+  variantImages.forEach((variantImage) => {
+    variantImage.addEventListener("click", () => {
+      // Get the URL of the clicked variant image
+      const variantImageUrl = variantImage.getAttribute("src");
+
+      // Update the main product image with the variant image URL
+      mainProductImage.setAttribute("src", variantImageUrl);
+
+      // Optionally, you can also update the link URL if needed
+      const productLink = document.querySelector(".product-image-slide a");
+      productLink.setAttribute("href", "{{ card_product.url }}");
+    });
+  });
+
+
 //  collection-tabbing slider
 const featureProduct = document.querySelectorAll(".collection-carousel");
 featureProduct.forEach((item)=>{
