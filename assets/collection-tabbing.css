@@ -97,7 +97,7 @@ input.single-size-selector {
 
 
 
-.product-size-selector {
+/* .product-size-selector {
   display: none;
 }
 
@@ -112,4 +112,4 @@ input.single-size-selector {
 .quick-ad:hover + .product-size-selector {
   display: block;
   transition: .5s ease all;
-}
+} */
