@@ -36,9 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
       initialSlide: 0,
       effect: "fade",
       autoplay: {
-        delay: 4000,
-        disableOnInteraction: false, // Enable autoplay even when user interacts with slider
-      },
+        delay: 3000,
+       },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
