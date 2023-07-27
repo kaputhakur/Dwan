@@ -27,6 +27,7 @@ featureProduct.forEach((item)=>{
 const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
 mainProductSlider.forEach((item)=>{
   var Swipes = new Swiper(item, {
+    spaceBetween: 10,
   loop: true,
   slidesPerView:1,
   initialSlide: 0,
