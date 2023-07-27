@@ -85,22 +85,7 @@ input.single-size-selector {
   border-radius:30px;
 }
 /*  hover-effect */
-.product-size-selector {
-  display: none;
-}
 
-.featured-product:hover .product-size-selector {
-  display: block;
-}
-
-.featured-product:hover .quick-ad {
-  display: block;
-}
-
-.quick-ad:hover + .product-size-selector {
-  display: block;
-  transition: .5s ease all;
-}
 
 /*product-slider  */
 .product-image-container {
