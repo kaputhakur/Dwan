@@ -1,20 +1,43 @@
-  const mainProductImage = document.querySelector(".feature-image");
-  const variantImages = document.querySelectorAll(".variant-images img");
 
-  // Add a click event listener to each variant image
-  variantImages.forEach((variantImage) => {
-    variantImage.addEventListener("click", () => {
-      // Get the URL of the clicked variant image
-      const variantImageUrl = variantImage.getAttribute("src");
 
-      // Update the main product image with the variant image URL
-      mainProductImage.setAttribute("src", variantImageUrl);
+  $(document).ready(function() {
+    // Function to update the main image based on selected color variant
+    function updateMainImage(selectedColor) {
+      $(".product-image-slide").hide();
+      $(".product-image-slide").each(function() {
+        if ($(this).find("img").attr("alt") === selectedColor) {
+          $(this).show();
+        }
+      });
+    }
 
-      // Optionally, you can also update the link URL if needed
-      const productLink = document.querySelector(".product-image-slide a");
-      productLink.setAttribute("href", "{{ card_product.url }}");
+    // Function to handle size and color selection changes
+    function handleSelectionChange() {
+      // Get the selected size and color values
+      var selectedSize = $("input[name='Size']:checked").val();
+      var selectedColor = $("input[name='Color']:checked").val();
+
+      // Update the main image based on the selected color variant
+      updateMainImage(selectedColor);
+
+      // If both size and color are selected, enable "Add to cart" button
+      if (selectedSize && selectedColor) {
+        $("input[type='submit']").prop("disabled", false);
+      } else {
+        $("input[type='submit']").prop("disabled", true);
+      }
+    }
+
+    // Trigger the handleSelectionChange function when size or color input is changed
+    $("input[name='Size'], input[name='Color']").on("change", function() {
+      handleSelectionChange();
     });
+
+    // Trigger the handleSelectionChange function on page load
+    handleSelectionChange();
   });
+
+
 
 
 //  collection-tabbing slider
