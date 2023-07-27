@@ -101,8 +101,7 @@ input.single-size-selector {
 }
 
 
-.featured-product:hover .product-size-selector,
-.quick-ad:focus-within + .product-size-selector {
+.featured-product:hover .product-size-selector {
   display: block;
 }
 .featured-product:hover .quick-ad {
