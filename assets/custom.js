@@ -38,13 +38,7 @@ mainProductSlider.forEach((item)=>{
 });  
 });
 
-// shop lock slider
-// const shopLockProduct= document.querySelectorAll(".shop-lock-products");
-// shopLockProduct.forEach((slides)=>{
-//   var shopSlides = new Swiper(slides,{
-//       slidesPerView:1,
-//   });
-// });
+
 
 
 
