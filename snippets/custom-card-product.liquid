@@ -73,7 +73,7 @@
           <h3>{{card_product.title }}</h3>
            {% for option in card_product.options_with_values %}
              {% if option.name == 'Color' %}
-                <p><span class="total-color-size">{{option.value| size }}Colors</span></p>
+                <p><span class="total-color-size"><span class="SelectedColor">{{ option.values[0] }}</span>{{option.value| size }}Colors</span></p>
                {% endif %}
              {% endfor %}
         </div>
