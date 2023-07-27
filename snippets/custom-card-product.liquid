@@ -1,14 +1,70 @@
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
     <div class="product-grid-wrapper">
+       <!-- product-image -->
+      <div class="product-main-image">
         {%for image in card_product.images %}
          <div class="product-image-slide" >
           <a href="{{ card_product.url }}">
             <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
-     
-        {% endfor %}
+      {% endfor %}
+      </div>
+<!--product-image-end  -->
+      <div class="product-variant-wrapper">
+  <div class="product-size-container">
+    <div class="quick-ad">
+      <span>OUICK ADD +</span>
+    </div>
+   <div class="product-size-selector">
+      {% for option in card_product.options_with_values %}
+        {% if option.name == 'Size' %}
+          <div class="size-selector-wrapper">
+            {% for value in option.values %}
+              <div class="size-selector">
+                <input
+                  class="single-size-selector"
+                  type="radio"
+                  id=""
+                  name="{{ option.name }}"
+                  value="{{ value | escape }}"
+                  {% if option.selected_value == value %}
+                    checked="true"
+                  {% endif %}
+                >
+                <label>{{ value }}</label>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- ------------- product-size-selector-ende ------  ---- -- -->
 
+  <!-- ------------- product-color-selector------  ---- -- -->
+  <div class="product-color-selector">
+    {% for option in card_product.options_with_values %}
+      {% if option.name == 'Color' %}
+        <div class="product-variant-images ">
+          {% for value in option.values %}
+            {% for image in card_product.images %}
+              {% if image.alt == value %}
+                <div class="variant-images">
+                  <img class="radius-5" src="{{ image.src | img_url:'60x60'}}">
+                </div>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+      <div class="bottom-container">
+      </div>
     </div>
     {% endform %}
