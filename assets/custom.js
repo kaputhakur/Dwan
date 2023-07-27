@@ -32,6 +32,7 @@ mainProductSlider.forEach((item)=>{
   slidesPerView:1,
   initialSlide: 0,
   effect:"fade",
+    autoplay:4000,
  navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -39,12 +40,12 @@ mainProductSlider.forEach((item)=>{
 }); 
 
 
-   var swp =item.swiper
+   var swpAuto =item.swiper
      item.addEventListener("mouseover", function() {
-   swp.autoplay.start();
+   swpAuto.autoplay.start();
       })
      item.addEventListener("mouseout", function() {
-   swp.autoplay.stop();
+   swpAuto.autoplay.stop();
    })
 });
 
