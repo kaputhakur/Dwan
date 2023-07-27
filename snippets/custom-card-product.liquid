@@ -1,8 +1,8 @@
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
+    <div class="product-grid-wrapper">
         {%for image in card_product.images %}
-        
-        <div class="product-image-slide" >
+         <div class="product-image-slide" >
           <a href="{{ card_product.url }}">
             <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
@@ -10,5 +10,5 @@
      
         {% endfor %}
 
-    
+    </div>
     {% endform %}
