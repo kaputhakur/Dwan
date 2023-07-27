@@ -37,7 +37,7 @@ mainProductSlider.forEach((item)=>{
   initialSlide: 0,
   effect:"fade",
        autoplay: {
-      delay: 7000,
+      delay: 1000,
       disableOnInteraction: false, // This allows autoplay to continue even when user interacts with the slider
     },
     speed: 300,
