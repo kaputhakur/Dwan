@@ -41,13 +41,15 @@ mainProductSlider.forEach((item)=>{
 }); 
 
 
-   var swpAuto =item.swiper
-     item.addEventListener("mouseover", function() {
-   swpAuto.autoplay.start();
-      })
-     item.addEventListener("mouseout", function() {
-   swpAuto.autoplay.stop();
-   })
+  var swpAuto = Swipes.autoplay;
+
+  item.addEventListener("mouseover", function() {
+    swpAuto.start();
+  });
+
+  item.addEventListener("mouseout", function() {
+    swpAuto.stop();
+  });
 });
 
 
