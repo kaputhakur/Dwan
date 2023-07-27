@@ -34,6 +34,9 @@
 .product-image-container {
     overflow: hidden;
 }
+.top-container{
+  position:relative;
+}
 .product-size-container {
     border-radius: 47px;
     position: absolute;
