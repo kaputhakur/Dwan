@@ -31,6 +31,8 @@
     overflow: inherit;
 }
 /* product*/
+.product-image-container {
+    overflow: hidden;
 .product-size-container {
     border-radius: 47px;
     position: absolute;
@@ -104,9 +106,8 @@ input.single-size-selector {
 }
 
 
-/*product-slider  */
-.product-image-container {
-    overflow: hidden;
+
+
 }
 /* swiper-arrow */
 .product-image-container .s-arrow {
