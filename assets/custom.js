@@ -30,6 +30,7 @@ mainProductSlider.forEach((item)=>{
   loop: true,
   slidesPerView:1,
   initialSlide: 0,
+  effect:"fade",
   allowTouchMove: false,
       autoplay: {
     delay: 5000,
