@@ -1,8 +1,7 @@
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
 <div class="product-grid-wrapper">
-
-  <div class="top-container">
+ <div class="top-container">
     <!-- product-image -->
          <div class="product-image-container">
       {% for option in card_product.options_with_values %}
@@ -70,6 +69,7 @@
 
       <div class="bottom-container">
 
+        
  <!-- ------------- product-color-selector------  ---- -- -->
          <div class="product-color-selector">
     {% for option in card_product.options_with_values %}
