@@ -91,7 +91,7 @@ input.single-size-selector {
   border-radius:20px;
 }
 /* --------- hover-effect -------------------------------------*/
-/* .product-color-selector{
+.product-color-selector{
   display:none
 } 
 .featured-product:hover .product-color-selector{
@@ -112,7 +112,7 @@ input.single-size-selector {
 
 .quick-ad:hover .product-size-selector {
   display: block;
-} */
+}
 
 
 
