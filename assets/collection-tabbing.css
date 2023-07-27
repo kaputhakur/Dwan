@@ -104,10 +104,6 @@ input.single-size-selector {
   display: block;
 }
 
-.quick-ad {
-  display: none;
- transition: .5s ease all;
-}
 
 .featured-product:hover .quick-ad {
   display: block;
