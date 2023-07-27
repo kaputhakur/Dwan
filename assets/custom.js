@@ -36,9 +36,12 @@ mainProductSlider.forEach((item)=>{
   slidesPerView:1,
   initialSlide: 0,
   effect:"fade",
-        autoplay:7000,
-	   speed: 300,
-        noSwiping: true,
+       autoplay: {
+      delay: 7000,
+      disableOnInteraction: false, // This allows autoplay to continue even when user interacts with the slider
+    },
+    speed: 300,
+    noSwiping: true,
   
  navigation: {
         nextEl: '.swiper-button-next',
