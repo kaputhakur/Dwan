@@ -106,7 +106,7 @@ input.single-size-selector {
 
 .quick-ad {
   display: none;
- transition: .5s ease all;e;
+ transition: .5s ease all;
 }
 
 .featured-product:hover .quick-ad {
