@@ -30,19 +30,6 @@
 .collection-carousel{
     overflow: inherit;
 }
-/* .product-size-container {
-    position: absolute;
-    bottom: 153px;
-    border: 1px solid;
-    z-index: 1;
-    width: 95%;
-    margin: 0 auto;
-}
-
-.quick-ad {
-    text-align: center;
-} */
-
 /* product*/
 .product-size-container {
     border-radius: 47px;
@@ -97,31 +84,7 @@ input.single-size-selector {
 .radius-20{
   border-radius:30px;
 }
-
-
-/* 
-.product-size-selector {
-  display: none;
-}
-
-.featured-product:hover .quick-ad {
-  display: block;
-}
-
-.quick-ad {
-  display: none;
- transition: .5s ease all;
-}
-
-.featured-product:hover .quick-ad {
-  display: block;
-
-}
-
-.quick-ad:hover + .product-size-selector {
-  display: block;
- transition: .5s ease all;
-} */
+/*  hover-effect */
 .product-size-selector {
   display: none;
 }
