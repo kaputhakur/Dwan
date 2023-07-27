@@ -28,7 +28,7 @@ const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
 mainProductSlider.forEach((item)=>{
   var Swipes = new Swiper(item, {
   loop: true,
-    allowTouchMove:true,
+    allowTouchMove:false,
   slidesPerView:1,
   initialSlide: 0,
   effect:"fade",
@@ -37,6 +37,10 @@ mainProductSlider.forEach((item)=>{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
 },
+     autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
 }); 
 
 });
