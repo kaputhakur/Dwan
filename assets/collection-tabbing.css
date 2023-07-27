@@ -111,11 +111,7 @@ input.single-size-selector {
 
 }
 /* swiper-arrow */
-.product-image-slide .s-arrow {
-     /* height: 30px !important;
-    width: 30px !important; */
- display:none;
-}
+
 
 .product-image-container .s-arrow::after {
     /* left: 8px;
@@ -125,5 +121,5 @@ input.single-size-selector {
      font-size: 18px;
     /*position: relative;
     top: -6px; */
-
+ display:none !important;
 }
