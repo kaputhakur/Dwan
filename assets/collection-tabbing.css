@@ -113,15 +113,15 @@ input.single-size-selector {
 /* swiper-arrow */
 .product-image-container .s-arrow {
     background:#000 !important;
-    height: 30px;
-    width: 30px;
+   
     border-radius: 100%;
 }
 
 .product-image-container .s-arrow::after {
     left: 8px;
    background:#000 !important;
-
+ height: 30px;
+    width: 30px;
     color: #fff;
     font-size: 10px;
     position: relative;
