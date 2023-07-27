@@ -114,7 +114,7 @@ input.single-size-selector {
 .product-image-slide .s-arrow {
      /* height: 30px !important;
     width: 30px !important; */
- display:none;
+ display:none !important;
 }
 
 .product-image-container .s-arrow::after {
