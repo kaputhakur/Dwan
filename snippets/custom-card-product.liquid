@@ -1,4 +1,15 @@
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
+    
+     {%for image in card_product.images %}
+        {% if image.alt == value %}
+        <div class="product-image-slide swiper-slide" >
+          <a href="{{ card_product.url }}">
+            <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+        {% endif %}
+        {% endfor %}
 
+    
     {% endform %}
