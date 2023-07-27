@@ -29,7 +29,8 @@ mainProductSlider.forEach((item)=>{
   var Swipes = new Swiper(item, {
   loop: true,
   slidesPerView:1,
-  initialSlide: 0, 
+  initialSlide: 0,
+       effect: 'fade',
 });  
 });
 
