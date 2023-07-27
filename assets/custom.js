@@ -41,8 +41,15 @@ mainProductSlider.forEach((item)=>{
         delay: 3000,
         disableOnInteraction: false,
       },
-}); 
-
+});
+  
+ item.addEventListener("mouseenter", function () {
+      Swipes.autoplay.stop();
+    });
+    
+    item.addEventListener("mouseleave", function () {
+      Swipes.autoplay.start();
+    });
 });
 
 
