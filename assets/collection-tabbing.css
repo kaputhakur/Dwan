@@ -88,10 +88,10 @@ input.single-size-selector {
   border-radius:30px;
 }
 /* --------- hover-effect -------------------------------------*/
-.product-variant-images{
+.product-color-selector{
   display:none
 } 
-.featured-product:hover .product-variant-images{
+.featured-product:hover .product-color-selector{
   display: block;
 }
 
