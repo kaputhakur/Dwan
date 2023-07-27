@@ -43,18 +43,13 @@ mainProductSlider.forEach((item)=>{
       },
 });
   
- function startAutoplay() {
-      Swipes.autoplay.start();
-    }
-
-    // Function to stop autoplay
-    function stopAutoplay() {
-      Swipes.autoplay.stop();
-    }
-
-    // Add event listeners to start and stop autoplay when hovering
-    item.addEventListener("mouseenter", startAutoplay);
-    item.addEventListener("mouseleave", stopAutoplay);
+ var swp =item.swiper
+     item.addEventListener("mouseover", function() {
+   swp.autoplay.start();
+      })
+     item.addEventListener("mouseout", function() {
+   swp.autoplay.stop();
+   });
   });
 
 
