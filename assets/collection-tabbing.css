@@ -33,6 +33,7 @@
 /* product*/
 .product-image-container {
     overflow: hidden;
+}
 .product-size-container {
     border-radius: 47px;
     position: absolute;
