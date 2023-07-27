@@ -114,6 +114,7 @@ input.single-size-selector {
 .product-image-container .s-arrow {
    height: 30px !important;
     width: 30px !important;
+  border-radius:100%;
 }
 
 .product-image-container .s-arrow::after {
