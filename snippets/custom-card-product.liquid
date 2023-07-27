@@ -6,21 +6,20 @@
       {% if option.name == 'Color'%}
       {% for value in option.values %}
       <div class="product-image-wrapper">
-         <div class="swiper-wrapper">
+      
         {%for image in card_product.images %}
         {% if image.alt == value %}
-        <div class="product-image-slide swiper-slide" >
+        <div class="product-image-slide" >
           <a href="{{ card_product.url }}">
             <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
         {% endif %}
         {% endfor %}
-         </div>
+        
         
        </div>
-     <div class="swiper-button-next"></div>
-       <div class="swiper-button-prev"></div>
+    
       {% break %}
       {% endfor %}
       {% endif %}
