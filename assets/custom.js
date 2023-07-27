@@ -48,13 +48,14 @@ mainProductSlider.forEach((item)=>{
    
     
 });
- var swp =item.swiper
-     item.addEventListener("mouseover", function() {
-   swp.autoplay.start();
-      })
-     item.addEventListener("mouseout", function() {
-   swp.autoplay.stop();
-   });
+  var swp = item.swiper;
+  item.addEventListener("mouseenter", function() { // Changed "mouseover" to "mouseenter"
+    swp.autoplay.start();
+  });
+
+  item.addEventListener("mouseleave", function() { // Changed "mouseout" to "mouseleave"
+    swp.autoplay.stop();
+  });
 
   });
 
