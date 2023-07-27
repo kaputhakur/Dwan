@@ -36,7 +36,16 @@ mainProductSlider.forEach((item)=>{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
 },
-});  
+}); 
+
+
+   var swp =item.swiper
+     item.addEventListener("mouseover", function() {
+   swp.autoplay.start();
+      })
+     item.addEventListener("mouseout", function() {
+   swp.autoplay.stop();
+   })
 });
 
 
