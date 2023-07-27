@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="{{ 'collection-tabbing.css' | asset_url }}">
 
-{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+}}
 <link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 <script src="{{ 'swiper.js'|asset_url }}"></script>
 
 {% style %}
@@ -17,11 +17,7 @@
   }
   }
 {% endstyle %}
-{%- if section.settings.enable_quick_add -%}
-  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
-  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-{%- endif -%}
+
 
 <div class="{% if section.settings.width =='full-width'%}full-width{% else %} page-width{% endif %}">
   <div class="product-range-wrapper">
