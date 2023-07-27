@@ -39,7 +39,7 @@ mainProductSlider.forEach((item)=>{
 },
      autoplay: {
         delay: 3000,
-        disableOnInteraction: false,
+   
       },
 });
   
