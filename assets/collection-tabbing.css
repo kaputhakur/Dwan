@@ -100,12 +100,10 @@ input.single-size-selector {
   display: none;
 }
 
-/* Show quick-ad when hovering over featured-product */
 .featured-product:hover .quick-ad {
   display: block;
 }
 
-/* Show product-size-selector when hovering over quick-ad */
 .quick-ad:hover .product-size-selector {
   display: block;
 }
