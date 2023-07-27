@@ -1,7 +1,6 @@
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
-    
-     {%for image in card_product.images %}
+        {%for image in card_product.images %}
         
         <div class="product-image-slide" >
           <a href="{{ card_product.url }}">
