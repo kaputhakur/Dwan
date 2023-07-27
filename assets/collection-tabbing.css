@@ -105,11 +105,20 @@ input.single-size-selector {
   display: block;
 }
 
-.quick-ad:hover + .product-size-selector {
-  display: block;
-  transition: .5s ease all;
+.quick-ad {
+  display: none;
+  transition: opacity 0.5s ease;
 }
 
+.featured-product:hover .quick-ad {
+  display: block;
+  opacity: 1;
+}
+
+.quick-ad:hover + .product-size-selector {
+  display: block;
+  transition: opacity 0.5s ease;
+}
 /* .product-size-selector {
   display: none;
 }
