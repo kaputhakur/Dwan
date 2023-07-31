@@ -1,7 +1,33 @@
+<div class="contact-touch-container">
+  <div class="conatct-touch-content">
+            {% if section.settings.sub-title != blank %}
+          <div class="">{{ section.settings.sub-title }}</div>
+        {% endif %}
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Contact Keep Touch",
+    "class":"contact-touch-section",
+    "settings": [
+        {
+          "type":"textarea",
+          "label":"Sub Heading",
+          "id":"sub_title"
+      },
+       {
+          "type":"text",
+          "label":"Heading",
+          "id":"title",
+           "default":"Title"
+       }
+    ],
+    "presets":[
+      {
+        "name":"Contact Keep Touch"
+      }
+    ]
   }
 {% endschema %}
 
