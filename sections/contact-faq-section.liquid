@@ -46,18 +46,22 @@
 
 <script> 
   
- var faq = document.querySelectorAll('.faq-qu-ans');
+var faq = document.querySelectorAll('.faq-qu-ans');
+var currentlyActiveFaq = null;
+
 function openFaq(ac) {
   var pr = ac.closest(".faq-qu-ans");
   var classlist = pr.classList;
 
-  if (classlist.contains('active')) {
-    classlist.remove('active');
+  if (classlist.contains('active') && pr === currentlyActiveFaq) {
+    // Do nothing if the clicked FAQ is already active.
+    return;
   } else {
     faq.forEach((item) => {
       item.classList.remove('active');
     });
     classlist.add('active');
+    currentlyActiveFaq = pr;
   }
 }
 
