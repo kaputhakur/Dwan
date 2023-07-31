@@ -46,21 +46,22 @@
 
 <script> 
   
- var faq = document.querySelectorAll('.faq-qu-ans');
+var faq = document.querySelectorAll('.faq-qu-ans');
+
 function openFaq(ac) {
   var pr = ac.closest(".faq-qu-ans");
   var classlist = pr.classList;
 
-  if (classlist.contains('active')) {
-    classlist.remove('active');
-  } else {
+  if (!classlist.contains('active')) {
+  
     faq.forEach((item) => {
       item.classList.remove('active');
     });
+
+    // Open the clicked FAQ item
     classlist.add('active');
   }
 }
-
 
 </script>
 
