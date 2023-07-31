@@ -12,7 +12,7 @@
    <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
      <div class="main-rich-text-wrapper">
      <div class="left-side-content">
-        {% if section.settings.star-svg != blank %}
+        {% if section.settings.star-svg != blank and section.settings.star-svg contains '<svg ' %}
           <div class="left-star-svg">
           {{ section.settings.star-svg }}
           </div>
