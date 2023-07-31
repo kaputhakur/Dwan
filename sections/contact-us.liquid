@@ -12,6 +12,7 @@
                <div class="dcontactTopOneWrap">
                  <div class="dcontactTopOneWrapTitle">
                     {{ block.settings.icon-with-text }}
+                     <p>{{ block.settings.title }}</p> 
                  </div>
              <div class="dcontactTopOneWrapValue">
                {{ block.settings.text }}
@@ -51,6 +52,12 @@
             "id":"icon-with-text"
             
           },
+            {
+          "type":"text",
+          "label":"Heading",
+          "id":"title",
+           "default":"Title"
+       },
            {
             "type":"textarea",
             "label":"Bottom Content",
