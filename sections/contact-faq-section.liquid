@@ -4,6 +4,33 @@
   }
   .faqItemsOneBottom.active{
     display:block
+    
+}
+  .faqItemsOneTopPl{
+  width: 14px;
+  height: 14px;
+  display:block;
+  position:absolute;
+  left: 24px;
+  top: calc(50% - 7px);
+}
+.faqItemsOneTopPl:before,
+.faqItemsOneTopPl:after{
+  position:absolute;
+  content:'';
+  width: 14px;
+  height: 2px;
+  background: #000000;
+  border-radius: 6px;
+  top: 6px;
+  left: 0;
+  transition: all ease .3s;
+}
+.faqItemsOneTopPl:after{
+  transform: rotate(90deg)
+}
+.faqItemsOne.active .faqItemsOneTopPl:after{
+  transform: rotate(0deg)
 }
 </style>
 <div class="dcontactBottomWrap">
