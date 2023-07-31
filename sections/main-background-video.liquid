@@ -12,7 +12,7 @@
    <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
  <div class="video-image-container">
       {% for block in section.blocks %}
-       <div class="BoxItems {% if section.blocks.size == 3 and forloop.index == 1 %}right-block-{{ forloop.index }}{% endif %}">
+       <div class="BoxItems">
            {% if block.type == 'video' %}
             <div class="video-text-container">
             {% if block.settings.desktop_video_link != blank and block.settings.desktop_video_link contains '.mp4' %}
@@ -53,13 +53,16 @@
                 
               </div>
             </div>
+             <div class="right-svg-image">
+             {{ block.settings.right_svg }}
+             </div>
           </div>
         {% endif %}
 
         {% if block.type == 'image' %}
           <div class="image-text-container">
             {% if block.settings.dektop_image != blank %}
-              <div class="image-box radius-30">
+              <div class="image-box">
                  <img lazy src="{{ block.settings.dektop_image | img_url:'768x'}}">
                 
               </div>
