@@ -11,7 +11,7 @@
     }
   }
 {%- endstyle -%}
-<div class="daobubanner-wrapp">
+<div class="daobubanner-wrapp" style="background:{{ section.settings.bg-color }};">
 <div class="section-{{section.id }}-padding {% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
   <div class="daobubanner">
    
@@ -45,7 +45,7 @@
       </div>
       
    
-    <div class="left-daobubanner-image">
+    <div class="left-daobubanner-image" >
       <img  src="{{ section.settings.right-image | img_url:'master' }}">
     </div>
 
