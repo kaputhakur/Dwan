@@ -25,6 +25,21 @@
           {{ section.settings.richtext }}
         {% endif %}
        </div>
+       <div class="middel-content">
+          {% if section.settings.gif_image != blank %}
+              <img class gif-image src="{{ secction.settings.gif_image |img_url:'' }}">
+        {% endif %}
+       </div>
+        <div class="right-side-content">
+           {% if section.settings.right-richtext != blank %}
+          {{ section.settings.right-richtext }}
+        {% endif %}
+          {% if section.settings.right-svg != blank %}
+          <div class="right-text-svg">
+         {{ section.settings.right-svg}}
+          </div>
+        {% endif %}
+        </div>
      </div>
    </div>
  </div>
