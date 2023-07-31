@@ -9,6 +9,14 @@
          <div class="dcontactTop">
            {% for block in section.blocks %}
              <div class="dcontactTopOne">
+               <div class="dcontactTopOneWrap">
+                 <div class="dcontactTopOneWrapTitle">
+                    {{ block.settings.icon-with-text }}
+                 </div>
+             <div class="dcontactTopOneWrapValue">
+               {{ block.settings.text }}
+             </div>
+               </div>
              </div>
              {% endfor %}
          </div>
