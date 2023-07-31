@@ -46,7 +46,8 @@
 
 <script> 
   
- var faq = document.querySelectorAll('.faq-qu-ans');
+var faq = document.querySelectorAll('.faq-qu-ans');
+
 function openFaq(ac) {
   var pr = ac.closest(".faq-qu-ans");
   var classlist = pr.classList;
@@ -59,6 +60,8 @@ function openFaq(ac) {
     });
     classlist.add('active');
   }
+
+  event.stopPropagation();
 }
 
 
