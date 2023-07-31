@@ -32,9 +32,9 @@
     </div>
   <div class="faq-blocks">
      {% for block in section.blocks %}
-       <div class="faq-qu-ans"  style="background:{{ section.settings.bg_color }};">
-        <h4 onclick="openFaq(this)">{{ block.settings.title }}</h4>
-         <div class="ans">
+       <div class="faqItemsOne">
+        <div class="faqItemsOneTop">{{ block.settings.title }}</div>
+         <div class="faqItemsOneBottom">
            {{ block.settings.ans }}
           </div>
        </div>
@@ -45,6 +45,17 @@
 </div>
 
 <script> 
+  
+  $('.faqItemsOneTop').click(function(){
+    if($(this).parent().hasClass('active')){
+      $(this).parent().removeClass('active');
+      $(this).parent().find('.faqItemsOneBottom').slideUp(300);
+      return
+    }
+    $(this).parent().addClass('active');
+    $(this).parent().find('.faqItemsOneBottom').slideDown(300);
+  })
+  
   
  var faq = document.querySelectorAll('.faq-qu-ans');
 function openFaq(ac) {
