@@ -46,22 +46,25 @@
 
 <script> 
   
-var faq = document.querySelectorAll('.faq-qu-ans');
+var faqItems = document.querySelectorAll('.faq-qu-ans');
 
 function openFaq(ac) {
   var pr = ac.closest(".faq-qu-ans");
   var classlist = pr.classList;
 
   if (!classlist.contains('active')) {
-  
-    faq.forEach((item) => {
-      item.classList.remove('active');
+    // Close the previously opened FAQ item (if any) except for the clicked one
+    faqItems.forEach((item) => {
+      if (item !== pr) {
+        item.classList.remove('active');
+      }
     });
 
     // Open the clicked FAQ item
     classlist.add('active');
   }
 }
+
 
 </script>
 
