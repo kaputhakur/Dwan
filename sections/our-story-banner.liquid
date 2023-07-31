@@ -14,10 +14,11 @@
 <div class="daobubanner-wrapp" style="background:{{ section.settings.bg-color }};">
 <div class="section-{{section.id }}-padding {% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
   <div class="daobubanner">
-   
+   {% if section.settings.left-image != blank %}
     <div class="left-daobubanner-image">
       <img  src="{{ section.settings.left-image | img_url:'master' }}">
     </div>
+     {% endif %}
    
       <div class="dcontainer-middel">
         {% if section.settings.sub-title != blank %}
@@ -44,11 +45,11 @@
         
       </div>
       
-   
+   {% if section.settings.right-image != blank %}
     <div class="left-daobubanner-image" >
       <img  src="{{ section.settings.right-image | img_url:'master' }}">
     </div>
-
+{% endif %}
   </div>
 </div>
 </div>
