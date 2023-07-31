@@ -64,7 +64,7 @@
       "settings": {
         "width": "narrow-width",
         "logo_position": "middle-center",
-        "menu": "main-menu",
+        "menu": "announce-left-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",
         "show_line_separator": false,
