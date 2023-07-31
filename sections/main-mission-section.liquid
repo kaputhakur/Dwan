@@ -19,7 +19,15 @@
           <h2>{{ section.settings.title }}</h2>
         {% endif %}
          <div class="middel-mainmission-content">
-           
+           {% if section.settings.left-richtext != blank %}
+           <div class="mainmissionMainLeft"> <span>{{ section.settings.left-richtext }}</span></div>
+             {% endif %}
+           {% if section.settings.gif_image != blank %}
+             <div class="mainmissionMainMiddle" ><img class src="{{ section.settings.gif_image | img_url:'' }}"></div>
+        {% endif %}
+               {% if section.settings.right-richtext != blank %}
+           <div class="mainmissionMainLeft"> <span>{{ section.settings.right-richtext }}</span></div>
+             {% endif %}
          </div>
        </div>
      
