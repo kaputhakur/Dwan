@@ -776,11 +776,13 @@
         "width": "full-width",
         "padding_top": 36,
         "padding_bottom": 36,
+        "left-image": "shopify:\/\/shop_images\/Group_1000002239_302x_e731818d-7060-47aa-b2ca-888cd719f1b3.webp",
         "sub_title": "",
         "title": "Title",
         "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<\/p>",
         "arrow-svg": "",
-        "oval-svg": ""
+        "oval-svg": "",
+        "right-image": "shopify:\/\/shop_images\/Group_1000002239_302x_e731818d-7060-47aa-b2ca-888cd719f1b3.webp"
       }
     }
   },
