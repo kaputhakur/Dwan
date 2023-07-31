@@ -32,7 +32,7 @@
     </div>
   <div class="faq-blocks">
      {% for block in section.blocks %}
-       <div class="faq-qu-ans">
+       <div class="faq-qu-ans"  style="background:{{ section.settings.bg_color }};">
         <h4 onclick="openFaq(this)">{{ block.settings.title }}</h4>
          <div class="ans">
            {{ block.settings.ans }}
