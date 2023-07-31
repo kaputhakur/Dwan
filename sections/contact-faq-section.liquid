@@ -46,22 +46,30 @@
 
 <script> 
   
- var faq = document.querySelectorAll('.faq-qu-ans');
-function openFaq(ac) {
-  var pr = ac.closest(".faq-qu-ans");
-  var classlist = pr.classList;
+//  var faq = document.querySelectorAll('.faq-qu-ans');
+// function openFaq(ac) {
+//   var pr = ac.closest(".faq-qu-ans");
+//   var classlist = pr.classList;
 
-  if (classlist.contains('active')) {
-    classlist.remove('active');
-  } else {
-    faq.forEach((item) => {
-      item.classList.remove('active');
-    });
-    classlist.add('active');
+//   if (classlist.contains('active')) {
+//     classlist.remove('active');
+//   } else {
+//     faq.forEach((item) => {
+//       item.classList.remove('active');
+//     });
+//     classlist.add('active');
+//   }
+// }
+
+    var faq =document.querySelectorAll('.faq-qu-ans');
+ function openFaq(ac){
+    var pr = ac.closest(".faq-qu-ans");
+    var classlist = pr.classList;
+    faq.forEach((item)=>{
+         item.classList.remove('active')
+      });
+      pr.classList.add('active');
   }
-}
-
-   
 
 </script>
 
