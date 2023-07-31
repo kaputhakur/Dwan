@@ -1,8 +1,183 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
+<script src="{{ 'swiper.js'|asset_url }}"></script>
+
+<div class="reviews-static-wrapper section-{{section.id }}-padding {% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
+
+    <div class="reviews-static-container">
+      <div class="reviews-static__header">
+         {% if section.settings.title != blank %}
+          <h2>{{ section.settings.title }}</h2>
+        {% endif %}
+      </div>
+      <div class="reviews-static-inner-wrapper">
+      <div class="reviews-static-slider swiper">
+      <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+          <div class="reviews-static-content swiper-slide">
+            {% if block.settings.quote_image != blank %}
+            <div class="star_image">
+              <img src="{{ block.settings.quote_image| img_url:'' }}">
+            </div>
+           {% endif %}
+        <div class="reviews-static-text" >
+         {% if block.settings.sub-title != blank %}
+            <h3>{{ block.settings.sub-title}}</h3>
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h2>{{ block.settings.title }}</h2>
+          {% endif %}
+          {% if block.settings.dec != blank %}
+            {{ block.settings.dec }}
+          {% endif %}
+         </div> 
+          </div>
+      {% endfor %}
+        </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+ 
+const productSlider = document.querySelectorAll(".protestimonials-slider");
+productSlider.forEach((item)=>{
+  var ProdcutSlides = new Swiper(item,{
+      slidesPerView:1,
+     initialSlide: 0,
+    pagination: {
+          el: ".swiper-pagination",
+           clickable: true,
+        },
+
+      breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1366: {
+      slidesPerView: 3,
+      
+    },
+    },
+  });
+});
+</script>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+  "name": "Reviews Static Slider",
+  "class":"reviews-static-section",
+  "settings": [
+      {
+      "type": "select",
+       "label":"Width",
+      "id":"width",
+        "options":[
+          {
+            "value":"full-width",
+            "label":"Full Width"
+          },
+          {
+            "value":"page-width",
+            "label":"Page Width"
+          }
+        ]
+    },
+         {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    },
+   {
+        "type":"text",
+        "label":"Sub Headeing",
+        "id":"sub-title",
+        "default":"Sub Title"
+     },
+    {
+        "type":"text",
+        "label":"Headeing",
+        "id":"title",
+        "default":"Title"
+     }
+    
+    
+
+  ],
+  "blocks":[
+    {
+      "type":"text",
+       "name":" Reviews Content",
+      "settings":[
+         
+         {
+          "type":"textarea",
+          "label":"Star Image",
+          "id":"star_image"
+        },
+        
+       {
+        "type":"text",
+        "label":"Headeing",
+        "id":"title"
+       
+      },
+      {
+        "type":"text",
+        "label":"Sub Heading",
+        "id":"sub-title"
+      },
+      {
+        "type":"richtext",
+        "label":"Description",
+        "id":"dec",
+        "default":"<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>"
+      }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Testimonials Slider"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
