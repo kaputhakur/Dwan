@@ -12,9 +12,15 @@
    <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
      <div class="main-rich-text-wrapper">
      <div class="left-side-content">
-        {% if section.settings.star-svg != blank and section.settings.star-svg contains '<svg ' %}
+       
+        {% if section.settings.star-svg != blank %}
           <div class="left-star-svg">
           {{ section.settings.star-svg }}
+          </div>
+        {% endif %}
+        {% if section.settings.oval-svg != blank %}
+          <div class="left-oval-svg">
+          {{ section.settings.oval-svg }}
           </div>
         {% endif %}
        
@@ -97,6 +103,11 @@
       "type": "textarea",
       "id": "star-svg",
       "label": "Star Svg code"
+    },
+          {
+      "type": "textarea",
+      "id": "oval-svg",
+      "label": "Oval Svg code"
     },
        {
           "type":"text",
