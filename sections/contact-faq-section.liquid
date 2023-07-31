@@ -7,11 +7,16 @@
 }
 </style>
 
-<div class= "faq-wrapper {% if section.settings.page-width =='full-width' %} full-width {% else %} page-width{% endif %}">
-  <div class="faq-content">
+
+  <div class="faq-content-wrapp">
+    <div class="faq-contet">
    <div class="faq-heading">
     <h2>{{ section.settings.title}}</h2> 
    </div>
+      <div class="faq-dec">
+    {{ section.settings.dec}}
+   </div>
+    </div>
   <div class="faq-blocks">
      {% for block in section.blocks %}
        <div class="faq-qu-ans {% if forloop.first %}active{% endif %}">
@@ -23,7 +28,7 @@
        {% endfor %}
    </div>
   </div>
-</div>
+
 
 <script> 
   
