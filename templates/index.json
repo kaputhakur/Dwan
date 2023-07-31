@@ -15,7 +15,7 @@
             "dec": "<p>Being a Golf Daddy is every shot flying true to your vision<br\/>        <\/p>",
             "first_button_title": "Shop Now",
             "first_button_link": "",
-            "btn_bg": "linear-gradient(90deg,#E7FE5F 0%,#53E28D 100%)",
+            "btn_bg": "linear-gradient(90deg, rgba(231, 254, 95, 1), rgba(83, 226, 141, 1) 100%)",
             "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(99deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000",
@@ -565,7 +565,6 @@
         "a9e3cf00-3ea9-43d5-9847-dc2be7f0f3bf"
       ],
       "settings": {
-        "sub_title": "",
         "title": "Title"
       }
     },
