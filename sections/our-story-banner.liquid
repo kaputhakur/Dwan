@@ -18,6 +18,15 @@
       <img  src="{{ section.settings.left-image | img_url:'master' }}">
     </div>
       {% endif %}
+      <div class="dcontainer-middel">
+        
+        {% if section.settings.sub-title != blank %}
+          <h4 class="">{{ section.settings.sub-title }}</h4>
+        {% endif %}
+        {% if section.settings.richtext != blank %}
+          {{ section.settings.richtext }}
+        {% endif %}
+      </div>
       
     {% if section.settings.right-image !=blank %}
     <div class="left-daobubanner-image">
@@ -84,10 +93,10 @@
       "content":"Middel Content"
     },
        {
-          "type":"text",
+          "type":"textarea",
           "label":"Sub Heading",
-          "id":"sub_title",
-           "default":"Sub-Title"
+          "id":"sub_title"
+         
            
        },
        {
