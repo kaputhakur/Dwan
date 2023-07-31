@@ -636,6 +636,7 @@
     },
     "55ec209e-6fcf-4787-91ec-8bd9c6378c27": {
       "type": "background",
+      "disabled": true,
       "blocks": {
         "template--19556649828672__55ec209e-6fcf-4787-91ec-8bd9c6378c27-video-1": {
           "type": "video",
@@ -644,7 +645,7 @@
             "overlay_opacity": 0,
             "title": "Video slide",
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "color_text": "#ffffff",
+            "color_text": "#bda6a6",
             "button_label": "",
             "button_link": "",
             "color_btn_bg": "#ffffff",
