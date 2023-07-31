@@ -737,7 +737,7 @@
         "9eab4390-f18e-4ce4-a738-f363f2582f04": {
           "type": "video",
           "settings": {
-            "desktop_video_link": "",
+            "desktop_video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b75c7ae9940349fca37155a6d63464df.mp4",
             "mobile-video_link": "",
             "overlay_opacity": 0,
             "text_color": "",
@@ -747,9 +747,9 @@
             "dec": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<\/p>",
             "first_button_title": "First Button Title",
             "first_button_link": "",
-            "btn_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_color": "#000",
-            "btn_hover_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000"
           }
         }
