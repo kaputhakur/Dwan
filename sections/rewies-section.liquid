@@ -19,6 +19,9 @@
 
     <div class="reviews-static-container">
       <div class="reviews-static__header">
+         {% if section.settings.sub-title != blank %}
+           <div class="reviews-static__label _PRETITLE"> {{ section.settings.sub-title }}</div>
+        {% endif %}
          {% if section.settings.title != blank %}
           <h2>{{ section.settings.title }}</h2>
         {% endif %}
@@ -30,17 +33,14 @@
           <div class="reviews-static-content swiper-slide">
             {% if block.settings.quote_image != blank %}
             <div class="star_image">
-              <img src="{{ block.settings.quote_image| img_url:'' }}">
+               {{ block.settings.star_image }}
             </div>
            {% endif %}
         <div class="reviews-static-text" >
          {% if block.settings.sub-title != blank %}
             <h3>{{ block.settings.sub-title}}</h3>
           {% endif %}
-          {% if block.settings.title != blank %}
-            <h2>{{ block.settings.title }}</h2>
-          {% endif %}
-          {% if block.settings.dec != blank %}
+           {% if block.settings.dec != blank %}
             {{ block.settings.dec }}
           {% endif %}
          </div> 
@@ -151,13 +151,6 @@ productSlider.forEach((item)=>{
           "label":"Star Image",
           "id":"star_image"
         },
-        
-       {
-        "type":"text",
-        "label":"Headeing",
-        "id":"title"
-       
-      },
       {
         "type":"text",
         "label":"Sub Heading",
