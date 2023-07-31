@@ -33,7 +33,9 @@
   <div class="faq-blocks">
      {% for block in section.blocks %}
        <div class="faqItemsOne">
-        <div class="faqItemsOneTop">{{ block.settings.title }}</div>
+        <div class="faqItemsOneTop">
+          <span class="faqItemsOneTopPl"></span>
+       {{ block.settings.title }}</div>
          <div class="faqItemsOneBottom">
            {{ block.settings.ans }}
           </div>
