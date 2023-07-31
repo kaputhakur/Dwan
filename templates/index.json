@@ -1,44 +1,5 @@
 {
   "sections": {
-    "ea6c87e7-e5a4-442f-8b6b-41ef378e11e9": {
-      "type": "video-with-image",
-      "blocks": {
-        "fbd8d782-9063-4792-b2c3-8b0a5301d7e6": {
-          "type": "video",
-          "settings": {
-            "desktop_video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a4b3c66492fb41a1ab5bc45a99f06ac7.mp4",
-            "mobile-video_link": "",
-            "overlay_opacity": 0,
-            "text_color": "#ffffff",
-            "desktop_content_position": "bottom-center",
-            "title": "THE AMPLIFY YOU’VE<br> BEEN WAITING FOR",
-            "sub_title": "You asked, we listened.",
-            "dec": "",
-            "first_button_title": "Shop Now",
-            "first_button_link": "shopify:\/\/products\/printed-agnes-dress",
-            "btn_bg": "linear-gradient(189deg, rgba(221, 160, 235, 1) 5%, rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
-            "sec_button_title": "",
-            "sec_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "fbd8d782-9063-4792-b2c3-8b0a5301d7e6"
-      ],
-      "settings": {
-        "bg-color": "",
-        "width": "page-width",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "d3e465f7-e20b-4be8-b11c-2b417e30e40f": {
       "type": "collection-tabbing",
       "blocks": {
@@ -71,72 +32,9 @@
         "enable_quick_add": false
       }
     },
-    "73ae3bd1-341b-4fc1-b6ad-9082e3072f35": {
-      "type": "video-with-image",
-      "disabled": true,
-      "blocks": {
-        "014c3557-bc97-47d0-a4ec-293bd27f479c": {
-          "type": "image",
-          "settings": {
-            "dektop_image": "shopify:\/\/shop_images\/JuneAmplify_49-port.webp",
-            "overlay_opacity": 0,
-            "text_color": "#f3f3f3",
-            "desktop_content_position": "bottom-center",
-            "title": "FEELS LESS COMPRESSIVE <br>IN THE WAIST",
-            "sub_title": "",
-            "dec": "",
-            "first_button_title": "",
-            "first_button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
-            "sec_button_title": "",
-            "sec_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
-          }
-        },
-        "b9e9ff20-67db-41b4-b19f-09e573acc56c": {
-          "type": "image",
-          "settings": {
-            "dektop_image": "shopify:\/\/shop_images\/JuneAmplify_63-port.webp",
-            "overlay_opacity": 0,
-            "text_color": "#ffffff",
-            "desktop_content_position": "bottom-center",
-            "title": "SITS SLIGHTLY LOWER <br>THAN BEFORE",
-            "sub_title": "",
-            "dec": "",
-            "first_button_title": "",
-            "first_button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
-            "sec_button_title": "",
-            "sec_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "014c3557-bc97-47d0-a4ec-293bd27f479c",
-        "b9e9ff20-67db-41b4-b19f-09e573acc56c"
-      ],
-      "settings": {
-        "bg-color": "",
-        "width": "page-width",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "7f9f5369-162e-48bb-968b-aa246d7922ca": {
       "type": "video-with-image",
+      "disabled": true,
       "blocks": {
         "4edac545-4c3a-4426-b570-b7ca7cbc2946": {
           "type": "image",
@@ -224,33 +122,6 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 2,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": false,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
     "d92db74f-8c78-419b-89ca-8129c36ebbef": {
       "type": "shop-lock",
       "disabled": true,
@@ -310,43 +181,30 @@
         "padding_bottom": 36
       }
     },
-    "e66fbc0a-7235-489c-b60b-959077e69c6d": {
-      "type": "video-with-image",
-      "disabled": true,
-      "blocks": {
-        "7d3847ea-9508-4e55-aaed-192b99c5e6a3": {
-          "type": "video",
-          "settings": {
-            "desktop_video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b75c7ae9940349fca37155a6d63464df.mp4",
-            "mobile-video_link": "",
-            "overlay_opacity": 0,
-            "text_color": "",
-            "desktop_content_position": "bottom-center",
-            "title": "",
-            "sub_title": "",
-            "dec": "",
-            "first_button_title": "First Button Title",
-            "first_button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
-            "sec_button_title": "Second Button Title",
-            "sec_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "7d3847ea-9508-4e55-aaed-192b99c5e6a3"
-      ],
+    "featured_collection": {
+      "type": "featured-collection",
       "settings": {
-        "bg-color": "",
-        "width": "full-width",
-        "padding_top": 36,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
         "padding_bottom": 36
       }
     },
@@ -638,31 +496,6 @@
         "bottom-richtext": ""
       }
     },
-    "55ec209e-6fcf-4787-91ec-8bd9c6378c27": {
-      "type": "background",
-      "disabled": true,
-      "blocks": {
-        "template--19556649828672__55ec209e-6fcf-4787-91ec-8bd9c6378c27-video-1": {
-          "type": "video",
-          "settings": {
-            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f01611b836be46b78ccd30f016955f30.mp4",
-            "overlay_opacity": 0,
-            "title": "Video slide",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "color_text": "#bda6a6",
-            "button_label": "",
-            "button_link": "",
-            "color_btn_bg": "#ffffff",
-            "color_btn_text": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "template--19556649828672__55ec209e-6fcf-4787-91ec-8bd9c6378c27-video-1"
-      ],
-      "settings": {
-      }
-    },
     "5990b349-c132-427a-92dd-294e8ce002f9": {
       "type": "rewies-section",
       "blocks": {
@@ -787,13 +620,10 @@
     }
   },
   "order": [
-    "ea6c87e7-e5a4-442f-8b6b-41ef378e11e9",
     "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
-    "73ae3bd1-341b-4fc1-b6ad-9082e3072f35",
     "7f9f5369-162e-48bb-968b-aa246d7922ca",
-    "featured_collection",
     "d92db74f-8c78-419b-89ca-8129c36ebbef",
-    "e66fbc0a-7235-489c-b60b-959077e69c6d",
+    "featured_collection",
     "image_banner",
     "deb51548-5c70-4b4d-8b78-0cf7d1a7b325",
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7",
@@ -801,7 +631,6 @@
     "41ffb30e-b137-4f30-b482-12b6caa674b8",
     "8a94f3d1-63ee-4632-9c6b-6650a0646e4a",
     "ed9a085c-1bb0-4e28-8625-014b5edce856",
-    "55ec209e-6fcf-4787-91ec-8bd9c6378c27",
     "5990b349-c132-427a-92dd-294e8ce002f9",
     "baa404d1-8f66-4af7-a7c0-1adf28975978",
     "719b9f52-0f7b-4b57-8439-d61a9852a310"
