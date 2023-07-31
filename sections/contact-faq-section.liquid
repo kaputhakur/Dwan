@@ -47,23 +47,32 @@
 <script> 
   
 var faqItems = document.querySelectorAll('.faq-qu-ans');
+var activeFaqItem = null;
 
 function openFaq(ac) {
   var pr = ac.closest(".faq-qu-ans");
-  var classlist = pr.classList;
 
-  if (!classlist.contains('active')) {
-    // Close the previously opened FAQ item (if any) except for the clicked one
-    faqItems.forEach((item) => {
-      if (item !== pr) {
-        item.classList.remove('active');
-      }
-    });
+  if (pr !== activeFaqItem) {
+    // Close the previously opened FAQ item (if any)
+    if (activeFaqItem !== null) {
+      activeFaqItem.classList.remove('active');
+    }
 
     // Open the clicked FAQ item
-    classlist.add('active');
+    pr.classList.add('active');
+    activeFaqItem = pr;
+  } else {
+    // Clicked on the same FAQ item, toggle the 'active' class
+    pr.classList.toggle('active');
+    activeFaqItem = pr.classList.contains('active') ? pr : null;
   }
 }
+
+
+
+
+
+
 
 
 </script>
