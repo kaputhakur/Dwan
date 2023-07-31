@@ -55,22 +55,7 @@
     $(this).parent().addClass('active');
     $(this).parent().find('.faqItemsOneBottom').slideDown(300);
   })
-  
-  
- var faq = document.querySelectorAll('.faq-qu-ans');
-function openFaq(ac) {
-  var pr = ac.closest(".faq-qu-ans");
-  var classlist = pr.classList;
 
-  if (classlist.contains('active')) {
-    classlist.remove('active');
-  } else {
-    faq.forEach((item) => {
-      item.classList.remove('active');
-    });
-    classlist.add('active');
-  }
-}
 
 
 </script>
