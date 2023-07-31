@@ -61,10 +61,10 @@ productSlider.forEach((item)=>{
   var ProdcutSlides = new Swiper(item,{
       slidesPerView:1,
      initialSlide: 0,
-    pagination: {
-          el: ".swiper-pagination",
-           clickable: true,
-        },
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+     },
 
       breakpoints: {
     640: {
