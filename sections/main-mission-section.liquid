@@ -10,6 +10,17 @@
 {% endstyle %}
  <div class="section-{{ section.id }}-padding">
    <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
+     <div class="main-mission-wrapper">
+       <div class="top-main-mainmission ">
+         {% if section.settings.sub-title != blank %}
+          <div class="_PRETITLE">{{ section.settings.sub-title }}</div>
+        {% endif %}
+         {% if section.settings.title != blank %}
+          <h3>{{ section.settings.title }}</h3>
+        {% endif %}
+       </div>
+     
+     </div>
    </div>
  </div>
 {% schema %}
