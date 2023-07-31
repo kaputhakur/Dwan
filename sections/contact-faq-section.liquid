@@ -1,7 +1,97 @@
+<style>
+  .faq-qu-ans .ans{
+    display:none;
+  }
+  .faq-qu-ans.active .ans {
+    display:block
+}
+</style>
+
+<div class= "faq-wrapper {% if section.settings.page-width =='full-width' %} full-width {% else %} page-width{% endif %}">
+  <div class="faq-content">
+   <div class="faq-heading">
+    <h2>{{ section.settings.title}}</h2> 
+   </div>
+  <div class="faq-blocks">
+     {% for block in section.blocks %}
+       <div class="faq-qu-ans {% if forloop.first %}active{% endif %}">
+        <h4 onclick="openFaq(this)">{{ block.settings.title }}</h4>
+         <div class="ans">
+           {{ block.settings.ans }}
+          </div>
+       </div>
+       {% endfor %}
+   </div>
+  </div>
+</div>
+
+<script> 
+  
+ var faq = document.querySelectorAll('.faq-qu-ans');
+function openFaq(ac) {
+  var pr = ac.closest(".faq-qu-ans");
+  var classlist = pr.classList;
+
+  if (classlist.contains('active')) {
+    classlist.remove('active');
+  } else {
+    faq.forEach((item) => {
+      item.classList.remove('active');
+    });
+    classlist.add('active');
+  }
+}
+
+   
+
+</script>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Contact-Faq-section",
+    "class":"Contact-Faq-section",
+    "settings": [
+
+      {
+        "type":"color",
+        "label":"Background Color",
+        "id":"bg_color"
+      },
+       {
+        "type":"text",
+        "label":"Heading",
+        "id":"title"
+      },
+      {
+        "type":"richtext",
+        "label":"Description",
+        "id":"dec"
+      }
+    ],
+   "blocks":[
+		{
+          "type":"header",
+     "name":"content",
+    "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question",
+		  "default": "Is simply dummy text"
+        },
+        {
+          "type": "richtext",
+          "id": "ans",
+          "label": "Answer",
+		  "default": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>"
+        }
+      ]
+    }
+	],
+    "presets":[
+      {"name":"Contact-Faq-section"}
+    ]
   }
 {% endschema %}
 
