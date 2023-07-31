@@ -12,11 +12,24 @@
   }
 {%- endstyle -%}
 <div class="section-{{section.id }}-padding {% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
-  
+  <div class="daobubanner">
+    {% if section.settings.left-image !=blank %}
+    <div class="left-daobubanner-image">
+      <img  src="{{ section.settings.left-image | img_url:'master' }}">
+    </div>
+      {% endif %}
+      
+    {% if section.settings.right-image !=blank %}
+    <div class="left-daobubanner-image">
+      <img  src="{{ section.settings.right-image | img_url:'master' }}">
+    </div>
+      {% endif %}
+  </div>
 </div>
 {% schema %}
   {
     "name": "Our Story Banner",
+    "class":"daobubanner-section",
     "settings": [
              {
       "type":"select",
