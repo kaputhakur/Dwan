@@ -33,7 +33,12 @@
      <div class="main-mission-bottom">
        {% for block in section.blocks %}
          <div class="mainmissionMainItem">
-           
+          {% if block.settings.logo_image != blank %}
+             <div class="mainmissionMainItem-image"><img class src="{{ section.settings.logo_image  | img_url:'' }}"></div>
+            {% endif %}
+           {% if block.settings.title != blank %}
+             <div class="mainmissionMainItem-tite">{{ block.settings.title }}</div>
+            {% endif %}
          </div>
        {% endfor %}
      </div>
