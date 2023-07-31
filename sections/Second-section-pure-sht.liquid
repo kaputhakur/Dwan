@@ -12,7 +12,7 @@
    <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
      <div class="main-rich-text-wrapper">
      <div class="left-side-content">
-       
+       <div class="mainRichtextStar"
         {% if section.settings.star-svg != blank %}
           <div class="left-star-svg">
           {{ section.settings.star-svg }}
@@ -23,6 +23,7 @@
           {{ section.settings.oval-svg }}
           </div>
         {% endif %}
+       </div>
        
        {% if section.settings.title != blank %}
           <h3>{{ section.settings.title }}</h3>
