@@ -1,7 +1,67 @@
+{% style %}
+  .section-{{section.id}}-padding{
+    padding-top:{{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom:{{ section.settings.padding_bottom | times:0.75 | round: 0 }}px;
+  }
+   @media screen and(min-width:750px){
+     padding-top:{{ section.settings.padding_top}}px;
+     padding-bottom:{{ section.settings.padding_bottom}}px;
+   }
+{% endstyle %}
+ <div class="section-{{ section.id }}-padding">
+   <div class="{% if section.settings.width == 'full-width' %}full-width{% else %}page-width{% endif %}">
+   </div>
+ </div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Main Mission Section",
+    "settings": [
+          {
+      "type":"select",
+      "label":"Page Width",
+      "id":"width",
+       "options":[
+         {
+           "value":"full-width",
+           "label":"Full Width"
+         },
+         {
+           "value":"page-width",
+           "label":"page-Width"
+         }
+       ]
+    },
+      {
+      "type":"header",
+      "content":"Section Padding"
+    },
+       {
+      "type":"range",
+      "label":"Padding Top",
+      "id":"padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default":36
+    },
+       {
+      "type":"range",
+      "label":"Padding Top",
+      "id":"padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default":36
+    }
+      
+    ],
+    "presets":[
+      {
+        "name":"Main Mission Section"
+      }
+    ]
   }
 {% endschema %}
 
