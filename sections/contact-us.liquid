@@ -3,6 +3,9 @@
             {% if section.settings.sub-title != blank %}
           <div class="dcontactTitleHook">{{ section.settings.sub-title }}</div>
         {% endif %}
+        {% if section.settings.title != blank %}
+          <h1 class="faqTitle _TITLE">{{ section.settings.title }}</h1>
+         {% endif %}
   </div>
 </div>
 
