@@ -124,34 +124,41 @@
 
 <script>
  
+// JavaScript code
 const productSlider = document.querySelectorAll(".reviews-static-slider");
-productSlider.forEach((item)=>{
-  var ProdcutSlides = new Swiper(item,{
-  
-      slidesPerView:1,
-     initialSlide: 0,
-        spaceBetween: 30,
-     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-     },
+productSlider.forEach((item) => {
+  const swiperWrapper = item.querySelector(".swiper-wrapper");
+  const slides = item.querySelectorAll(".swiper-slide");
 
-      breakpoints: {
-    640: {
-      slidesPerView: 2,
+  // Manually create a clone of each slide and append them to the end of the swiperWrapper
+  slides.forEach((slide) => {
+    const cloneSlide = slide.cloneNode(true);
+    swiperWrapper.appendChild(cloneSlide);
+  });
+
+  var ProdcutSlides = new Swiper(item, {
+    slidesPerView: 1,
+    initialSlide: 0,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    1024: {
-      slidesPerView: 3,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1366: {
+        slidesPerView: 4,
+      },
     },
-    1366: {
-      slidesPerView: 4,
-      
-    },
-    },
-       loop:true,
-   
+    loop: true,
   });
 });
+
 </script>
 {% schema %}
   {
