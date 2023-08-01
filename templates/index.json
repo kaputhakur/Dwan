@@ -1,5 +1,44 @@
 {
   "sections": {
+    "bc7d5410-93d3-44ad-aebe-a7f9b4cc1060": {
+      "type": "video-with-image",
+      "blocks": {
+        "979518eb-6a2a-4a01-8436-d0ed43e04c45": {
+          "type": "video",
+          "settings": {
+            "desktop_video_link": "",
+            "mobile-video_link": "",
+            "overlay_opacity": 0,
+            "text_color": "",
+            "desktop_content_position": "bottom-center",
+            "title": "Title",
+            "sub_title": "Sub-Title",
+            "dec": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<\/p>",
+            "first_button_title": "First Button Title",
+            "first_button_link": "",
+            "btn_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_color": "#000",
+            "btn_hover_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_hover_color": "#000",
+            "sec_button_title": "Second Button Title",
+            "sec_button_link": "",
+            "sec_btn_bg": "linear-gradient(#ffffff, #ffffff)",
+            "sec_btn_color": "#000",
+            "sec_btn_hover_bg": "linear-gradient(#ffffff, #ffffff)",
+            "sec_btn_hover_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "979518eb-6a2a-4a01-8436-d0ed43e04c45"
+      ],
+      "settings": {
+        "bg-color": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "d3e465f7-e20b-4be8-b11c-2b417e30e40f": {
       "type": "collection-tabbing",
       "blocks": {
@@ -450,6 +489,7 @@
     }
   },
   "order": [
+    "bc7d5410-93d3-44ad-aebe-a7f9b4cc1060",
     "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
     "d92db74f-8c78-419b-89ca-8129c36ebbef",
     "featured_collection",
