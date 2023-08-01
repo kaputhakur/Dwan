@@ -332,6 +332,52 @@
         "padding_bottom": 36
       }
     },
+    "9824f5c1-796f-4b78-96ed-ae96e082216b": {
+      "type": "contact-faq-section",
+      "blocks": {
+        "942d9838-638e-459e-be8a-cb20bb40e4ca": {
+          "type": "header",
+          "settings": {
+            "title": "Is simply dummy text",
+            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
+        },
+        "0306cac1-8044-4d5b-b6d4-d606f0213e51": {
+          "type": "header",
+          "settings": {
+            "title": "Is simply dummy text",
+            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
+        },
+        "e9813b79-dcae-42ad-9f80-58845c375422": {
+          "type": "header",
+          "settings": {
+            "title": "Is simply dummy text",
+            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
+        },
+        "e2fa9a33-ca48-4142-961e-61f7f5e3ff3b": {
+          "type": "header",
+          "settings": {
+            "title": "Is simply dummy text",
+            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "942d9838-638e-459e-be8a-cb20bb40e4ca",
+        "0306cac1-8044-4d5b-b6d4-d606f0213e51",
+        "e9813b79-dcae-42ad-9f80-58845c375422",
+        "e2fa9a33-ca48-4142-961e-61f7f5e3ff3b"
+      ],
+      "settings": {
+        "bg_color": "#834242",
+        "title": "uguyguyg",
+        "dec": "",
+        "faq-title": "jgjhghjgjh",
+        "faq-dec": ""
+      }
+    },
     "41ffb30e-b137-4f30-b482-12b6caa674b8": {
       "type": "tabbing",
       "disabled": true,
@@ -387,6 +433,7 @@
     },
     "8a94f3d1-63ee-4632-9c6b-6650a0646e4a": {
       "type": "Second-section-pure-sht",
+      "disabled": true,
       "settings": {
         "width": "full-width",
         "padding_top": 36,
@@ -403,6 +450,7 @@
     },
     "ed9a085c-1bb0-4e28-8625-014b5edce856": {
       "type": "main-mission-section",
+      "disabled": true,
       "blocks": {
         "40dba8e2-f312-4a65-81ac-1b90ec35345a": {
           "type": "Images",
@@ -518,6 +566,7 @@
     },
     "719b9f52-0f7b-4b57-8439-d61a9852a310": {
       "type": "our-story-banner",
+      "disabled": true,
       "settings": {
         "bg-color": "linear-gradient(90deg,#FAFFDF 0%,#DDF9E8 100%)",
         "width": "full-width",
@@ -534,6 +583,7 @@
     },
     "b34a908f-4bb0-4ab3-8823-29238b57cdc8": {
       "type": "contact-us",
+      "disabled": true,
       "blocks": {
         "0671f98a-8c75-4583-8596-33c569c84ae1": {
           "type": "text",
@@ -569,52 +619,6 @@
         "sub-title": "",
         "title": "Title"
       }
-    },
-    "9824f5c1-796f-4b78-96ed-ae96e082216b": {
-      "type": "contact-faq-section",
-      "blocks": {
-        "942d9838-638e-459e-be8a-cb20bb40e4ca": {
-          "type": "header",
-          "settings": {
-            "title": "Is simply dummy text",
-            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
-          }
-        },
-        "0306cac1-8044-4d5b-b6d4-d606f0213e51": {
-          "type": "header",
-          "settings": {
-            "title": "Is simply dummy text",
-            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
-          }
-        },
-        "e9813b79-dcae-42ad-9f80-58845c375422": {
-          "type": "header",
-          "settings": {
-            "title": "Is simply dummy text",
-            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
-          }
-        },
-        "e2fa9a33-ca48-4142-961e-61f7f5e3ff3b": {
-          "type": "header",
-          "settings": {
-            "title": "Is simply dummy text",
-            "ans": "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "942d9838-638e-459e-be8a-cb20bb40e4ca",
-        "0306cac1-8044-4d5b-b6d4-d606f0213e51",
-        "e9813b79-dcae-42ad-9f80-58845c375422",
-        "e2fa9a33-ca48-4142-961e-61f7f5e3ff3b"
-      ],
-      "settings": {
-        "bg_color": "#834242",
-        "title": "uguyguyg",
-        "dec": "",
-        "faq-title": "jgjhghjgjh",
-        "faq-dec": ""
-      }
     }
   },
   "order": [
@@ -626,12 +630,12 @@
     "deb51548-5c70-4b4d-8b78-0cf7d1a7b325",
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7",
     "38d6c8b9-2190-493d-89b5-d81415604a57",
+    "9824f5c1-796f-4b78-96ed-ae96e082216b",
     "41ffb30e-b137-4f30-b482-12b6caa674b8",
     "8a94f3d1-63ee-4632-9c6b-6650a0646e4a",
     "ed9a085c-1bb0-4e28-8625-014b5edce856",
     "5990b349-c132-427a-92dd-294e8ce002f9",
     "719b9f52-0f7b-4b57-8439-d61a9852a310",
-    "b34a908f-4bb0-4ab3-8823-29238b57cdc8",
-    "9824f5c1-796f-4b78-96ed-ae96e082216b"
+    "b34a908f-4bb0-4ab3-8823-29238b57cdc8"
   ]
 }
