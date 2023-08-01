@@ -23,6 +23,47 @@
     text-align: center;
     background: #FFFFFF;
 }  
+  .reviews-static__buttons{
+    margin-top: 50px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-static__buttons .swiper-button-prev,
+.reviews-static__buttons .swiper-button-next {
+  position: static;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  margin-top: 0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: .2s;
+}
+
+.reviews-static__buttons .swiper-button-prev::after,
+.reviews-static__buttons .swiper-button-next::after {
+  display: none;
+}
+
+.reviews-static__buttons .swiper-button-next {
+  margin-left: 9px;
+  transform: rotate(180deg);
+}
+
+
+
+.swiper-button-prev svg {
+  margin-top: 19px;
+}
+
+.swiper-button-next svg {
+   margin-top: 16px;
+}
 {%- endstyle -%}
 
 <link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
