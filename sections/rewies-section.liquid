@@ -28,6 +28,29 @@
     line-height: 34px;
   }
 }
+._TITLE{
+  margin: 0;
+  text-align:center;
+  font-family: 'Scania Sans CY Headline';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  color: #000000;
+  position:relative;
+  margin-bottom: 15px; 
+}
+._TITLE:before{
+  position:absolute;
+  width: 142px;
+  height: 7px;
+  background-image: url("data:image/svg+xml,%3Csvg width='142' height='7' viewBox='0 0 142 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M141.944 2.22633C141.365 1.4011 136.386 1.05364 121.423 0.764088C107.462 0.489012 91.2083 -0.307264 62.8109 0.127066C41.1045 0.460053 14.0768 1.792 14.0768 2.53036C14.0768 3.06604 15.1305 3.08051 25.1934 2.60275C34.4924 2.16842 39.2605 2.06708 45.0822 1.95125C21.7425 3.08051 16.7638 3.81888 4.32999 4.52828C-3.46746 4.97709 1.08983 6.2656 3.93485 6.1353C3.96119 6.1353 40.2351 4.51381 43.6597 4.60067C43.9758 4.61515 40.5249 4.87575 35.9676 5.17978C23.2441 6.04844 25.694 7.49606 35.23 6.83009C67.3155 4.58605 97.5043 3.89112 120.765 4.86112C128.115 5.16515 128.931 5.16515 128.931 4.78873C128.931 4.12276 126.929 3.61619 123.794 3.51485C118.895 3.34111 100.033 2.84873 91.4981 2.70395C90.8395 2.68947 91.1557 2.41454 91.7352 2.38558C95.2124 2.19737 122.82 2.34201 133.673 2.54469C141.655 2.68947 142.234 2.67514 141.944 2.22633Z' fill='url(%23paint0_linear_217_3394)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_217_3394' x1='7.14957e-07' y1='3.50002' x2='142' y2='3.50003' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E7FE5F'/%3E%3Cstop offset='1' stop-color='%2353E28D'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  content:'';
+  background-size: cover;
+  top: calc(100% + 8px);
+  left: calc(50% - 71px);
+}
+  
 
 .reviews-static-content {
     box-sizing: border-box;
@@ -95,7 +118,9 @@
            <div class="reviews-static__label _PRETITLE"> {{ section.settings.sub-title }}</div>
         {% endif %}
          {% if section.settings.title != blank %}
+           <div class="_TITLE">
           <h2>{{ section.settings.title }}</h2>
+           </div>
         {% endif %}
       </div>
       <div class="reviews-static-inner-wrapper">
