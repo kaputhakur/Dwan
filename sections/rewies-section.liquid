@@ -129,15 +129,14 @@ const productSlider = document.querySelectorAll(".reviews-static-slider");
 productSlider.forEach((item) => {
   const swiperWrapper = item.querySelector(".swiper-wrapper");
   const slides = item.querySelectorAll(".swiper-slide");
-
-  // Manually create a clone of each slide and append them to the end of the swiperWrapper
-  slides.forEach((slide) => {
+ slides.forEach((slide) => {
     const cloneSlide = slide.cloneNode(true);
     swiperWrapper.appendChild(cloneSlide);
   });
 
   var ProdcutSlides = new Swiper(item, {
     slidesPerView: 1,
+     loop: true,
     initialSlide: 0,
     spaceBetween: 30,
     navigation: {
@@ -155,7 +154,7 @@ productSlider.forEach((item) => {
         slidesPerView: 4,
       },
     },
-    loop: true,
+   
   });
 });
 
