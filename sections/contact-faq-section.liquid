@@ -38,8 +38,12 @@
     position: relative;
     cursor: pointer;
 }
+  .faqItemsOne.active{
+  background: linear-gradient(90deg, #FAFFDF 0%, #DDF9E8 100%);
+}
 </style>
 <div class="dcontactBottomWrap">
+  {% comment %}
 <div class="dcontactBottomWrapLeft">
       <div class="contact-contet">
    <div class="conatct-heading">
@@ -53,6 +57,7 @@
     {% render 'contact-form-snippet' %}
   </div>
 </div>
+    {% endcomment %}
 <div class="dcontactBottomWrapRight">
   <div class="faq-content-wrapp">
     <div class="faq-contet">
