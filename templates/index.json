@@ -244,7 +244,6 @@
     },
     "c2ecd15a-a2ca-48f4-886c-70fefbd845f7": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--19339382227264__c2ecd15a-a2ca-48f4-886c-70fefbd845f7-168561527772a6e58d-0": {
           "type": "heading",
@@ -291,7 +290,6 @@
     },
     "38d6c8b9-2190-493d-89b5-d81415604a57": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--19339382227264__38d6c8b9-2190-493d-89b5-d81415604a57-168561527772a6e58d-0": {
           "type": "heading",
