@@ -17,15 +17,15 @@
             "first_button_title": "First Button Title",
             "first_button_link": "",
             "btn_bg": "linear-gradient(275deg, rgba(63, 56, 56, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000",
+            "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000",
+            "btn_hover_color": "#000000",
             "sec_button_title": "Second Button Title",
             "sec_button_link": "",
             "sec_btn_bg": "linear-gradient(275deg, rgba(63, 56, 56, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000",
+            "sec_btn_color": "#000000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000"
+            "sec_btn_hover_color": "#000000"
           }
         }
       },
@@ -73,7 +73,6 @@
     },
     "d92db74f-8c78-419b-89ca-8129c36ebbef": {
       "type": "shop-lock",
-      "disabled": true,
       "blocks": {
         "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5": {
           "type": "Block-1",
@@ -122,6 +121,7 @@
         "bcae278f-b05d-4aac-ab5b-26526b42c5f7",
         "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056"
       ],
+      "disabled": true,
       "settings": {
         "bg-color": "",
         "width": "page-width",
@@ -160,7 +160,6 @@
     },
     "image_banner": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -185,6 +184,7 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/woman-in-pink-silk.jpg",
         "image_overlay_opacity": 40,
@@ -201,7 +201,6 @@
     },
     "deb51548-5c70-4b4d-8b78-0cf7d1a7b325": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--19339382227264__deb51548-5c70-4b4d-8b78-0cf7d1a7b325-1685621367ac3bb74b-0": {
           "type": "heading",
@@ -233,6 +232,7 @@
         "template--19339382227264__deb51548-5c70-4b4d-8b78-0cf7d1a7b325-1685621367ac3bb74b-1",
         "template--19339382227264__deb51548-5c70-4b4d-8b78-0cf7d1a7b325-1685621367ac3bb74b-2"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -336,7 +336,6 @@
     },
     "41ffb30e-b137-4f30-b482-12b6caa674b8": {
       "type": "tabbing",
-      "disabled": true,
       "blocks": {
         "86c833e5-c708-4018-ad79-c2cffc7619bb": {
           "type": "text",
@@ -377,6 +376,7 @@
         "ae056ccd-fcf1-4d2e-a470-ac4642de250b",
         "02c2ebb9-8715-41e1-a0e6-721b788b0a10"
       ],
+      "disabled": true,
       "settings": {
         "width": "page-width",
         "padding_top": 36,
@@ -406,7 +406,6 @@
     },
     "ed9a085c-1bb0-4e28-8625-014b5edce856": {
       "type": "main-mission-section",
-      "disabled": true,
       "blocks": {
         "40dba8e2-f312-4a65-81ac-1b90ec35345a": {
           "type": "Images",
@@ -435,6 +434,7 @@
         "7012a294-7cb7-40b0-9eef-7a6a98e66ef3",
         "56896f5e-0c56-467f-b514-9d0e8fa66630"
       ],
+      "disabled": true,
       "settings": {
         "width": "full-width",
         "padding_top": 36,
@@ -448,7 +448,6 @@
     },
     "b34a908f-4bb0-4ab3-8823-29238b57cdc8": {
       "type": "contact-us",
-      "disabled": true,
       "blocks": {
         "0671f98a-8c75-4583-8596-33c569c84ae1": {
           "type": "text",
@@ -480,9 +479,74 @@
         "5a57b4ba-554b-4ed6-9b8a-4a1ae81e39d3",
         "a9e3cf00-3ea9-43d5-9847-dc2be7f0f3bf"
       ],
+      "disabled": true,
       "settings": {
         "sub-title": "",
         "title": "Title"
+      }
+    },
+    "ef406433-f4f4-4651-b27c-338e68fa0431": {
+      "type": "video-with-image",
+      "blocks": {
+        "ded4134d-c15c-4122-ab99-b6221232c21d": {
+          "type": "video",
+          "settings": {
+            "desktop_video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a4b3c66492fb41a1ab5bc45a99f06ac7.mp4",
+            "mobile-video_link": "",
+            "overlay_opacity": 0,
+            "text_color": "",
+            "desktop_content_position": "bottom-center",
+            "title": "Title",
+            "sub_title": "Sub-Title",
+            "dec": "",
+            "first_button_title": "First Button Title",
+            "first_button_link": "",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_color": "#000",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_hover_color": "#000",
+            "sec_button_title": "Second Button Title",
+            "sec_button_link": "",
+            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_color": "#000",
+            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_hover_color": "#000"
+          }
+        },
+        "52fb392e-254e-400c-83f9-b3da8636a638": {
+          "type": "image",
+          "settings": {
+            "dektop_image": "shopify:\/\/shop_images\/earrings08-hover_576x_37c84716-5ac5-4914-994a-62f472431fb4.webp",
+            "overlay_opacity": 0,
+            "text_color": "",
+            "desktop_content_position": "bottom-center",
+            "title": "Title",
+            "sub_title": "Sub-Title",
+            "dec": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<\/p>",
+            "first_button_title": "First Button Title",
+            "first_button_link": "",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_color": "#000",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_hover_color": "#000",
+            "sec_button_title": "Second Button Title",
+            "sec_button_link": "",
+            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_color": "#000",
+            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_hover_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "ded4134d-c15c-4122-ab99-b6221232c21d",
+        "52fb392e-254e-400c-83f9-b3da8636a638"
+      ],
+      "settings": {
+        "bg-color": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -498,6 +562,7 @@
     "41ffb30e-b137-4f30-b482-12b6caa674b8",
     "8a94f3d1-63ee-4632-9c6b-6650a0646e4a",
     "ed9a085c-1bb0-4e28-8625-014b5edce856",
-    "b34a908f-4bb0-4ab3-8823-29238b57cdc8"
+    "b34a908f-4bb0-4ab3-8823-29238b57cdc8",
+    "ef406433-f4f4-4651-b27c-338e68fa0431"
   ]
 }
