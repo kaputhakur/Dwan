@@ -42,15 +42,16 @@ mainProductSlider.forEach((item) => {
       prevEl: '.swiper-button-prev',
     },
   });
-  var autoStart = item.swiper;
-     item.addEventListener("mouseover", function () {
-    autoStart.autoplay.start();
-  });
- item.addEventListener("mouseout",function() {
-
-    autoStart.autoplay.stop();
-  });
   
+  item.swiper = swiper; // Store the swiper instance inside the item
+
+  item.addEventListener("mouseover", function () {
+    swiper.autoplay.start(); // Use the swiper instance for autoplay control
+  });
+
+  item.addEventListener("mouseout", function () {
+    swiper.autoplay.stop(); // Use the swiper instance for autoplay control
+  });
 });
 
 
