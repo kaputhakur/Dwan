@@ -39,38 +39,6 @@
         "padding_bottom": 36
       }
     },
-    "d3e465f7-e20b-4be8-b11c-2b417e30e40f": {
-      "type": "collection-tabbing",
-      "blocks": {
-        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "women",
-            "title": ""
-          }
-        },
-        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91": {
-          "type": "content",
-          "settings": {
-            "slider-collection": "men",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "9d6e98dd-9af2-4a62-9ce0-f2bf9bf0f713",
-        "80a0a3a4-0a90-4bff-b34a-8cefcdfd5c91"
-      ],
-      "settings": {
-        "width": "page-width",
-        "title": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "enable_quick_add": false
-      }
-    },
     "d92db74f-8c78-419b-89ca-8129c36ebbef": {
       "type": "shop-lock",
       "blocks": {
@@ -547,11 +515,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "a6dc1eb5-1d9e-4c6f-ae75-00404121cf62": {
+      "type": "product-range-tab",
+      "settings": {
+        "width": "full-width",
+        "title": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "enable_quick_add": false
+      }
     }
   },
   "order": [
     "bc7d5410-93d3-44ad-aebe-a7f9b4cc1060",
-    "d3e465f7-e20b-4be8-b11c-2b417e30e40f",
     "d92db74f-8c78-419b-89ca-8129c36ebbef",
     "featured_collection",
     "image_banner",
@@ -562,6 +541,7 @@
     "8a94f3d1-63ee-4632-9c6b-6650a0646e4a",
     "ed9a085c-1bb0-4e28-8625-014b5edce856",
     "b34a908f-4bb0-4ab3-8823-29238b57cdc8",
-    "ef406433-f4f4-4651-b27c-338e68fa0431"
+    "ef406433-f4f4-4651-b27c-338e68fa0431",
+    "a6dc1eb5-1d9e-4c6f-ae75-00404121cf62"
   ]
 }
