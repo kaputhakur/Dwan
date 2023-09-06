@@ -121,7 +121,6 @@
         "bcae278f-b05d-4aac-ab5b-26526b42c5f7",
         "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056"
       ],
-      "disabled": true,
       "settings": {
         "bg-color": "",
         "width": "page-width",
@@ -502,15 +501,15 @@
             "first_button_title": "First Button Title",
             "first_button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000",
+            "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000",
+            "btn_hover_color": "#000000",
             "sec_button_title": "Second Button Title",
             "sec_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000",
+            "sec_btn_color": "#000000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000"
+            "sec_btn_hover_color": "#000000"
           }
         },
         "52fb392e-254e-400c-83f9-b3da8636a638": {
@@ -522,19 +521,19 @@
             "desktop_content_position": "bottom-center",
             "title": "Title",
             "sub_title": "Sub-Title",
-            "dec": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<\/p>",
+            "dec": "",
             "first_button_title": "First Button Title",
             "first_button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000",
+            "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000",
+            "btn_hover_color": "#000000",
             "sec_button_title": "Second Button Title",
             "sec_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000",
+            "sec_btn_color": "#000000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000"
+            "sec_btn_hover_color": "#000000"
           }
         }
       },
