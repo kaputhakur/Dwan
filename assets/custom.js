@@ -34,13 +34,7 @@ mainProductSlider.forEach((item) => {
     allowTouchMove: true,
     slidesPerView: 1,
     effect: "fade",
-    autoplay: {
-      delay: 1000, // Specify autoplay delay here
-      disableOnInteraction: false, // Allow autoplay to continue after manual interaction
-    },
-    speed: 300,
-    noSwiping: true,
-    navigation: {
+  navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
