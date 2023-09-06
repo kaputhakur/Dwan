@@ -40,15 +40,17 @@ mainProductSlider.forEach((item) => {
     },
   });
 
-  // Add event listeners to start and stop autoplay on hover
-  item.addEventListener('mouseenter', () => {
-    swiper.autoplay.start();
-  });
+   var autoStart = item.swiper;
+    item.addEventListener("mousehover",function ()=> {
+      autoStart.autoplay.start();
+      
+    });
+  item.addEventListener("mouseleve",function()=>{
 
-  item.addEventListener('mouseleave', () => {
-    swiper.autoplay.stop();
-  });
-});
+    autoStart.autoplay.stop();
+  })
+  
+
 
 
 
