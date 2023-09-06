@@ -35,7 +35,7 @@ mainProductSlider.forEach((item) => {
     slidesPerView: 1,
     effect: "fade",
      autoplay: {
-      delay: 1000, // Adjust the delay as needed (in milliseconds)
+      delay: 1000,
     },
   navigation: {
       nextEl: '.swiper-button-next',
@@ -43,16 +43,23 @@ mainProductSlider.forEach((item) => {
     },
   });
   
-  item.swiper = swiper; // Store the swiper instance inside the item
+  item.swiper = swiper
 
   item.addEventListener("mouseover", function () {
-    swiper.autoplay.start(); // Use the swiper instance for autoplay control
+    swiper.autoplay.start();
   });
 
   item.addEventListener("mouseout", function () {
-    swiper.autoplay.stop(); // Use the swiper instance for autoplay control
+    swiper.autoplay.stop(); 
   });
 });
+
+
+
+
+
+
+
 
 
 
