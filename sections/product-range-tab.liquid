@@ -88,6 +88,93 @@
      btnTarget.classList.add("active");
   }
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize variables to keep track of selected image and size.
+    let selectedImage = "";
+    let selectedSize = "";
+
+    // Function to update the selected image when a color is clicked.
+    function updateSelectedImage(color) {
+      selectedImage = color;
+      // Update the displayed image based on the selected color.
+      // You can replace 'product-image' with the actual ID or class of your image container.
+      document.querySelector(".product-image").innerHTML = `
+        <a href="${card_product.url}">
+          <img class="borrder-all radius-20 feature-image" src="${getImageUrl(selectedImage)}">
+        </a>
+      `;
+    }
+
+    // Function to update the selected size when a size is clicked.
+    function updateSelectedSize(size) {
+      selectedSize = size;
+    }
+
+    // Function to add the selected product to the cart.
+    function addToCart() {
+      // Check if both image and size are selected.
+      if (selectedImage && selectedSize) {
+        // Find the variant ID that matches the selected options.
+        let variantId = findVariantId(selectedImage, selectedSize);
+        if (variantId) {
+          // Add the product to the cart using Shopify's AJAX API.
+          Shopify.addItem(variantId, 1, function (cart) {
+            // You can add code here to update the cart widget or show a success message.
+            console.log("Product added to cart!");
+          });
+        } else {
+          console.error("Variant not found for selected options.");
+        }
+      } else {
+        console.error("Please select both an image and a size.");
+      }
+    }
+
+    // Function to find the variant ID based on selected options.
+    function findVariantId(image, size) {
+      // Iterate through the product variants to find the matching variant.
+      for (const variant of card_product.variants) {
+        if (variant.option1 === image && variant.option2 === size) {
+          return variant.id;
+        }
+      }
+      return null; // Return null if no matching variant is found.
+    }
+
+    // Function to get the image URL based on the selected color.
+    function getImageUrl(color) {
+      // Iterate through the product images to find the image with the matching alt text.
+      for (const image of card_product.images) {
+        if (image.alt === color) {
+          return "{{ image.src | img_url: '248x333' }}";
+        }
+      }
+      return ""; // Return an empty string if no matching image is found.
+    }
+
+    // Attach click event listeners to color and size selectors.
+    document.querySelectorAll(".size-selector").forEach(function (sizeSelector) {
+      sizeSelector.addEventListener("click", function () {
+        const size = this.querySelector("input").value;
+        updateSelectedSize(size);
+      });
+    });
+
+    document.querySelectorAll(".variant-images").forEach(function (colorSelector) {
+      colorSelector.addEventListener("click", function () {
+        const color = this.querySelector("img").alt;
+        updateSelectedImage(color);
+      });
+    });
+
+    // Attach click event listener to "Add to Cart" button.
+    document.querySelector(".add-to-cart-button").addEventListener("click", function () {
+      addToCart();
+    });
+  });
+</script>
+
 
 {% schema %}
 {
