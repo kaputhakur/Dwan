@@ -44,7 +44,7 @@ mainProductSlider.forEach((item) => {
      item.addEventListener("mouseover", function () {
     autoStart.autoplay.start();
   });
-item.addEventListener("mouseout",function() {
+ item.addEventListener("mouseout",function() {
 
     autoStart.autoplay.stop();
   });
