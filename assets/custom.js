@@ -26,36 +26,35 @@ featureProduct.forEach((item)=>{
 
 // product-main-slider-in tabbing section
 
-  const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
-  mainProductSlider.forEach((item) => {
-    var Swipes = new Swiper(item, {
-      loop: true,
-      allowTouchMove: true,
-      slidesPerView: 1,
-      autoplay:true,
-      effect: "fade",
-      autoplay: {
-        delay: 1000, // Specify autoplay delay here
-      },
-      speed: 300,
-      noSwiping: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
 
-
-
- var swp =item.swiper
-     item.addEventListener("mouseover", function() {
-   swp.autoplay.start();
-      })
-     item.addEventListener("mouseout", function() {
-   swp.autoplay.stop();
-   });
-
+mainProductSlider.forEach((item) => {
+  const swiper = new Swiper(item, {
+    loop: true,
+    allowTouchMove: true,
+    slidesPerView: 1,
+    effect: "fade",
+    autoplay: {
+      delay: 1000, // Specify autoplay delay here
+      disableOnInteraction: false, // Allow autoplay to continue after manual interaction
+    },
+    speed: 300,
+    noSwiping: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
+
+  // Add event listeners to start and stop autoplay on hover
+  item.addEventListener('mouseenter', () => {
+    swiper.autoplay.start();
+  });
+
+  item.addEventListener('mouseleave', () => {
+    swiper.autoplay.stop();
+  });
+});
 
 
 
