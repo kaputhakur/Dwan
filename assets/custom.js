@@ -42,8 +42,7 @@ mainProductSlider.forEach((item) => {
       prevEl: '.swiper-button-prev',
     },
   });
-
-   var autoStart = item.swiper;
+  var autoStart = item.swiper;
      item.addEventListener("mouseover", function () {
     autoStart.autoplay.start();
   });
