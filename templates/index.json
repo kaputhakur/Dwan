@@ -518,6 +518,18 @@
     },
     "a6dc1eb5-1d9e-4c6f-ae75-00404121cf62": {
       "type": "product-range-tab",
+      "blocks": {
+        "6bdcd1c7-9c81-4010-94d5-cf5eb0fd6720": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "women",
+            "title": "Women"
+          }
+        }
+      },
+      "block_order": [
+        "6bdcd1c7-9c81-4010-94d5-cf5eb0fd6720"
+      ],
       "settings": {
         "width": "full-width",
         "title": "",
