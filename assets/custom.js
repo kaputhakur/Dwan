@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
  //   swp.autoplay.stop();
  //   });
 
-  });
+  // });
 
 
 
