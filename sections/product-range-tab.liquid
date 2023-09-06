@@ -51,7 +51,7 @@
                 {% assign collection = collections[block.settings['slider-collection']] %}
                 {% for product in collection.products %}
                   <div class="featured-product swiper-slide">
-                    {% render 'custom-card-product' %}   </div>
+                    {% render 'custom-card-product' card_product: product %}   </div>
                 {% endfor %}
               </div>
             </div>
