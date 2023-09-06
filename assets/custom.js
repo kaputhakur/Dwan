@@ -35,7 +35,7 @@ featureProduct.forEach((item)=>{
       autoplay:true,
       effect: "fade",
       autoplay: {
-        delay: 7000, // Specify autoplay delay here
+        delay: 1000, // Specify autoplay delay here
       },
       speed: 300,
       noSwiping: true,
