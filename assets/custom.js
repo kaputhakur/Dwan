@@ -47,15 +47,15 @@ featureProduct.forEach((item)=>{
   });
 
 
- // var swp =item.swiper
- //     item.addEventListener("mouseover", function() {
- //   swp.autoplay.start();
- //      })
- //     item.addEventListener("mouseout", function() {
- //   swp.autoplay.stop();
- //   });
+ var swp =item.swiper
+     item.addEventListener("mouseover", function() {
+   swp.autoplay.start();
+      })
+     item.addEventListener("mouseout", function() {
+   swp.autoplay.stop();
+   });
 
-  // });
+  });
 
 
 
