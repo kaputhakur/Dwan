@@ -89,6 +89,7 @@
         "bcae278f-b05d-4aac-ab5b-26526b42c5f7",
         "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056"
       ],
+      "disabled": true,
       "settings": {
         "bg-color": "",
         "width": "page-width",
@@ -539,7 +540,7 @@
         "3c53973e-7097-493a-9e35-d77737f76112"
       ],
       "settings": {
-        "width": "full-width",
+        "width": "page-width",
         "title": "",
         "padding_top": 36,
         "padding_bottom": 36,
