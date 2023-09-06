@@ -96,7 +96,8 @@
   </div>
  <!-- ------------- product-color-selector-end------  ---- -- -->
       </div>
-
+  
+<noscript>
 <form method="post" action="/cart/add">
   <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
   <input type="submit" value="Add to cart" class="btn" />
@@ -110,5 +111,7 @@
         {% endif %}
         {% endfor %}
       </select>
+    </noscript>
     </div>
+
     {% endform %}
