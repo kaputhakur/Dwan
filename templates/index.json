@@ -525,10 +525,18 @@
             "slider-collection": "women",
             "title": "Women"
           }
+        },
+        "3c53973e-7097-493a-9e35-d77737f76112": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "men",
+            "title": "Men"
+          }
         }
       },
       "block_order": [
-        "6bdcd1c7-9c81-4010-94d5-cf5eb0fd6720"
+        "6bdcd1c7-9c81-4010-94d5-cf5eb0fd6720",
+        "3c53973e-7097-493a-9e35-d77737f76112"
       ],
       "settings": {
         "width": "full-width",
