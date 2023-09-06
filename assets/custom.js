@@ -47,9 +47,9 @@ mainProductSlider.forEach((item) => {
 item.addEventListener("mouseout",function() {
 
     autoStart.autoplay.stop();
-  })
+  });
   
-
+});
 
 
 
