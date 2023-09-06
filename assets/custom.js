@@ -56,7 +56,7 @@ featureProduct.forEach((item)=>{
    });
 
   });
-  });
+
 
 
 
