@@ -25,14 +25,14 @@ featureProduct.forEach((item)=>{
 });
 
 // product-main-slider-in tabbing section
-
+document.addEventListener("DOMContentLoaded", function() {
   const mainProductSlider = document.querySelectorAll(".product-image-wrapper");
   mainProductSlider.forEach((item) => {
     var Swipes = new Swiper(item, {
       loop: true,
       allowTouchMove: true,
       slidesPerView: 1,
-     
+      initialSlide: 0,
       effect: "fade",
       autoplay: {
         delay: 7000, // Specify autoplay delay here
@@ -45,7 +45,7 @@ featureProduct.forEach((item)=>{
       },
     });
   });
-
+});
 
  // var swp =item.swiper
  //     item.addEventListener("mouseover", function() {
