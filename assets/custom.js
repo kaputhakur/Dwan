@@ -1,7 +1,4 @@
 
-
-
-
 //  collection-tabbing slider
 const featureProduct = document.querySelectorAll(".collection-carousel");
 featureProduct.forEach((item)=>{
