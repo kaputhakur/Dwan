@@ -51,7 +51,8 @@
                 {% assign collection = collections[block.settings['slider-collection']] %}
                 {% for product in collection.products %}
                   <div class="featured-product swiper-slide">
-                    {% render 'custom-card-product' PRODUCT: card_product%}   </div>
+                     {% render 'custom-card-product',card_product:product%}
+                   </div>
                 {% endfor %}
               </div>
             </div>
@@ -65,6 +66,9 @@
 </div>
 
 <script>
+
+
+  
   var tabLinks = document.querySelectorAll(".Tab-{{ section.id}}");
   var tabContent = document.querySelectorAll(".TabContent-{{ section.id}}");
   tabLinks.forEach(function(el) {
