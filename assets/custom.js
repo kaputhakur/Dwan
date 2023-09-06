@@ -44,7 +44,7 @@ featureProduct.forEach((item)=>{
         prevEl: '.swiper-button-prev',
       },
     });
-  });
+
 
 
  var swp =item.swiper
@@ -56,7 +56,7 @@ featureProduct.forEach((item)=>{
    });
 
   });
-
+  });
 
 
 
