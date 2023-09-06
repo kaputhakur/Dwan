@@ -41,11 +41,10 @@ mainProductSlider.forEach((item) => {
   });
 
    var autoStart = item.swiper;
-    item.addEventListener("mousehover",function ()=> {
-      autoStart.autoplay.start();
-      
-    });
-  item.addEventListener("mouseleve",function()=>{
+     item.addEventListener("mouseover", function () {
+    autoStart.autoplay.start();
+  });
+  item.addEventListener("mouseout",function(){
 
     autoStart.autoplay.stop();
   })
