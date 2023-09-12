@@ -88,7 +88,29 @@
      btnTarget.classList.add("active");
   }
 </script>
-
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const colorSelectors = document.querySelectorAll(".product-color-selector .variant-images img");
+    const sizeSelectors = document.querySelectorAll(".single-size-selector");
+    const addToCartButton = document.querySelector("input[type='submit']");
+    
+    colorSelectors.forEach((colorSelector) => {
+      colorSelector.addEventListener("click", () => {
+        // Enable size selectors
+        sizeSelectors.forEach((sizeSelector) => {
+          sizeSelector.removeAttribute("disabled");
+        });
+      });
+    });
+    
+    sizeSelectors.forEach((sizeSelector) => {
+      sizeSelector.addEventListener("change", () => {
+        // Enable add to cart button
+        addToCartButton.removeAttribute("disabled");
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
