@@ -39,65 +39,6 @@
         "padding_bottom": 36
       }
     },
-    "d92db74f-8c78-419b-89ca-8129c36ebbef": {
-      "type": "shop-lock",
-      "blocks": {
-        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5": {
-          "type": "Block-1",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
-            "productlist-1": "amplify-legging",
-            "productlist-2": "classic-capital-crop-hoodie",
-            "productlist-3": "printed-agnes-dress",
-            "productlist-4": "surface-pocket-legging-27"
-          }
-        },
-        "aebc03e7-a71e-4255-b843-a89b9e590666": {
-          "type": "Block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Spring02__003-port_800x_62e9b31f-ca4e-4acc-89ac-35d21b51a629.webp",
-            "productlist-1": "amplify-legging",
-            "productlist-2": "classic-capital-crop-hoodie",
-            "productlist-3": "pulse-kinetic-legging",
-            "productlist-4": "pulse-kinetic-legging"
-          }
-        },
-        "bcae278f-b05d-4aac-ab5b-26526b42c5f7": {
-          "type": "Block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-10_800x_a9251a87-df87-43e5-88c7-c5585dc4a42d.webp",
-            "productlist-1": "amplify-legging",
-            "productlist-2": "elmts-relaxed-jogger",
-            "productlist-3": "surface-pocket-legging-27",
-            "productlist-4": "classic-capital-crop-hoodie"
-          }
-        },
-        "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056": {
-          "type": "Block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/JuneAmplify_04-port_800x_b8f917fe-12e6-44a2-bae2-19eb1d0b4cfc.webp",
-            "productlist-1": "amplify-legging",
-            "productlist-2": "elmts-relaxed-jogger",
-            "productlist-3": "classic-capital-crop-hoodie",
-            "productlist-4": "amplify-legging"
-          }
-        }
-      },
-      "block_order": [
-        "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5",
-        "aebc03e7-a71e-4255-b843-a89b9e590666",
-        "bcae278f-b05d-4aac-ab5b-26526b42c5f7",
-        "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056"
-      ],
-      "settings": {
-        "bg-color": "",
-        "width": "page-width",
-        "title": "Shop The Lock",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -151,7 +92,6 @@
         "heading",
         "button"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/woman-in-pink-silk.jpg",
         "image_overlay_opacity": 40,
@@ -239,6 +179,7 @@
         "template--19339382227264__c2ecd15a-a2ca-48f4-886c-70fefbd845f7-168561527772a6e58d-1",
         "template--19339382227264__c2ecd15a-a2ca-48f4-886c-70fefbd845f7-168561527772a6e58d-2"
       ],
+      "disabled": true,
       "settings": {
         "bg-color": "",
         "image": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg",
@@ -455,29 +396,29 @@
     "ef406433-f4f4-4651-b27c-338e68fa0431": {
       "type": "video-with-image",
       "blocks": {
-        "ded4134d-c15c-4122-ab99-b6221232c21d": {
+        "b2252571-1e53-410b-a664-41171136a64b": {
           "type": "video",
           "settings": {
-            "desktop_video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a4b3c66492fb41a1ab5bc45a99f06ac7.mp4",
+            "desktop_video_link": "",
             "mobile-video_link": "",
             "overlay_opacity": 0,
             "text_color": "",
             "desktop_content_position": "bottom-center",
             "title": "Title",
             "sub_title": "Sub-Title",
-            "dec": "",
+            "dec": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<\/p>",
             "first_button_title": "First Button Title",
             "first_button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
+            "btn_color": "#000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
+            "btn_hover_color": "#000",
             "sec_button_title": "Second Button Title",
             "sec_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
+            "sec_btn_color": "#000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "sec_btn_hover_color": "#000"
           }
         },
         "52fb392e-254e-400c-83f9-b3da8636a638": {
@@ -503,11 +444,36 @@
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "sec_btn_hover_color": "#000000"
           }
+        },
+        "801dce7f-b04a-4da4-924d-d59a0444b01b": {
+          "type": "image",
+          "settings": {
+            "dektop_image": "shopify:\/\/shop_images\/22.webp",
+            "overlay_opacity": 0,
+            "text_color": "",
+            "desktop_content_position": "bottom-center",
+            "title": "Title",
+            "sub_title": "Sub-Title",
+            "dec": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled<\/p>",
+            "first_button_title": "First Button Title",
+            "first_button_link": "",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_color": "#000",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "btn_hover_color": "#000",
+            "sec_button_title": "Second Button Title",
+            "sec_button_link": "",
+            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_color": "#000",
+            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "sec_btn_hover_color": "#000"
+          }
         }
       },
       "block_order": [
-        "ded4134d-c15c-4122-ab99-b6221232c21d",
-        "52fb392e-254e-400c-83f9-b3da8636a638"
+        "b2252571-1e53-410b-a664-41171136a64b",
+        "52fb392e-254e-400c-83f9-b3da8636a638",
+        "801dce7f-b04a-4da4-924d-d59a0444b01b"
       ],
       "settings": {
         "bg-color": "",
@@ -551,7 +517,6 @@
   },
   "order": [
     "bc7d5410-93d3-44ad-aebe-a7f9b4cc1060",
-    "d92db74f-8c78-419b-89ca-8129c36ebbef",
     "featured_collection",
     "image_banner",
     "deb51548-5c70-4b4d-8b78-0cf7d1a7b325",
