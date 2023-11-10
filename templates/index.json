@@ -44,6 +44,7 @@
       "blocks": {
         "1d4dce27-ba61-4f3d-8d38-a82f2dfc0ce5": {
           "type": "Block-1",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/AA23-MAY-Creative-16_800x_6a14400a-67c1-47f0-926c-4ae2013cae83.webp",
             "productlist-1": "amplify-legging",
@@ -89,7 +90,6 @@
         "bcae278f-b05d-4aac-ab5b-26526b42c5f7",
         "e143d0b1-16ba-44a7-8d6a-5c5b6c9c2056"
       ],
-      "disabled": true,
       "settings": {
         "bg-color": "",
         "width": "page-width",
@@ -106,8 +106,8 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "men",
-        "products_to_show": 2,
+        "collection": "women",
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": false,
