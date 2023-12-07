@@ -92,7 +92,6 @@
         "heading",
         "button"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/woman-in-pink-silk.jpg",
         "image_overlay_opacity": 40,
@@ -313,15 +312,15 @@
             "first_button_title": "First Button Title",
             "first_button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000",
+            "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000",
+            "btn_hover_color": "#000000",
             "sec_button_title": "Second Button Title",
             "sec_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000",
+            "sec_btn_color": "#000000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000"
+            "sec_btn_hover_color": "#000000"
           }
         },
         "52fb392e-254e-400c-83f9-b3da8636a638": {
@@ -361,15 +360,15 @@
             "first_button_title": "First Button Title",
             "first_button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000",
+            "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000",
+            "btn_hover_color": "#000000",
             "sec_button_title": "Second Button Title",
             "sec_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000",
+            "sec_btn_color": "#000000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000"
+            "sec_btn_hover_color": "#000000"
           }
         }
       },
