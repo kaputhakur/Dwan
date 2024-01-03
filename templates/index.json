@@ -416,6 +416,30 @@
         "show_secondary_image": false,
         "enable_quick_add": false
       }
+    },
+    "2dadf42b-c00a-48f1-83a3-acd323c32a3f": {
+      "type": "product-range-tab",
+      "blocks": {
+        "3d745c31-36d4-454e-8826-f43f719aa19b": {
+          "type": "content",
+          "settings": {
+            "slider-collection": "women",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "3d745c31-36d4-454e-8826-f43f719aa19b"
+      ],
+      "settings": {
+        "width": "full-width",
+        "title": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "enable_quick_add": false
+      }
     }
   },
   "order": [
@@ -427,6 +451,7 @@
     "38d6c8b9-2190-493d-89b5-d81415604a57",
     "41ffb30e-b137-4f30-b482-12b6caa674b8",
     "ef406433-f4f4-4651-b27c-338e68fa0431",
-    "a6dc1eb5-1d9e-4c6f-ae75-00404121cf62"
+    "a6dc1eb5-1d9e-4c6f-ae75-00404121cf62",
+    "2dadf42b-c00a-48f1-83a3-acd323c32a3f"
   ]
 }
